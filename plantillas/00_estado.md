@@ -6,8 +6,9 @@
 ## Datos generales
 
 - **Tesista:**
-- **Programa:** Maestría en Ingeniería de Software
-- **Institución:**
+- **Programa:** Maestría en Ingeniería de Software (fijado)
+- **Tutor:** Luis Roberto Pérez Rios, Ph.D. (fijado)
+- **Institución de destino:** se define durante la traducción al modelo institucional
 - **Fecha de inicio:**
 - **Título provisional:**
 
