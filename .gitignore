@@ -1,11 +1,15 @@
 # Trabajo personal del tesista (no versionar)
 tesis_ds/
+entrega_*/
 
 # Salidas y binarios
 *.pdf
 *.docx
 *.aux
 *.log
+
+# Conversiones temporales
+*.emf
 
 # Sistema
 .DS_Store
