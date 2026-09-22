@@ -1,0 +1,16 @@
+# Trabajo personal del tesista (no versionar)
+tesis_ds/
+
+# Salidas y binarios
+*.pdf
+*.docx
+*.aux
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Entornos y dependencias
+.env
+node_modules/
