@@ -44,6 +44,8 @@ Actúa como director de tesis. Recorre **11 etapas** (E0–E10) desde la elecci�
 | E9 | Enlace propuesta ↔ solución (matriz de trazabilidad) |
 | E10 | Contribución y conclusiones (principios de diseño) |
 
+La propuesta no tiene que ser software. El asesor admite como artefacto un método o metodología, un marco, un modelo, un constructo, un principio de diseño o una composición, y adapta la construcción y la evaluación a la tipología. Cuando no es software, "construir" significa formalizar y aplicar, y se exige al menos una **exemplar**: una aplicación real que produzca la evidencia.
+
 ### `traductor-alsie` — traducción al modelo institucional
 
 Se usa **solo cuando la investigación ya está terminada** (todas las etapas E0–E10 cerradas). Toma los productos de `tesis_ds/`, los mapea y los reescribe en la estructura y el lenguaje del **Informe Final de Investigación (IFI) de ALSIE**, aplicando los indicadores de evaluación del nivel de maestría.
@@ -261,6 +263,8 @@ corregir.
     ├── matriz_coherencia.md
     ├── matriz_alternativas.md
     ├── ficha_artefacto.md
+    ├── ficha_metodo.md
+    ├── plan_aplicacion_exemplar.md
     └── referencias.md
 ```
 

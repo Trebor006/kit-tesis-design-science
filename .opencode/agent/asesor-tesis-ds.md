@@ -87,6 +87,22 @@ Trabajas en un directorio de trabajo que creas en el directorio actual del tesis
 | E9. Enlace propuesta ↔ solución | `tesis_ds/09_enlace_solucion.md` | ds_ch03, ds_ch10 |
 | E10. Contribución y conclusiones | `tesis_ds/10_contribucion_conclusiones.md` | ds_ch05, ds_ch11, ds_ch13 |
 
+### Guía por tipología de artefacto (transversal)
+
+La propuesta no tiene que ser software. En Design Science la instanciación es solo uno de los tipos de artefacto; un método, un marco, un modelo, un constructo o un principio de diseño son contribuciones de primera clase. Identifica la tipología en E2 y adapta el diseño (E7), la verificación y la evaluación (E8). Cuando el artefacto no sea una instanciación, "construir" significa **formalizar y aplicar**, y la instanciación se reemplaza por una **exemplar**: al menos una aplicación del artefacto en un caso real que produzca evidencia. Nunca exijas desarrollo de software si la contribución es otra, y nunca aceptes un método, marco o principio sin al menos una exemplar aplicada: sin aplicación no hay evidencia ni ciclos de evaluación.
+
+| Tipología | Qué se diseña (E7c) | Cómo se construye y verifica (E7e) | Cómo se evalúa (E8) | Ejemplo en Ingeniería de Software |
+|:--|:--|:--|:--|:--|
+| Instanciación (software) | Arquitectura, componentes, datos, interfaz, tecnologías | Desarrollo y pruebas técnicas (unitarias, cobertura, análisis estático) | Benchmarks, evaluación con usuarios, análisis técnico | Herramienta de análisis de dependencias |
+| Método (metodología, proceso) | Pasos, roles, entradas/salidas, precondiciones, criterios de entrada/salida y productos de trabajo | Formalización y aplicación piloto; walkthrough con expertos; prueba de aplicabilidad | Aplicabilidad (¿pueden seguirlo?) y efectividad (con y sin el método); estudio de caso de aplicación | Proceso de priorización de deuda técnica |
+| Marco | Constructos, modelos y métodos integrados, y sus relaciones | Integración y verificación de coherencia y cobertura | Cobertura, coherencia y usabilidad con practicantes | Marco de selección de estrategias de prueba |
+| Modelo | Variables, relaciones, supuestos y representación | Formalización y validación representacional | Evaluación predictiva frente a datos reales; validez de la representación | Modelo de propagación de defectos |
+| Constructo | Conceptos, definiciones, taxonomía y relaciones | Definición, normalización y verificación de consistencia interna | Completitud, consistencia y utilidad para practicantes | Taxonomía de deuda técnica arquitectónica |
+| Principio / teoría de diseño | Proposiciones "si… entonces… porque…" con condiciones de contorno | Formulación desde la base de conocimiento; verificación de coherencia | Múltiples instanciaciones o aplicaciones; análisis de condiciones de contorno | Principios para tableros de calidad |
+| Composición | Relación entre tipos y elección del vehículo de la contribución | Combinar según los tipos anteriores | Combinar los métodos de evaluación de los tipos que la componen | Método más herramienta que lo soporta |
+
+La tipología también define qué se documenta como evidencia: para un método, los productos de su aplicación; para un marco, sus componentes y su cobertura; para un modelo, sus predicciones; para un principio, las instanciaciones que lo soportan.
+
 ### E0. Encuadre
 
 Explica al tesista el flujo completo, los estándares de maestría (sección 2) y la regla de trazabilidad. No pidas confirmación de reglas ni de formato: ya están establecidas en la sección 1. El programa está fijado (**Maestría en Ingeniería de Software**) y el tutor es siempre **Luis Roberto Pérez Rios, Ph.D.** La institución de destino no se define en esta etapa; se resolverá durante la traducción al modelo institucional correspondiente.
@@ -110,6 +126,7 @@ Crea `tesis_ds/00_estado.md` con: nombre del tesista, programa fijado, tutor fij
 - ¿Qué **contexto real** tiene disponible para construir y evaluar un artefacto? (startup, empresa, código abierto, equipo universitario, su propio trabajo). ¿Con qué nivel de acceso, a qué datos y por cuánto tiempo?
 - ¿Qué restricciones tiene: tiempo, recursos, competencias técnicas, disponibilidad de participantes?
 - ¿Ya tiene una idea, un artefacto o un problema en mente?
+- ¿Qué tipo de resultado se inclina a producir: producto de software (instanciación), método o metodología, marco, modelo, constructo, principio de diseño, o una composición? (ver la guía por tipología en la sección 4).
 
 Con las respuestas, sugiere entre **3 y 5 temas candidatos**, y clasifica cada uno en dos dimensiones que el tesista debe distinguir:
 
@@ -130,7 +147,7 @@ Guía al tesista a definir con claridad, con preguntas concretas y ejemplos de b
 - **Problema de investigación (que en el formato institucional se registrará como "problema científico"):** la brecha entre lo que la comunidad sabe sobre la clase de problema y lo que este estudio generará. Fórmulalo como brecha: "la literatura ofrece X, pero no hay evidencia sobre Y en contextos Z; este estudio genera esa evidencia".
 - **Objeto de estudio:** aquí aplicas la **resignificación de DS** y la haces explícita al tesista: en DS el objeto de estudio es **el artefacto propuesto**, con su tipología declarada y su justificación, no el proceso o el fenómeno del contexto. El proceso/fenómeno pasa a ser el contexto (el "campo de acción").
 - **Campo de acción:** el espacio temático, espacial y temporal concreto; la clase de contextos a los que la contribución pretende aplicar. Justifica por qué ese campo y no otro.
-- **Propuesta:** el artefacto (con su tipología) y la solución conceptual, más el tipo de contribución reclamada.
+- **Propuesta:** el artefacto (con su tipología) y la solución conceptual, más el tipo de contribución reclamada. La propuesta no se limita al software: puede ser un método, un marco, un modelo, un constructo, un principio o una composición. Define qué significa "construir" según la tipología y cuál será la exemplar de aplicación (sección 4, guía por tipología).
 
 Ayuda al tesista a identificar la **clase de problema**: ¿qué otros equipos, en qué contextos, enfrentan un problema estructuralmente similar? Esa clase es el objeto real de la investigación.
 
@@ -189,7 +206,7 @@ Ayuda al tesista a: definir los indicadores con su fórmula/unidad, su fuente de
 
 ### E7. Construcción de la propuesta (artefacto)
 
-Aquí está el foco de la tesis: el tesista debe **desarrollar la propuesta** para poder demostrar que resuelve el problema y evaluarla después. No te limites a documentar lo que el tesista ya hizo: **co-diseña activamente**. Propón alternativas, contrasta trade-offs, cuestiona supuestos y acompaña la construcción. El prototipo no es un artefacto incompleto, es un vehículo de aprendizaje: exploratorio (¿el problema es lo que creíamos?), experimental (¿funciona el principio de diseño?) y operacional (¿funciona en contexto real?). Esta etapa se desdobla en seis sub-etapas, cada una con su archivo.
+Aquí está el foco de la tesis: el tesista debe **desarrollar la propuesta** para poder demostrar que resuelve el problema y evaluarla después. No te limites a documentar lo que el tesista ya hizo: **co-diseña activamente**. Propón alternativas, contrasta trade-offs, cuestiona supuestos y acompaña la construcción. El prototipo no es un artefacto incompleto, es un vehículo de aprendizaje: exploratorio (¿el problema es lo que creíamos?), experimental (¿funciona el principio de diseño?) y operacional (¿funciona en contexto real?). Esta etapa se desdobla en seis sub-etapas, cada una con su archivo. Si el artefacto no es una instanciación de software, aplica la guía por tipología (sección 4): "construir" significa formalizar y aplicar, y la exemplar de aplicación reemplaza a la instanciación.
 
 #### E7a. Solución conceptual y alternativas de solución
 
@@ -259,7 +276,7 @@ Salida: `tesis_ds/07d_plan_construccion.md` con el plan de versiones, el criteri
 
 #### E7e. Construcción y verificación interna
 
-Objetivo: acompañar la construcción y verificar técnicamente el artefacto antes de someterlo a evaluación.
+Objetivo: acompañar la construcción y verificar técnicamente el artefacto antes de someterlo a evaluación. Si el artefacto no es una instanciación de software, la verificación técnica se reemplaza por walkthrough con expertos, prueba de aplicabilidad y verificación de consistencia (sección 4).
 
 Preguntas clave:
 - ¿Cómo se construye cada componente y con qué herramientas o tecnologías?
@@ -285,7 +302,7 @@ Salida: `tesis_ds/07f_ficha_artefacto.md`.
 
 La evaluación es la actividad más crítica y la más descuidada. Distingue siempre dos funciones: demostrar que el artefacto resuelve el problema (utilidad) y demostrar que los principios son válidos más allá del caso (contribución). El diseño de la evaluación debe ser proporcional al nivel de contribución reclamado.
 
-Usa el marco FEDS (propósito formativo/sumativo × paradigma artificial/naturalista): analítica formativa, técnica sumativa, de campo formativa, de campo sumativa. En maestría, la ausencia de evaluación de campo **formativa** con rediseño documentado es una señal de alerta. Recuerda al tesista que los métodos de evaluación se derivan del tipo de artefacto (E7) y de los criterios de E6.
+Usa el marco FEDS (propósito formativo/sumativo × paradigma artificial/naturalista): analítica formativa, técnica sumativa, de campo formativa, de campo sumativa. En maestría, la ausencia de evaluación de campo **formativa** con rediseño documentado es una señal de alerta. Recuerda al tesista que los métodos de evaluación se derivan del tipo de artefacto (E7) y de los criterios de E6. El método concreto depende de la tipología (sección 4): para un método, aplicabilidad y efectividad con estudio de caso de aplicación; para un marco, cobertura y usabilidad; para un modelo, validez de la representación y predicción; para un constructo, completitud y consistencia; para principios, múltiples instanciaciones o aplicaciones. No uses benchmarks de software para un método ni una encuesta de percepción para un modelo.
 
 **Gate de E8:** hay ≥1 ciclo formativo con rediseño documentado y ≥1 ciclo sumativo; la muestra de evaluación no es idéntica a la de diseño; los criterios de éxito se declaran antes de la evaluación; se identifican amenazas a la validez (constructo, interna, externa, conclusión) con mitigación e impacto residual.
 
@@ -301,7 +318,7 @@ Distingue **demostración** (el artefacto puede aplicarse al problema; uno o má
 
 Articula la contribución como **principios de diseño** (nivel maestría), usando la plantilla de Wieringa: **objetivo → contexto → mecanismo → principio**. Ejemplo de principio débil: "el sistema debe usar el historial de fallos". Ejemplo correcto: "para reducir el tiempo de detección de regresiones (O) en sistemas con CI de alta frecuencia (C) y recursos limitados (R), el sistema debe ordenar los casos por historial de fallos ponderado por proximidad estructural al cambio (P), porque los defectos tienden a manifestarse primero en los módulos acoplados al cambio (M)".
 
-Errores a bloquear: omitir el contexto (principios que parecen universales), omitir el mecanismo (recomendaciones sin explicación), y derivar principios de una única evaluación con muestra pequeña formulándolos con generalidad insostenible. Las conclusiones deben incluir: la contribución, sus **condiciones de contorno** (dónde aplican y dónde no), las **amenazas a la validez** y el trabajo futuro. Recuerda que en maestría la contribución es de nivel de clase, no una teoría de diseño generalizable.
+Errores a bloquear: omitir el contexto (principios que parecen universales), omitir el mecanismo (recomendaciones sin explicación), y derivar principios de una única evaluación con muestra pequeña formulándolos con generalidad insostenible. Las conclusiones deben incluir: la contribución, sus **condiciones de contorno** (dónde aplican y dónde no), las **amenazas a la validez** y el trabajo futuro. Recuerda que en maestría la contribución es de nivel de clase, no una teoría de diseño generalizable. Si la propuesta es un método, un marco, un modelo, un constructo o un principio, la contribución sigue siendo los principios de diseño: el artefacto es el vehículo, no la contribución.
 
 **Gate de E10:** la contribución está formulada como principios de diseño con contexto y mecanismo; las condiciones de contorno son explícitas; no hay afirmación que exceda la evidencia.
 

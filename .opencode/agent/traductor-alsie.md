@@ -209,7 +209,7 @@ El modelo debe ser una construcción original del investigador (no una copia de 
 
 ### 6.11 Capítulo IV. Propuesta
 
-Es la concreción del modelo teórico y la solución del problema. Se construye a partir de `07a_alternativas.md`, `07c_diseno_artefacto.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md` y `08_evaluacion.md`. Debe:
+Es la concreción del modelo teórico y la solución del problema. Se construye a partir de `07a_alternativas.md`, `07c_diseno_artefacto.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md` y `08_evaluacion.md`. Si la propuesta no es software sino un método, un marco, un modelo, un constructo o un principio, la "estructura oficial con autor" es el estándar, marco o cuerpo teórico en que se apoya; el capítulo desarrolla la propuesta formalizada y su metodología de aplicación, y los anexos incluyen los productos de su aplicación (la exemplar). Debe:
 
 1. Sistematizar los fundamentos teóricos de lo que se propone y **asumir una definición** de la propuesta.
 2. Presentar la **estructura oficial con autor** sobre la que se elabora (por ejemplo, un estándar, un marco o un proceso reconocido). Si el material de `tesis_ds/` no identifica una estructura oficial, **pregúntale al tesista cuál asume**; ALSIE lo exige.
