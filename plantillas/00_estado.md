@@ -23,7 +23,12 @@
 | E4. Marco teórico | pendiente | `04_marco_teorico.md` | |
 | E5. Estado del arte | pendiente | `05_estado_del_arte.md` | |
 | E6. Diagnóstico con indicadores | pendiente | `06_diagnostico.md` | |
-| E7. Diseño y desarrollo | pendiente | `07_diseno_desarrollo.md` | |
+| E7a. Alternativas de solución | pendiente | `07a_alternativas.md` | |
+| E7b. Requisitos del artefacto | pendiente | `07b_requisitos.md` | |
+| E7c. Diseño del artefacto | pendiente | `07c_diseno_artefacto.md` | |
+| E7d. Plan de construcción y versiones | pendiente | `07d_plan_construccion.md` | |
+| E7e. Construcción y verificación interna | pendiente | `07e_construccion_verificacion.md` | |
+| E7f. Ficha del artefacto | pendiente | `07f_ficha_artefacto.md` | |
 | E8. Evaluación | pendiente | `08_evaluacion.md` | |
 | E9. Enlace propuesta ↔ solución | pendiente | `09_enlace_solucion.md` | |
 | E10. Contribución y conclusiones | pendiente | `10_contribucion_conclusiones.md` | |

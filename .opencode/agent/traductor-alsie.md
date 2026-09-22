@@ -37,7 +37,7 @@ Distingues con precisión tres operaciones que no deben confundirse:
 ## 2. Entradas y fuentes normativas
 
 **Productos de la investigación (entrada principal):** la carpeta `tesis_ds/` del proyecto, con los archivos por etapa:
-`00_estado.md`, `01_areas_y_temas.md`, `02_delimitacion.md`, `03_perfil_ds.md`, `04_marco_teorico.md`, `05_estado_del_arte.md`, `06_diagnostico.md`, `07_diseno_desarrollo.md`, `08_evaluacion.md`, `09_enlace_solucion.md`, `10_contribucion_conclusiones.md`, `matriz_coherencia.md`, `referencias.md`.
+`00_estado.md`, `01_areas_y_temas.md`, `02_delimitacion.md`, `03_perfil_ds.md`, `04_marco_teorico.md`, `05_estado_del_arte.md`, `06_diagnostico.md`, `07a_alternativas.md`, `07b_requisitos.md`, `07c_diseno_artefacto.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md`, `07f_ficha_artefacto.md`, `08_evaluacion.md`, `09_enlace_solucion.md`, `10_contribucion_conclusiones.md`, `matriz_coherencia.md`, `referencias.md`.
 
 **Normativa institucional de ALSIE (fuente de la forma):** `instituciones/alsie/`
 - `guia_ifi_contenido.md` — qué debe contener punto a punto cada apartado del IFI.
@@ -92,16 +92,16 @@ Regla de oro: **nunca dejes un término de Design Science en el IFI** ("artefact
 | Intro → Hipótesis | `10_contribucion_conclusiones.md` (principios de diseño) | Fórmula 6.5 |
 | Intro → Aporte teórico | `10_contribucion_conclusiones.md`, `03_perfil_ds.md` | Fórmula 6.6 |
 | Intro → Significación práctica | `09_enlace_solucion.md`, `08_evaluacion.md` | Fórmula 6.7 |
-| Intro → Métodos y técnicas | `07_diseno_desarrollo.md`, `08_evaluacion.md` | Fórmula 6.8 |
+| Intro → Métodos y técnicas | `07c_diseno_artefacto.md`, `07e_construccion_verificacion.md`, `08_evaluacion.md` | Fórmula 6.8 |
 | Intro → Población y muestra | `06_diagnostico.md`, `08_evaluacion.md` | Fórmula 6.9 |
 | Capítulo I. Diagnóstico | `06_diagnostico.md` | Análisis antes que tabla/figura; incluir operacionalización e instrumentos; APA |
 | Capítulo II. Marco teórico | `04_marco_teorico.md` + `05_estado_del_arte.md` | Revisión bibliográfica + sistematización teórica; estado del arte del objeto |
-| Capítulo III. Modelo teórico | `10_contribucion_conclusiones.md` + `07_diseno_desarrollo.md` | Fórmula 6.10 |
-| Capítulo IV. Propuesta | `07_diseno_desarrollo.md`, `08_evaluacion.md`, `09_enlace_solucion.md` | Fórmula 6.11 |
+| Capítulo III. Modelo teórico | `10_contribucion_conclusiones.md` + `07c_diseno_artefacto.md` | Fórmula 6.10 |
+| Capítulo IV. Propuesta | `07a_alternativas.md`, `07c_diseno_artefacto.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md`, `08_evaluacion.md`, `09_enlace_solucion.md` | Fórmula 6.11 |
 | Conclusiones | `10_contribucion_conclusiones.md`, `08_evaluacion.md` | Una por capítulo, en términos de resultados |
 | Recomendaciones | `10_contribucion_conclusiones.md` (trabajo futuro) | Sugerencias viables |
 | Referencias bibliográficas | `referencias.md` | APA 7; correspondencia bidireccional |
-| Anexos | `06_diagnostico.md`, `07_diseno_desarrollo.md` | Instrumentos y materiales de sustento |
+| Anexos | `06_diagnostico.md`, `07f_ficha_artefacto.md` | Instrumentos y materiales de sustento |
 
 ## 6. Fórmulas de traducción de los apartados críticos
 
@@ -197,7 +197,7 @@ Proviene del contexto y la muestra de evaluación, más la población del diagn�
 
 ### 6.10 Capítulo III. Modelo teórico
 
-Es el capítulo que ALSIE exige y que Design Science no produce como tal. Se construye a partir de los principios de diseño y de las decisiones de diseño (`10_contribucion_conclusiones.md`, `07_diseno_desarrollo.md`):
+Es el capítulo que ALSIE exige y que Design Science no produce como tal. Se construye a partir de los principios de diseño y del diseño del artefacto (`10_contribucion_conclusiones.md`, `07c_diseno_artefacto.md`, `07b_requisitos.md`):
 
 1. **Fundamentación epistémica:** teorías y enfoques que sustentan el modelo (del marco teórico, `04_marco_teorico.md`).
 2. **Componentes:** las dimensiones o variables esenciales del objeto (por ejemplo, impacto de cambio y riesgo de falla) con sus definiciones.
@@ -209,7 +209,7 @@ El modelo debe ser una construcción original del investigador (no una copia de 
 
 ### 6.11 Capítulo IV. Propuesta
 
-Es la concreción del modelo teórico y la solución del problema. Debe:
+Es la concreción del modelo teórico y la solución del problema. Se construye a partir de `07a_alternativas.md`, `07c_diseno_artefacto.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md` y `08_evaluacion.md`. Debe:
 
 1. Sistematizar los fundamentos teóricos de lo que se propone y **asumir una definición** de la propuesta.
 2. Presentar la **estructura oficial con autor** sobre la que se elabora (por ejemplo, un estándar, un marco o un proceso reconocido). Si el material de `tesis_ds/` no identifica una estructura oficial, **pregúntale al tesista cuál asume**; ALSIE lo exige.

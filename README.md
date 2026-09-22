@@ -34,7 +34,12 @@ Actúa como director de tesis. Recorre **11 etapas** (E0–E10) desde la elecci�
 | E4 | Marco teórico que sustenta el objeto de estudio |
 | E5 | Estado del arte sobre la propuesta y los artefactos existentes |
 | E6 | Diagnóstico con indicadores y línea base |
-| E7 | Diseño y desarrollo del artefacto |
+| E7a | Alternativas de solución y decisión con trade-offs |
+| E7b | Requisitos del artefacto |
+| E7c | Diseño del artefacto (componentes, estructura, diagrama) |
+| E7d | Plan de construcción y versiones (producto mínimo viable, suficiencia) |
+| E7e | Construcción y verificación interna |
+| E7f | Ficha reproducible del artefacto |
 | E8 | Evaluación (formativa con rediseño + sumativa) |
 | E9 | Enlace propuesta ↔ solución (matriz de trazabilidad) |
 | E10 | Contribución y conclusiones (principios de diseño) |
@@ -254,6 +259,8 @@ corregir.
 └── plantillas/                           Esqueletos opcionales de trabajo
     ├── 00_estado.md
     ├── matriz_coherencia.md
+    ├── matriz_alternativas.md
+    ├── ficha_artefacto.md
     └── referencias.md
 ```
 
