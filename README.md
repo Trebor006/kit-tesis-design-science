@@ -67,6 +67,8 @@ Al abrir opencode dentro de la carpeta, el agente `asesor-tesis-ds` queda selecc
 
 No hay que instalar nada más ni configurar rutas: los agentes y su biblioteca de referencia viajan dentro del repositorio.
 
+Video adicional de ejemplo: [OpenCode+Agente Tutor](https://youtu.be/pBNbl9Z-pD0)
+
 ---
 
 ## Flujo completo de trabajo
