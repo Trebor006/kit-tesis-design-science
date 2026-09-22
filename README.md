@@ -194,6 +194,8 @@ señala los tres problemas más graves y los tres mayores aciertos.
 - Nunca inventa referencias. Busca y verifica fuentes reales; lo no verificable se marca como `[por verificar]`.
 - Exige que los criterios de éxito y los indicadores se definan antes de construir el artefacto.
 - No escribe la tesis por el estudiante: co-construye sobre decisiones que él ya tomó y puede defender.
+- Todos los entregables y artefactos se producen **siempre en archivos Markdown (`.md`)**.
+- Las citas y referencias siguen **APA 7 de forma obligatoria** en todos los archivos y etapas.
 
 ---
 
@@ -206,6 +208,8 @@ señala los tres problemas más graves y los tres mayores aciertos.
 **¿El agente inventa bibliografía?** No. Tiene la instrucción explícita de verificar cada fuente y de marcar como `[por verificar]` lo que no pueda confirmar.
 
 **¿Puedo usarlo para mi plantilla institucional?** Este kit produce el trabajo en clave de Design Science. La traducción a la plantilla institucional (por ejemplo, con los apartados de problema científico, objeto de estudio y campo de acción) se hará con un agente de traducción que se desarrollará en una fase posterior.
+
+**¿En qué formato entrega el agente?** Siempre en archivos Markdown (`.md`), con citas y referencias en APA 7. No genera Word ni PDF directamente; si necesitas otro formato, se convierte después a partir del `.md`.
 
 **¿Cómo actualizo el kit?** Con `git pull` dentro de la carpeta. Tu carpeta `tesis_ds/` no se ve afectada porque está ignorada por Git.
 
