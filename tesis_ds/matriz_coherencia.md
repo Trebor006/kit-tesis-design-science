@@ -1,0 +1,19 @@
+﻿# Matriz de coherencia de la tesis
+
+> Esta matriz se mantiene viva durante todo el proceso. Ningún eslabón debe contradecir a otro.
+
+| Eslabón | Formulación actual | Estado | Observación |
+|:--|:--|:--|:--|
+| Problema de diseño | La línea de software a medida de PRX carece de una ruta ligera, común y verificable para adoptar prácticas mínimas de gestión técnica desde el inicio de los proyectos. | Formulado | Incluye contexto, problema, solución conceptual y criterios preliminares de éxito. |
+| Problema de investigación | Existe una brecha sobre cómo diseñar marcos ligeros de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de empresas emergentes con baja formalización. En el formato institucional se registrará como problema científico. | Formulado | Reforzado con literatura académica verificada sobre mejora de procesos en pequeñas empresas, entidades muy pequeñas e ISO/IEC 29110. |
+| Objeto de estudio | Marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de empresas emergentes de software con baja formalización. | Formulado | En Design Science el objeto es el artefacto propuesto, no PRX ni su proceso actual. |
+| Campo de acción | Adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de empresas emergentes de software; contexto inicial: línea de software a medida de PRX. | Formulado | Delimitado a cinco desarrolladores y dos semanas de aplicación inicial. |
+| Objetivo | Diseñar, construir y evaluar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para mejorar visibilidad, trazabilidad y verificación básica, y derivar principios de diseño aplicables a contextos similares. | Formulado | Incluye construcción y contribución al conocimiento. |
+| Pregunta de investigación | ¿Qué principios de diseño debe incorporar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para mejorar la visibilidad del trabajo, la trazabilidad de cambios y la verificación básica del código en equipos pequeños de empresas emergentes de software con baja formalización? | Formulada | Es prescriptiva, exige construcción y evaluación. |
+| Artefacto | Marco ligero compuesto por diagnóstico inicial, ruta de adopción, reglas mínimas y criterios de verificación. Precondición: repositorio institucional en GitHub; prácticas iniciales: tareas visibles, ramas/commits, solicitudes de integración de cambios y pruebas unitarias iniciales. | Formulado | Tipología principal: marco, con componente metodológico. Se añadió criterio de suficiencia para pasar a evaluación sumativa. |
+| Método de evaluación | Línea base previa, evaluación formativa con rediseño documentado y evaluación sumativa inicial en contexto real. | Formulado | Cumple la exigencia mínima de maestría en DS, aunque con alcance temporal limitado; exige registrar rediseño formativo. |
+| Criterios | 80 % de tareas activas visibles; 80 % de ramas y commits conformes; 70 % de cambios por solicitudes de integración; 70 % de solicitudes con evidencia mínima; al menos un componente crítico por proyecto piloto con pruebas unitarias ejecutables. | Fijados antes de construir | No deben modificarse post-hoc; cualquier ajuste debe documentarse como rediseño. |
+| Evidencia | Evidencia preliminar en Central, Ansular y PConst; línea base pendiente mediante tablero interno de tareas en Odoo, GitHub, repositorios piloto y entrevistas; estado del arte preliminar documentado en `05_estado_del_arte.md`. | En construcción | Falta levantar valores numéricos reales antes de aplicar el marco. |
+| Contribución | Principios de diseño para marcos ligeros de adopción inicial de prácticas de Ingeniería de Software en equipos pequeños con baja formalización. | Formulada | La contribución no se limitará al documento operativo del marco. |
+
+
