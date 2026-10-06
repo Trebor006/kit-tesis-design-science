@@ -2,7 +2,7 @@
 
 ## Propósito de la revisión
 
-Esta revisión no describe el fenómeno general de la baja formalización en PRX. Su función en Design Science es comparar soluciones, marcos, normas y prácticas existentes que abordan la misma clase de problema: adopción inicial de prácticas de Ingeniería de Software en equipos pequeños con baja formalización. El resultado debe justificar por qué el artefacto propuesto —un marco ligero— no duplica una solución existente y qué limitaciones debe superar en el contexto de PRX.
+Esta revisión no describe el fenómeno general de la baja formalización en PRX. Su función en Design Science es comparar soluciones, marcos, normas y prácticas existentes que abordan la misma clase de problema: adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización. El resultado debe justificar por qué el artefacto propuesto —un marco ligero— no duplica una solución existente y qué limitaciones debe superar en el contexto de PRX.
 
 La pregunta de revisión es: ¿qué soluciones o artefactos existentes orientan la adopción inicial de prácticas de Ingeniería de Software en equipos pequeños, qué ofrecen, cómo se limitan para el contexto de PRX y qué implicaciones tienen para el diseño del marco propuesto?
 
@@ -34,7 +34,7 @@ La brecha, por tanto, no es que falten normas, marcos o herramientas. La brecha 
 
 ## Novedad relativa del artefacto propuesto
 
-El marco propuesto no será novedoso porque invente prácticas desconocidas. Esa sería una afirmación falsa. Su novedad relativa estará en la composición y adaptación de prácticas existentes para una clase específica de contexto: equipos pequeños de empresas emergentes de software con baja formalización, repositorio institucional en GitHub y una herramienta interna de gestión de tareas ya disponible.
+El marco propuesto no será novedoso porque invente prácticas desconocidas. Esa sería una afirmación falsa. Su novedad relativa estará en la composición y adaptación de prácticas existentes para una clase específica de contexto: equipos pequeños de desarrollo con baja estandarización, repositorio oficial o excepción documentada y un mecanismo de gestión de tareas ya disponible.
 
 La contribución esperada no es “usar GitHub”, “hacer tareas visibles” o “agregar pruebas unitarias”. La contribución será formular y evaluar principios de diseño sobre cómo ordenar esas prácticas, con qué precondiciones, con qué mínima evidencia verificable y con qué condiciones de contorno. Esta distinción protege el estudio de convertirse en consultoría operativa para PRX.
 
@@ -67,3 +67,10 @@ Laporte, C. Y., Munoz, M., Mejia Miranda, J., & OConnor, R. V. (2018). Applying 
 Pino, F. J., García, F., & Piattini, M. (2008). Software process improvement in small and medium software enterprises: A systematic review. *Software Quality Journal, 16*(2), 237–261. https://doi.org/10.1007/s11219-007-9038-z
 
 Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. https://scrumguides.org/scrum-guide.html
+
+
+
+
+
+
+

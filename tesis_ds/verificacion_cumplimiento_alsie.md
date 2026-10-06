@@ -18,9 +18,9 @@ El trabajo cumple sustancialmente con lo solicitado para llegar al perfil Design
 | Definir objeto/campo | Cumplido | `02_delimitacion.md`, `03_perfil_ds_limpio.md`, `matriz_coherencia.md` | Ninguna acción crítica. |
 | Demostrar relación directa con la Maestría en Ingeniería de Software | Cumplido | Tema sobre prácticas de Ingeniería de Software, control de cambios, pruebas, trazabilidad y mejora de procesos | Reforzar oralmente que no es administración general ni consultoría. |
 | Mostrar que el foco es el problema, no solo la propuesta | Cumplido | Problema de diseño, problema de investigación y diagnóstico en `03_perfil_ds_limpio.md` y `06_diagnostico.md` | En exposición, comenzar por el problema y evidencia, no por el marco. |
-| Desarrollar primera versión usando el agente | Cumplido | Directorio `tesis_ds/` con E0 a E6, perfil limpio, estado del arte e instrumentos de línea base | Falta preparar una vista clara para el docente, posiblemente un `README.md`. |
+| Desarrollar primera versión usando el agente | Cumplido | Directorio `tesis_ds/` con E0 a E6, perfil limpio, estado del arte e instrumentos de línea base | Vista preparada en `GUIA_REVISION_ENTREGA_ALSIE.md`, sin reemplazar el `README.md` general del kit. |
 | Estudiar los documentos generados | Pendiente del tesista | Archivos generados disponibles | El tesista debe leer y poder explicar el perfil con sus palabras. |
-| Elaborar plan individual para desarrollo de la propuesta | Pendiente explícito | Cronograma en `03_perfil_ds_limpio.md` | Crear un archivo específico de plan individual con tareas, fechas y entregables. |
+| Elaborar plan individual para desarrollo de la propuesta | Cumplido | `tesis_ds/plan_individual_desarrollo.md` y `tesis_ds/cronograma_ajustado_defensa.md` | Mantener actualizado según fechas oficiales. |
 | Publicar enlace público al repositorio | Pendiente operativo | Repositorio local existe | Hacer público el repositorio o crear repositorio remoto público y compartir enlace. |
 | Ajustar al modelo ALSIE | Pendiente posterior | Perfil DS listo como base | No hacerlo antes de consolidar coherencia; será traducción documental. |
 | Documento completo para predefensa interna | En construcción | Perfil completo; E4-E6 preliminares | Para octubre/noviembre faltan E7, E8, E9 y E10 con propuesta desarrollada y evaluación inicial. |
@@ -34,8 +34,8 @@ El trabajo cumple sustancialmente con lo solicitado para llegar al perfil Design
 
 ## Acciones mínimas antes del lunes 28 de septiembre de 2026
 
-1. Crear un `README.md` del repositorio que explique qué se generó y cómo revisar los archivos principales.
-2. Crear `tesis_ds/plan_individual_desarrollo.md` con actividades desde perfil hasta predefensa interna.
+1. Usar `GUIA_REVISION_ENTREGA_ALSIE.md` como guía específica de revisión, porque el repositorio ya cuenta con un `README.md` general del kit.
+2. Mantener actualizado `tesis_ds/plan_individual_desarrollo.md` con actividades desde perfil hasta predefensa interna.
 3. Confirmar que el repositorio pueda publicarse sin exponer información sensible de PRX.
 4. Publicar el repositorio o preparar el enlace público solicitado.
 5. Estudiar especialmente `03_perfil_ds_limpio.md`, `matriz_coherencia.md`, `revision_final_perfil_limpio.md` y `06_instrumentos_linea_base.md`.
@@ -43,3 +43,10 @@ El trabajo cumple sustancialmente con lo solicitado para llegar al perfil Design
 ## Conclusión
 
 Sí se está cumpliendo lo central solicitado por el docente: el trabajo llegó al perfil con enfoque Design Science, tiene elementos rectores y mantiene coherencia investigativa por encima del llenado de plantilla. Aún falta cumplir dos entregables operativos explícitos: el plan individual de desarrollo de la propuesta y el enlace público al repositorio con una guía clara de revisión.
+
+
+
+
+
+
+

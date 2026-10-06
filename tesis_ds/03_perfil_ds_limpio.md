@@ -2,46 +2,46 @@
 
 ## Título provisional
 
-**Marco ligero para la adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de empresas emergentes: un estudio Design Science en la línea de software a medida de PRX**
+**Marco ligero para la adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización: un estudio Design Science en la línea de software a medida de PRX**
 
-El título declara el tipo de artefacto —marco ligero—, la clase de problema —adopción inicial de prácticas de Ingeniería de Software—, la clase de contexto —equipos pequeños de empresas emergentes— y el contexto empírico inicial —línea de software a medida de PRX—. Esta formulación evita presentar el trabajo como una guía interna para una sola empresa y lo orienta hacia una contribución de Design Science.
+El título declara el tipo de artefacto —marco ligero—, la clase de problema —adopción inicial de prácticas de Ingeniería de Software—, la clase de contexto —equipos pequeños de desarrollo con baja estandarización— y el contexto empírico inicial —línea de software a medida de PRX—. Esta formulación evita presentar el trabajo como una guía interna para una sola empresa y lo orienta hacia una contribución de Design Science.
 
 ## Planteamiento del problema
 
-En la línea de software a medida de PRX, un equipo pequeño desarrolla sistemas para clientes, aplicaciones empresariales y soluciones integradas con tecnologías como Angular, interfaces de programación de aplicaciones (API) y una línea basada en Odoo. Aunque la empresa cuenta con un tablero interno de gestión de tareas implementado en Odoo y utiliza GitHub como repositorio institucional, la adopción de prácticas mínimas de gestión técnica todavía no está estabilizada. La evidencia preliminar muestra tareas no visibles, uso irregular de Git, repositorios creados tardíamente, ausencia o uso no sistemático de solicitudes de integración de cambios, pruebas unitarias escasas y cambios que introducen defectos que deben corregirse con urgencia.
+PRX comenzó como una empresa pequeña y familiar orientada a la venta de servidores y actualmente cuenta con una línea de negocio consolidada en ese rubro. En contraste, el área de desarrollo de software ha construido diversos sistemas durante varios años, pero sin un estándar institucional común de trabajo: las prácticas dependían del conocimiento individual de cada desarrollador, con diferencias importantes en uso de Git, registro de tareas, trazabilidad y verificación. Esta trayectoria no niega que PRX haya desarrollado software funcional durante años; más bien muestra que prácticas que resultaron suficientes en etapas anteriores dejaron de ser adecuadas cuando el área de software necesitó operar con mayor coordinación, evidencia y capacidad de gestión entre proyectos. En la línea de software a medida, un equipo pequeño desarrolla sistemas para clientes, aplicaciones empresariales y soluciones integradas con tecnologías como Angular, interfaces de programación de aplicaciones (API) y una línea basada en Odoo. Aunque la empresa cuenta con un tablero interno de gestión de tareas implementado en Odoo y utiliza GitHub como repositorio institucional, la adopción de prácticas mínimas de gestión técnica todavía no está estabilizada. La evidencia preliminar muestra tareas no visibles, uso irregular de Git, repositorios creados tardíamente, ausencia o uso no sistemático de solicitudes de integración de cambios, pruebas unitarias escasas y cambios que introducen defectos que deben corregirse con urgencia. Esta situación también afecta la gestión económica del área de software, porque dificulta producir evidencia verificable del trabajo realizado para sustentar entregables y cobros a clientes.
 
-El **problema de diseño** consiste en que el equipo carece de una ruta ligera, común y verificable para adoptar prácticas mínimas de Ingeniería de Software desde el inicio de los proyectos. Esta carencia reduce la visibilidad del trabajo, dificulta la coordinación técnica, debilita la trazabilidad de cambios, aumenta el riesgo de defectos no detectados y limita la institucionalización del conocimiento técnico. La solución conceptual es un marco ligero que indique qué prácticas mínimas adoptar primero, cómo aplicarlas y cómo verificar su cumplimiento sin imponer la carga de un modelo completo de mejora de procesos.
+El **problema de diseño** consiste en que el equipo carece de una ruta ligera, común y verificable para adoptar prácticas mínimas de Ingeniería de Software desde el inicio de los proyectos. Esta carencia reduce la visibilidad del trabajo, dificulta la coordinación técnica, debilita la trazabilidad de cambios, aumenta el riesgo de defectos no detectados, limita la institucionalización del conocimiento técnico y deja evidencia insuficiente sobre el avance real de los proyectos de software. La solución conceptual es un marco ligero que indique qué prácticas mínimas adoptar primero, cómo aplicarlas y cómo verificar su cumplimiento sin imponer la carga de un modelo completo de mejora de procesos.
 
-El **problema de investigación**, que en el formato institucional se registrará como **problema científico**, se formula como una brecha entre los modelos generales de mejora de procesos de software y las necesidades de adopción inicial de equipos pequeños con baja formalización. Existen modelos, marcos y prácticas que orientan la mejora de procesos, pero las empresas emergentes pequeñas requieren rutas más ligeras, aplicables y evaluables para comenzar con prácticas mínimas antes de aspirar a una mejora organizacional amplia. Este estudio abordará esa brecha mediante la construcción, aplicación, rediseño y evaluación de un marco ligero en la línea de software a medida de PRX.
+El **problema de investigación**, que en el formato institucional se registrará como **problema científico**, se formula como una brecha entre los modelos generales de mejora de procesos de software y las necesidades de adopción inicial de equipos pequeños de desarrollo con baja estandarización. Existen modelos, marcos y prácticas que orientan la mejora de procesos, pero los equipos pequeños de desarrollo con baja estandarización requieren rutas más ligeras, aplicables y evaluables para comenzar con prácticas mínimas antes de aspirar a una mejora organizacional amplia. Este estudio abordará esa brecha mediante la construcción, aplicación, rediseño y evaluación de un marco ligero en la línea de software a medida de PRX.
 
 ## Pregunta de investigación
 
-**¿Qué principios de diseño debe incorporar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para mejorar la visibilidad del trabajo, la trazabilidad de cambios y la verificación básica del código en equipos pequeños de empresas emergentes de software con baja formalización?**
+**¿Qué principios de diseño debe incorporar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para mejorar la visibilidad del trabajo, la trazabilidad de cambios, la evidencia verificable del avance y la verificación básica del código en equipos pequeños de desarrollo con baja estandarización?**
 
-La pregunta es adecuada para Design Science porque no puede responderse sin construir y evaluar un artefacto. No pregunta únicamente si el marco funciona en PRX, sino qué principios de diseño debe incorporar un marco de esta clase para resolver una clase de problemas en una clase de contextos. Su componente de utilidad se expresa en la mejora de visibilidad, trazabilidad y verificación básica; su componente de conocimiento se expresa en los principios de diseño que se derivarán de la construcción y evaluación del marco.
+La pregunta es adecuada para Design Science porque no puede responderse sin construir y evaluar un artefacto. No pregunta únicamente si el marco funciona en PRX, sino qué principios de diseño debe incorporar un marco de esta clase para resolver una clase de problemas en una clase de contextos. Su componente de utilidad se expresa en la mejora de visibilidad, trazabilidad, evidencia verificable del avance y verificación básica; su componente de conocimiento se expresa en los principios de diseño que se derivarán de la construcción y evaluación del marco.
 
 ## Subpreguntas de investigación
 
 1. ¿Qué limitaciones de gestión técnica inicial se presentan en la línea de software a medida de PRX respecto a tareas visibles, control de cambios, revisión previa y pruebas unitarias iniciales?
-2. ¿Qué componentes, reglas mínimas y criterios de verificación debe contener un marco ligero para que sea aplicable por equipos pequeños con baja formalización?
-3. ¿En qué medida la aplicación del marco mejora los indicadores de visibilidad del trabajo, trazabilidad de cambios y verificación básica del código durante el periodo de evaluación?
-4. ¿Qué principios de diseño pueden derivarse de la construcción, evaluación y rediseño del marco para orientar artefactos similares en equipos pequeños de empresas emergentes de software?
+2. ¿Qué componentes, reglas mínimas y criterios de verificación debe contener un marco ligero para que sea aplicable por equipos pequeños de desarrollo con baja estandarización?
+3. ¿En qué medida la aplicación del marco mejora los indicadores de visibilidad del trabajo, trazabilidad de cambios, evidencia verificable del avance y verificación básica del código durante el periodo de evaluación?
+4. ¿Qué principios de diseño pueden derivarse de la construcción, evaluación y rediseño del marco para orientar artefactos similares en equipos pequeños de desarrollo con baja estandarización?
 
 ## Objeto de estudio
 
-En Design Science, el objeto de estudio no es PRX ni su proceso actual, sino el artefacto propuesto. El objeto de estudio será el **marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de empresas emergentes de software con baja formalización**.
+En Design Science, el objeto de estudio no es PRX ni su proceso actual, sino el artefacto propuesto. El objeto de estudio será el **marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de desarrollo con baja estandarización**.
 
-La tipología principal del artefacto es **marco**, porque integrará constructos, prácticas, reglas de aplicación, productos de trabajo y criterios de verificación. También contiene un componente metodológico, porque propondrá una ruta de adopción por pasos. Su estructura preliminar incluirá diagnóstico inicial, precondición de repositorio institucional en GitHub, ruta de adopción, reglas mínimas para tareas visibles, ramas y commits, solicitudes de integración de cambios, pruebas unitarias iniciales y criterios de verificación.
+La tipología principal del artefacto es **marco**, porque integrará constructos, prácticas, reglas de aplicación, productos de trabajo y criterios de verificación. También contiene un componente metodológico, porque propondrá una ruta de adopción por pasos. Su estructura preliminar incluirá diagnóstico inicial, precondición de repositorio oficial o excepción documentada, ruta de adopción, reglas mínimas para tareas visibles, ramas y commits, solicitudes de integración de cambios, pruebas unitarias iniciales y criterios de verificación.
 
 ## Campo de acción
 
-El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de empresas emergentes de software con baja formalización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La aplicación y evaluación inicial se concentrarán en cinco desarrolladores de la línea de software a medida durante un periodo de dos semanas.
+El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La aplicación y evaluación inicial se concentrarán en cinco desarrolladores de la línea de software a medida durante un periodo de dos semanas.
 
 La delimitación excluye la certificación formal de madurez, la implantación completa de CMMI, la transformación integral de todos los procesos organizacionales y la automatización avanzada mediante agentes de calidad de código. Estas dimensiones pueden aparecer como antecedentes, restricciones o trabajo futuro, pero no forman parte del núcleo evaluable del perfil.
 
 ## Objetivo general
 
-Diseñar, construir y evaluar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de empresas emergentes con baja formalización, con el fin de mejorar la visibilidad del trabajo, la trazabilidad de cambios y la verificación básica del código, y derivar principios de diseño aplicables a contextos similares.
+Diseñar, construir y evaluar un marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de desarrollo con baja estandarización, con el fin de mejorar la visibilidad del trabajo, la trazabilidad de cambios y la verificación básica del código, y derivar principios de diseño aplicables a contextos similares.
 
 ## Objetivos específicos
 
@@ -49,12 +49,12 @@ Diseñar, construir y evaluar un marco ligero de adopción inicial de prácticas
 2. Fundamentar el diseño del marco a partir de conocimiento existente sobre mejora de procesos en entidades pequeñas, gestión de configuración, transparencia del trabajo, revisión de cambios y pruebas unitarias.
 3. Diseñar y construir un marco ligero de adopción inicial de prácticas de Ingeniería de Software, compuesto por diagnóstico, ruta de adopción, reglas mínimas, productos de trabajo y criterios de verificación.
 4. Evaluar formativamente el marco en la línea de software a medida de PRX, identificando fricciones de aplicabilidad y documentando los ajustes de rediseño.
-5. Evaluar sumativamente la versión rediseñada del marco mediante los indicadores de visibilidad del trabajo, trazabilidad de cambios y verificación básica del código.
-6. Derivar principios de diseño para marcos ligeros de adopción inicial aplicables a equipos pequeños de empresas emergentes de software con baja formalización.
+5. Evaluar sumativamente la versión rediseñada del marco mediante los indicadores de visibilidad del trabajo, trazabilidad de cambios, evidencia verificable del avance y verificación básica del código.
+6. Derivar principios de diseño para marcos ligeros de adopción inicial aplicables a equipos pequeños de desarrollo con baja estandarización.
 
 ## Proposición de diseño
 
-Si un marco ligero de adopción inicial organiza prácticas mínimas de Ingeniería de Software en una ruta gradual, verificable y ajustada a las herramientas reales del equipo, entonces puede mejorar la visibilidad del trabajo, la trazabilidad de cambios y la verificación básica del código en equipos pequeños con baja formalización, porque reduce la ambigüedad operativa y convierte prácticas individuales dispersas en acuerdos técnicos observables.
+Si un marco ligero de adopción inicial organiza prácticas mínimas de Ingeniería de Software en una ruta gradual, verificable y ajustada a las herramientas reales del equipo, entonces puede mejorar la visibilidad del trabajo, la trazabilidad de cambios, la evidencia verificable del avance y la verificación básica del código en equipos pequeños de desarrollo con baja estandarización, porque reduce la ambigüedad operativa y convierte prácticas individuales dispersas en acuerdos técnicos observables.
 
 Esta proposición no se formula como una hipótesis causal estadística, sino como una proposición de diseño propia de Design Science. Su función es orientar la construcción del artefacto y anticipar el mecanismo por el cual se espera que el marco produzca utilidad en el contexto de aplicación. La evaluación no buscará demostrar una ley general, sino obtener evidencia contextual suficiente para sostener principios de diseño transferibles analíticamente a equipos estructuralmente similares.
 
@@ -62,7 +62,7 @@ Esta proposición no se formula como una hipótesis causal estadística, sino co
 
 La fundamentación preliminar se apoya en fuentes verificadas que orientan decisiones concretas del artefacto. ISO/IEC 29110-1-1:2024 justifica el enfoque en entidades muy pequeñas y la necesidad de guías adaptadas a su capacidad real de adopción (International Organization for Standardization [ISO] & International Electrotechnical Commission [IEC], 2024). SWEBOK Guide V4.0 permite ubicar las prácticas seleccionadas dentro de áreas reconocidas de Ingeniería de Software, como gestión de configuración, proceso, pruebas y calidad (Washizaki, 2024). La Scrum Guide sustenta el uso de transparencia, inspección y adaptación como principios para hacer visible el trabajo (Schwaber & Sutherland, 2020).
 
-GitHub Flow fundamenta la decisión de utilizar ramas, commits y solicitudes de integración de cambios como mecanismo ligero de colaboración y revisión sobre GitHub institucional (GitHub Docs, s. f.). Aniche (2022) sustenta la incorporación de pruebas unitarias iniciales en componentes críticos como una forma mínima y sostenible de verificación. Pino et al. (2008) muestran que la mejora de procesos en pequeñas y medianas empresas de software requiere adaptación al tamaño y restricciones de estas organizaciones.
+GitHub Flow fundamenta la decisión de utilizar ramas, commits y solicitudes de integración de cambios como mecanismo ligero de colaboración y revisión; en PRX esta decisión se instancia sobre GitHub institucional (GitHub Docs, s. f.). Aniche (2022) sustenta la incorporación de pruebas unitarias iniciales en componentes críticos como una forma mínima y sostenible de verificación. Pino et al. (2008) muestran que la mejora de procesos en pequeñas y medianas empresas de software requiere adaptación al tamaño y restricciones de estas organizaciones.
 
 Laporte et al. (2018) vinculan la aplicación de estándares de Ingeniería de Software en entidades muy pequeñas con trayectorias desde empresas emergentes hacia organizaciones más maduras, mientras que Buchalcevova (2021) evidencia la necesidad de reforzar calidad y pruebas en el perfil básico de ISO/IEC 29110. CMMI se mantendrá solo como antecedente de mejora de capacidades; no se usará como promesa de certificación ni como criterio para declarar que PRX asciende de nivel de madurez (CMMI Institute, s. f.).
 
@@ -79,7 +79,7 @@ La investigación adoptará el modelo DSRM de Peffers et al. como proceso princi
 
 ## Criterio de suficiencia del artefacto
 
-El artefacto se considerará suficiente para pasar a evaluación sumativa cuando exista una versión rediseñada del marco que contenga: a) propósito y contexto de uso; b) precondición de repositorio institucional en GitHub; c) ruta de adopción por pasos; d) reglas mínimas para tareas visibles, ramas, commits, solicitudes de integración de cambios y pruebas unitarias iniciales; e) productos de trabajo esperados; f) criterios de verificación por práctica; y g) ajustes documentados después de la evaluación formativa. Este criterio evita que el marco se evalúe como una intención general o como una lista informal de recomendaciones.
+El artefacto se considerará suficiente para pasar a evaluación sumativa cuando exista una versión rediseñada del marco que contenga: a) propósito y contexto de uso; b) precondición de repositorio oficial o excepción documentada; c) ruta de adopción por pasos; d) reglas mínimas para tareas visibles, ramas, commits, solicitudes de integración de cambios y pruebas unitarias iniciales; e) productos de trabajo esperados; f) criterios de verificación por práctica; y g) ajustes documentados después de la evaluación formativa. Este criterio evita que el marco se evalúe como una intención general o como una lista informal de recomendaciones.
 
 La suficiencia no significa que el marco sea definitivo ni completo para toda PRX. Significa que contiene los componentes mínimos necesarios para probar los principios de diseño declarados y para contrastar los criterios de éxito fijados antes de la construcción. Cualquier mejora adicional que exceda ese umbral se registrará como trabajo futuro o como ampliación posterior del artefacto.
 
@@ -96,13 +96,13 @@ La evaluación seguirá una secuencia formativa–sumativa en contexto real. Pri
 
 Los criterios de éxito serán: 80 % de tareas activas visibles en el tablero interno de tareas; 80 % de ramas y commits conformes con la convención mínima; 70 % de cambios integrados mediante solicitudes de integración; 70 % de solicitudes con evidencia mínima de verificación; y al menos un componente crítico por proyecto piloto con pruebas unitarias ejecutables.
 
-Las principales amenazas a la validez son la muestra pequeña, el periodo corto de evaluación, la participación del investigador en el contexto, la evaluación en un solo contexto organizacional y el posible sesgo por adopción inducida u obligatoria. Estas amenazas impiden una generalización estadística; por ello, la tesis reclamará transferibilidad analítica hacia equipos pequeños de empresas emergentes con baja formalización y condiciones comparables a las observadas en PRX.
+Las principales amenazas a la validez son la muestra pequeña, el periodo corto de evaluación, la participación del investigador en el contexto, la evaluación en un solo contexto organizacional y el posible sesgo por adopción inducida u obligatoria. Estas amenazas impiden una generalización estadística; por ello, la tesis reclamará transferibilidad analítica hacia equipos pequeños de desarrollo con baja estandarización y condiciones comparables a las observadas en PRX.
 
 ## Selección y muestra
 
 La selección del contexto es intencional. PRX representa un contexto relevante porque cuenta con un departamento de desarrollo en proceso de profesionalización, líneas de trabajo diferenciadas y evidencia preliminar de baja formalización en la línea de software a medida. La muestra inicial estará conformada por cinco desarrolladores de esa línea y por proyectos piloto seleccionados según disponibilidad de repositorio, actividad durante el periodo de evaluación y pertinencia para observar tareas, cambios de código y pruebas unitarias.
 
-La muestra no pretende representar estadísticamente a todas las empresas emergentes de software. Su función es permitir evaluación naturalista en un contexto real y generar evidencia suficiente para formular principios de diseño con transferibilidad analítica hacia equipos estructuralmente similares.
+La muestra no pretende representar estadísticamente a todos los equipos pequeños de desarrollo con baja estandarización. Su función es permitir evaluación naturalista en un contexto real y generar evidencia suficiente para formular principios de diseño con transferibilidad analítica hacia equipos estructuralmente similares.
 
 ## Plan de análisis
 
@@ -112,13 +112,13 @@ En la evaluación sumativa inicial se contrastarán los resultados con los crite
 
 ## Tipo de contribución reclamada
 
-La contribución será un conjunto de principios de diseño para marcos ligeros de adopción inicial de prácticas de Ingeniería de Software en equipos pequeños con baja formalización. El marco aplicado en PRX será el artefacto evaluado, pero la contribución no se limitará al documento operativo del marco.
+La contribución será un conjunto de principios de diseño para marcos ligeros de adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización. El marco aplicado en PRX será el artefacto evaluado, pero la contribución no se limitará al documento operativo del marco.
 
 Esta contribución corresponde al nivel de maestría en Design Science porque apunta a conocimiento de nivel de clase, no únicamente a la utilidad local del artefacto en PRX. No se reclamará una teoría de diseño general ni generalización estadística; la transferencia será analítica y limitada a contextos estructuralmente similares.
 
 ## Cronograma preliminar
 
-El cronograma de ejecución posterior a la aprobación del perfil se plantea en ocho semanas. Es un cronograma ajustado, por lo que protege explícitamente el tiempo de evaluación formativa y rediseño, condición necesaria para que el trabajo mantenga coherencia con Design Science a nivel de maestría.
+El cronograma de ejecución posterior a la aprobación del perfil se plantea en ocho semanas, ajustado a una predefensa interna ideal en la última semana de octubre o, como máximo, en la primera semana de noviembre de 2026, y a una defensa final extraoficial a finales de noviembre. Es un cronograma exigente, por lo que protege explícitamente el tiempo de evaluación formativa y rediseño, condición necesaria para que el trabajo mantenga coherencia con Design Science a nivel de maestría.
 
 | Semana | Actividad principal | Producto esperado |
 |:--|:--|:--|
@@ -137,7 +137,7 @@ El anexo del artefacto contendrá la ficha reproducible del marco: propósito, c
 
 ## Oración única de contribución original
 
-Esta investigación aportará principios de diseño para construir marcos ligeros de adopción inicial de prácticas de Ingeniería de Software en equipos pequeños con baja formalización, sustentados en la construcción, aplicación, rediseño y evaluación de un marco en la línea de software a medida de PRX.
+Esta investigación aportará principios de diseño para construir marcos ligeros de adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización, sustentados en la construcción, aplicación, rediseño y evaluación de un marco en la línea de software a medida de PRX.
 
 ## Referencias
 
@@ -164,4 +164,19 @@ Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to
 Vives, L., Melendez, K., & Dávila, A. (2022). ISO/IEC 29110 and software engineering education: A systematic mapping study. *Programming and Computer Software, 48*(8), 745–755. https://doi.org/10.1134/S0361768822080229
 
 Washizaki, H. (Ed.). (2024). *Guide to the Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0*. IEEE Computer Society. https://www.computer.org/education/bodies-of-knowledge/software-engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

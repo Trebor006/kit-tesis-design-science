@@ -6,6 +6,10 @@
 - CMMI Institute. (s. f.). *CMMI Model Viewer*. ISACA. Recuperado el 22 de septiembre de 2026, de https://cmmiinstitute.com/cmmi/model-viewer/ — Verificada.
 - GitHub Docs. (s. f.). *GitHub flow*. Recuperado el 22 de septiembre de 2026, de https://docs.github.com/en/get-started/using-github/github-flow — Verificada.
 - GitHub Docs. (s. f.). *Pull requests*. Recuperado el 25 de septiembre de 2026, de https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests — Verificada.
+- GitHub Docs. (s. f.). *About code owners*. Recuperado el 1 de octubre de 2026, de https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners — Verificada.
+- GitHub Docs. (s. f.). *About organization teams*. Recuperado el 1 de octubre de 2026, de https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams — Verificada.
+- GitHub Docs. (s. f.). *About protected branches*. Recuperado el 1 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches — Verificada.
+- GitHub Docs. (s. f.). *About rulesets*. Recuperado el 1 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets — Verificada.
 - International Organization for Standardization, & International Electrotechnical Commission. (2024a). *ISO/IEC 29110-1-1:2024: Systems and software engineering — Lifecycle profiles for very small entities (VSEs) — Part 1-1: Overview*. https://www.iso.org/standard/85337.html — Verificada.
 - International Organization for Standardization, & International Electrotechnical Commission. (2024b). *ISO/IEC 29110-1-2:2024: Systems and software engineering — Lifecycle profiles for Very Small Entities (VSEs) — Part 1-2: Vocabulary*. https://www.iso.org/standard/85338.html — Verificada.
 - Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. https://scrumguides.org/scrum-guide.html — Verificada.
@@ -20,5 +24,9 @@
 ## Bibliografía de consulta
 
 - Pérez Rios, L. R. (2026). *Design Science en ingeniería de software: naturaleza y alcance* [manuscrito de trabajo]. Verificada localmente en `referencias/ds_ch02_ds_en_se.md`.
+
+
+
+
 
 

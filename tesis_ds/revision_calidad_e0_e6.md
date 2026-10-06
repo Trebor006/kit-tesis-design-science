@@ -46,3 +46,7 @@ Con estas fuentes, la afirmación de que faltaba bibliografía específica queda
 2. Mantener en el perfil solo las referencias verificadas y necesarias.
 3. Explicitar que la línea base numérica se levantará antes de aplicar el marco.
 4. Mantener el alcance: no prometer certificación CMMI, transformación organizacional completa ni reducción estadística de defectos.
+
+
+
+

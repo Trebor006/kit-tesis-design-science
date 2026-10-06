@@ -2,7 +2,7 @@
 
 ## Propósito del diagnóstico
 
-El diagnóstico no se formulará como una descripción general de PRX. En Design Science, el diagnóstico debe demostrar que el problema de diseño existe y establecer una línea base contra la cual se evaluará el artefacto. Por ello, los indicadores se concentran en las cuatro prácticas seleccionadas para el marco ligero: gestión visible de tareas, convención de ramas y commits, solicitudes de integración de cambios y pruebas unitarias iniciales.
+El diagnóstico no se formulará como una descripción general de PRX. En Design Science, el diagnóstico debe demostrar que el problema de diseño existe y establecer una línea base contra la cual se evaluará el artefacto. Por ello, los indicadores se concentran en las cuatro prácticas seleccionadas para el marco ligero: gestión visible de tareas, convención de ramas y commits, solicitudes de integración de cambios y pruebas unitarias iniciales. Además, se registrará como indicador contextual la existencia de evidencia trazable que permita respaldar entregables frente a clientes, sin convertir la tesis en un estudio financiero.
 
 Los valores esperados se fijan antes de construir el artefacto, para evitar criterios definidos a posteriori. Las líneas base numéricas no deben inventarse: se levantarán antes de aplicar el marco mediante Revisión del tablero interno de gestión de tareas implementado en Odoo, GitHub, repositorios de proyectos piloto y entrevistas breves con participantes. Si un proyecto no tiene registro suficiente, esa ausencia se documentará como parte de la línea base.
 
@@ -26,7 +26,8 @@ Los valores esperados se fijan antes de construir el artefacto, para evitar crit
 | I5 | Cambios integrados mediante solicitudes de integración | Proporción de cambios integrados a la rama principal mediante solicitudes de integración de cambios en GitHub. | `(Número de cambios integrados mediante solicitud de integración / Número total de cambios integrados a rama principal) × 100` | GitHub; historial de solicitudes de integración y fusiones. | A levantar antes de aplicar el marco. La evidencia inicial indica ausencia o uso no estabilizado de solicitudes de integración. | ≥ 70 % de cambios integrados mediante solicitudes de integración. | Mide revisión previa y control mínimo antes de integrar cambios. |
 | I6 | Solicitudes de integración con evidencia mínima de verificación | Proporción de solicitudes de integración que incluyen descripción del cambio y evidencia mínima de verificación, como prueba ejecutada, captura, lista de verificación o resultado de pruebas unitarias. | `(Número de solicitudes de integración con evidencia mínima / Número total de solicitudes de integración del periodo) × 100` | GitHub; descripción de solicitudes de integración; comentarios de revisión; resultados de pruebas si existen. | A levantar antes de aplicar el marco. Si no existen solicitudes de integración, la línea base es 0 %. | ≥ 70 % de solicitudes de integración con evidencia mínima de verificación. | Mide si la solicitud de integración funciona como mecanismo de control y no solo como trámite. |
 | I7 | Componentes críticos con pruebas unitarias iniciales | Existencia de pruebas unitarias ejecutables para al menos un componente crítico por proyecto piloto. | `Sí/No` por proyecto piloto; evidencia: comando de ejecución y resultado. | Repositorio GitHub; código fuente; herramienta de pruebas del proyecto. | A levantar antes de aplicar el marco. La evidencia inicial indica ausencia de pruebas unitarias en PConst e incorporación posterior de pruebas en API de Central. | Al menos un componente crítico por proyecto piloto con pruebas unitarias ejecutables. | Mide verificación básica del código en áreas de mayor riesgo. |
-| I8 | Defectos o correcciones urgentes asociados a cambios recientes | Número de defectos o correcciones urgentes reportadas durante el periodo y asociadas a cambios recientes. | Conteo de incidencias registradas o reportadas por entrevista breve; clasificación por proyecto. | tablero interno de gestión de tareas implementado en Odoo si registra incidencias; GitHub Issues si aplica; entrevistas; mensajes o registros internos disponibles. | A levantar antes de aplicar el marco. La evidencia inicial incluye defectos introducidos durante refactorización en Ansular. | No se fija reducción porcentual en dos semanas; se usará como indicador contextual y de amenaza a la validez. | Ayuda a interpretar si la verificación mínima reduce riesgo, pero el periodo es corto para prometer reducción estadística. |
+$0
+| I9 | Evidencia trazable para respaldo de entregables | Existencia de vínculo entre tarea, cambio técnico y evidencia de verificación que permita demostrar trabajo realizado en un proyecto piloto. | Conteo de entregables o cambios con trazabilidad mínima `tarea → rama/commit → solicitud de integración → evidencia de verificación`; reporte cualitativo de brechas. | Tablero interno de gestión de tareas implementado en Odoo; GitHub; solicitudes de integración; entrevistas con responsables. | A levantar antes de aplicar el marco. La evidencia cualitativa inicial indica que la falta de estándar dificulta demostrar avances y respaldar cobros a clientes. | No se fija criterio porcentual principal en esta versión; se usará como indicador contextual de gestión. | Ayuda a interpretar la relevancia práctica del marco para gestión de entregables y facturación, sin prometer impacto financiero en dos semanas. |
 
 ## Criterios de éxito fijados antes de la construcción
 
@@ -41,7 +42,7 @@ Los criterios de éxito principales del artefacto serán los siguientes:
 
 ## Indicadores no usados como criterios de éxito principales
 
-El número de defectos o correcciones urgentes se registrará como evidencia contextual, pero no será criterio principal de éxito en esta versión del estudio. Dos semanas no bastan para demostrar reducción confiable de defectos en producción, y prometerlo produciría una afirmación más amplia que la evidencia disponible. Este indicador servirá para interpretar riesgos y orientar trabajo futuro, no para declarar éxito o fracaso del marco.
+El número de defectos o correcciones urgentes y la evidencia trazable para respaldo de entregables se registrarán como evidencia contextual, pero no serán criterios principales de éxito en esta versión del estudio. Dos semanas no bastan para demostrar reducción confiable de defectos en producción ni mejora económica del área de software, y prometerlo produciría una afirmación más amplia que la evidencia disponible. Estos indicadores servirán para interpretar relevancia práctica, riesgos y trabajo futuro, no para declarar éxito o fracaso financiero del marco.
 
 ## Fuentes mínimas para levantar línea base
 
@@ -51,6 +52,7 @@ La línea base debe levantarse antes de construir o aplicar el artefacto mediant
 2. Revisión del GitHub institucional de PRX para verificar repositorios, ramas, commits y solicitudes de integración.
 3. Revisión de repositorios de proyectos piloto para identificar pruebas unitarias existentes y forma de ejecución.
 4. Entrevistas breves a los cinco desarrolladores para detectar trabajo no visible, fricciones de Git y prácticas reales no registradas.
+5. Revisión con responsables del área, cuando sea posible, para identificar cómo la falta de evidencia de trabajo afecta la gestión de entregables y el respaldo de cobros a clientes.
 
 ## Advertencia metodológica
 
@@ -87,7 +89,7 @@ Los proyectos piloto se seleccionarán con tres criterios: a) pertenecer a la l�
 4. **Revisar GitHub institucional.** Verificar existencia de repositorio, ramas creadas, commits, fusiones a rama principal, solicitudes de integración de cambios y evidencia de verificación registrada.
 5. **Revisar pruebas unitarias.** Identificar si existe estructura de pruebas, comando de ejecución, pruebas ejecutables y componentes críticos cubiertos.
 6. **Realizar entrevistas breves.** Confirmar trabajo no registrado, fricciones de uso de GitHub, prácticas reales de integración y verificación, y casos recientes de correcciones urgentes.
-7. **Consolidar indicadores.** Calcular I1 a I8 con evidencia trazable; cuando un dato no exista, registrar “sin evidencia disponible” en lugar de inventar un valor.
+7. **Consolidar indicadores.** Calcular I1 a I9 con evidencia trazable; cuando un dato no exista, registrar “sin evidencia disponible” en lugar de inventar un valor.
 8. **Firmar cierre de línea base.** Registrar que los valores fueron fijados antes de aplicar el marco y antes de ejecutar la evaluación formativa.
 
 ### Reglas de codificación para los indicadores
@@ -114,3 +116,9 @@ Los instrumentos operativos se documentan en `tesis_ds/06_instrumentos_linea_bas
 ## Estado actualizado del gate E6
 
 E6 queda fortalecido, pero todavía no cerrado. Ya existen indicadores, reglas de codificación, fuentes, procedimiento de línea base e instrumentos mínimos. El cierre metodológico de E6 ocurrirá solo cuando se registren valores reales de línea base para los proyectos piloto seleccionados y exista al menos una fuente de contexto real adicional a la literatura, como entrevistas breves o revisión documental interna.
+
+
+
+
+
+

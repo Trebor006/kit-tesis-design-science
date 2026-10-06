@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Este plan organiza el trabajo individual de Robert Cabrera Lara desde el perfil Design Science hasta una predefensa interna prevista para la última semana de octubre o, como máximo, la primera semana de noviembre de 2026. El plan no sustituye al cronograma académico institucional; traduce el perfil en tareas ejecutables para desarrollar, aplicar y documentar la propuesta.
+Este plan organiza el trabajo individual de Robert Cabrera Lara desde el perfil Design Science hasta una predefensa interna prevista para la última semana de octubre o, como máximo, la primera semana de noviembre de 2026, considerando una defensa final extraoficial a finales de noviembre de 2026. El plan no sustituye al cronograma académico institucional; traduce el perfil en tareas ejecutables para desarrollar, aplicar y documentar la propuesta.
 
 ## Punto de partida
 
@@ -11,6 +11,10 @@ El perfil Design Science está construido y revisado en `tesis_ds/03_perfil_ds_l
 ## Objetivo operativo
 
 Desarrollar, aplicar y evaluar una primera versión del marco ligero de adopción inicial de prácticas de Ingeniería de Software en la línea de software a medida de PRX, documentando la evaluación formativa, el rediseño, la evaluación sumativa inicial y los principios de diseño resultantes.
+
+## Ventanas calendario principales
+
+El cronograma ajustado se documenta en `tesis_ds/cronograma_ajustado_defensa.md`. La entrega del perfil y del repositorio se concentra el 2026-09-28; la línea base y el diseño del artefacto deben ejecutarse entre el 2026-09-29 y el 2026-10-13; la evaluación formativa, rediseño y evaluación sumativa inicial deben completarse entre el 2026-10-17 y el 2026-10-31 para llegar a predefensa interna en la última semana de octubre o, como máximo, en la primera semana de noviembre.
 
 ## Plan por semanas
 
@@ -43,3 +47,9 @@ CMMI se mantendrá como antecedente conceptual de mejora de capacidades, no como
 ## Próxima acción inmediata
 
 La próxima acción es levantar la línea base real usando `tesis_ds/06_instrumentos_linea_base.md` y, en paralelo, iniciar E7a con alternativas de solución. No debe construirse el marco operacional antes de registrar los valores iniciales de los indicadores.
+
+
+
+
+
+

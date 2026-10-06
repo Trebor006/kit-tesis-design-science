@@ -2,7 +2,7 @@
 
 ## Alcance y estado de verificación
 
-Este marco teórico sustenta el objeto de estudio definido en la delimitación: el **marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños de empresas emergentes de software**. La búsqueda inicial se orientó a fuentes primarias, normas y documentación técnica verificable sobre entidades muy pequeñas, mejora de procesos, conocimiento aceptado en Ingeniería de Software, gestión visible del trabajo, control de cambios, solicitudes de integración de cambios y pruebas unitarias.
+Este marco teórico sustenta el objeto de estudio definido en la delimitación: el **marco ligero de adopción inicial de prácticas de Ingeniería de Software para equipos pequeños o áreas de software en profesionalización**. La búsqueda inicial se orientó a fuentes primarias, normas y documentación técnica verificable sobre entidades muy pequeñas, mejora de procesos, conocimiento aceptado en Ingeniería de Software, gestión visible del trabajo, control de cambios, solicitudes de integración de cambios y pruebas unitarias.
 
 Las búsquedas web generales ejecutadas durante esta etapa fueron canceladas por la herramienta disponible; por ello, se usaron fuentes verificadas mediante acceso directo a sitios oficiales o editoriales. No se incluyen referencias no verificadas como si estuvieran confirmadas. Las fuentes verificadas en esta iteración son ISO/IEC 29110-1-1:2024, ISO/IEC 29110-1-2:2024, SWEBOK Guide V4.0, Scrum Guide 2020, documentación oficial de GitHub Flow, *Effective Software Testing* y la página oficial del CMMI Model Viewer.
 
@@ -24,7 +24,7 @@ La decisión de diseñar un marco ligero, con prácticas iniciales y criterios d
 
 SWEBOK Guide V4.0 proporciona una referencia amplia y actual del cuerpo de conocimiento de Ingeniería de Software. Su valor para esta tesis no está en usarlo como lista enciclopédica, sino en ubicar el artefacto dentro de áreas reconocidas: gestión de configuración, proceso de software, gestión de Ingeniería de Software, pruebas, calidad y operaciones (Washizaki, 2024). Esta fuente impide que el marco se reduzca a preferencias personales del tesista; las prácticas seleccionadas deben corresponder a áreas disciplinarias reconocidas.
 
-La relación con el diseño es concreta. La precondición de repositorio institucional se sustenta en gestión de configuración; la gestión visible de tareas se relaciona con gestión de Ingeniería de Software; las solicitudes de integración de cambios se apoyan en control de cambios y revisión; y las pruebas unitarias pertenecen al área de pruebas y calidad. Por tanto, el marco debe mostrar trazabilidad entre cada práctica y un área aceptada de la disciplina, evitando una fundamentación decorativa.
+La relación con el diseño es concreta. La precondición de repositorio oficial o excepción documentada se sustenta en gestión de configuración; la gestión visible de tareas se relaciona con gestión de Ingeniería de Software; las solicitudes de integración de cambios se apoyan en control de cambios y revisión; y las pruebas unitarias pertenecen al área de pruebas y calidad. Por tanto, el marco debe mostrar trazabilidad entre cada práctica y un área aceptada de la disciplina, evitando una fundamentación decorativa.
 
 ### Transparencia, inspección y adaptación como principios de gestión visible
 
@@ -35,6 +35,8 @@ La decisión de diseño no es “usar Scrum”, porque eso sería una afirmació
 ### Flujo de cambios basado en ramas y solicitudes de integración
 
 La documentación oficial de GitHub Flow describe un flujo ligero basado en ramas, cambios confirmados mediante commits, solicitudes de integración de cambios y revisión antes de fusionar hacia la rama principal (GitHub Docs, s. f.). Esta fuente es pertinente porque PRX usa GitHub como repositorio institucional, y el marco propuesto no necesita introducir una herramienta adicional para controlar cambios. El diseño debe aprovechar la infraestructura existente para reducir fricción de adopción.
+
+El diseño del flujo de ramas también se apoya en *Trunk-Based Development* —desarrollo basado en tronco—, entendido como un modelo de ramificación que favorece integrar cambios frecuentes sobre una rama principal y evitar ramas de larga duración. Para este estudio no se adopta como metodología completa ni como práctica avanzada de entrega continua, sino como principio de diseño: ramas cortas, integración frecuente, menor acumulación de divergencias y eliminación de ramas luego de integrar. Esta decisión es coherente con equipos pequeños y con la necesidad de evitar una estructura de ramificación pesada.
 
 De esta fuente se derivan varias decisiones de diseño. Primero, cada proyecto piloto debe estar en el GitHub institucional de PRX antes de aplicar el marco. Segundo, cada cambio no trivial debe ocurrir en una rama con nombre descriptivo. Tercero, la integración a la rama principal debe realizarse mediante solicitud de integración de cambios, con una descripción mínima del problema resuelto y evidencia de verificación. Estas reglas son simples, pero convierten el trabajo individual en trabajo inspeccionable por el equipo.
 
@@ -108,4 +110,9 @@ Peffers, K., Tuunanen, T., Rothenberger, M. A., & Chatterjee, S. (2007). A desig
 Pino, F. J., García, F., & Piattini, M. (2008). Software process improvement in small and medium software enterprises: A systematic review. *Software Quality Journal, 16*(2), 237–261. https://doi.org/10.1007/s11219-007-9038-z
 
 Vives, L., Melendez, K., & Dávila, A. (2022). ISO/IEC 29110 and software engineering education: A systematic mapping study. *Programming and Computer Software, 48*(8), 745–755. https://doi.org/10.1134/S0361768822080229
+
+
+
+
+
 

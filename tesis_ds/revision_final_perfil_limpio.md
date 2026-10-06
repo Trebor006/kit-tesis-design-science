@@ -28,9 +28,15 @@ El ajuste principal realizado en esta revisión fue añadir el **criterio de suf
 1. **Tiempo de evaluación.** Dos semanas es defendible para perfil si se presenta como evaluación inicial y se reconocen sus límites. No debe prometerse evidencia estadística fuerte.
 2. **CMMI.** Debe mantenerse como antecedente conceptual de mejora de capacidades, no como objetivo, instrumento de evaluación ni promesa de nivel.
 3. **Línea base.** No debe inventarse. Debe levantarse antes de aplicar el marco mediante el tablero interno de gestión de tareas implementado en Odoo, GitHub, repositorios piloto y entrevistas.
-4. **Contribución.** No se debe decir que el marco servirá para cualquier empresa de software. La formulación correcta es: equipos pequeños de empresas emergentes con baja formalización y condiciones comparables.
+4. **Contribución.** No se debe decir que el marco servirá para cualquier empresa de software. La formulación correcta es: equipos pequeños de desarrollo con baja estandarización y condiciones comparables.
 5. **Evaluación formativa.** Debe producir un rediseño documentado; si no hay cambio del artefacto, la evaluación formativa será débil.
 
 ## Decisión de cierre de E3
 
 E3 queda cerrada para fines de perfil, con la condición de que la traducción posterior al formato institucional respete las decisiones metodológicas ya fijadas y no convierta el trabajo en una propuesta de consultoría de procesos. El perfil limpio puede usarse como base para esa traducción.
+
+
+
+
+
+
