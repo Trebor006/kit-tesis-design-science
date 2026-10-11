@@ -41,6 +41,7 @@ El caso GitHub confirma la falta de institucionalización completa: solo 3 de 7 
 |:--|:--|
 | Repositorios fuera de PRX o con ubicación ambigua. | El marco debe exigir repositorio oficial o excepción documentada. |
 | Convenciones usadas pero no documentadas. | El marco debe diferenciar práctica informal de regla institucional verificable. |
+| Nombres de ramas permanentes y de validación no estandarizados; ausencia de `stage` o `production` en algunos repositorios; rama por defecto variable. | El marco debe exigir que cada repositorio documente sus ramas oficiales, su propósito, su rama por defecto y sus equivalencias antes de imponer renombramientos. |
 | Solicitudes sin evidencia de verificación. | El marco debe definir solicitud de integración válida y evidencia mínima aceptable. |
 | Solicitudes creadas y fusionadas por la misma persona. | El marco debe distinguir entre solicitud de integración trazable y solicitud de integración revisada por un tercero, con excepción documentada para componentes de un solo desarrollador. |
 | Ausencia de revisión independiente como práctica institucional observable. | El marco no debe asumir revisión por pares inexistente; debe introducir validación progresiva: solicitud trazable, plantilla completa, evidencia mínima, validación documentada y revisión por tercero cuando sea factible. |

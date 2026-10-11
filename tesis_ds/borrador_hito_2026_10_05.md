@@ -1,4 +1,4 @@
-# Borrador del hito 2026-10-05: diagnóstico y propuesta del artefacto
+﻿# Borrador del hito 2026-10-05: diagnóstico y propuesta del artefacto
 
 ## Propósito del borrador
 
@@ -96,6 +96,80 @@ En el componente de integración y revisión de cambios, el marco deberá recono
 
 Para el componente de trazabilidad del código, la primera versión del marco adoptará una convención mínima inspirada en Angular y Conventional Commits. Las ramas deberán usar el formato `<tipo>/<codigo-tarea>-<descripcion-corta>`, por ejemplo `feat/CCC-4407-operador-contrato`; los commits deberán usar `<tipo>(<codigo-tarea>): <descripcion breve>`, por ejemplo `feat(CCC-4407): agregar datos del operador en contratos`. El código de tarea deberá aparecer también en la solicitud de integración. Al fusionar, se recomendará `squash merge`, conservando el código de tarea en el mensaje final, y eliminación de la rama después de la fusión.
 
+La línea base también registra variación en nombres de ramas permanentes y de validación: `Production`, `production`, `Prod`, `Stage`, `Staging`, `staging`, `stagin`, `staging-server`, `TEST`, `Test`, `test`, `COSVI` y `moriah`. Además, en algunos repositorios no existe una rama de validación equivalente a `stage`, en otros no existe una rama de producción, y la rama por defecto varía entre `main` y ramas como `Production`. Por ello, el marco no solo definirá ramas temporales de trabajo; también exigirá que cada repositorio documente cuáles son sus ramas permanentes oficiales, cuál es su rama por defecto y qué representa cada una.
+
+Como estándar objetivo para PRX se propone `main` como rama por defecto y tronco de integración, `stage` como rama de validación cuando exista ambiente de pruebas, y `production` como rama de producción solo cuando el mecanismo de despliegue lo requiera. La estandarización de nombres será progresiva para evitar riesgos al renombrar ramas históricas que podrían estar conectadas con despliegues, Odoo.sh u otras automatizaciones.
+
+La plantilla mínima obligatoria de solicitud de integración será:
+
+```markdown
+## Tarea relacionada
+
+Código de tarea:
+Enlace o referencia:
+
+## Descripción del cambio
+
+¿Qué se cambió y por qué?
+
+## Tipo de cambio
+
+- [ ] feat
+- [ ] fix
+- [ ] hotfix
+- [ ] config
+- [ ] test
+- [ ] docs
+- [ ] refactor
+
+## Componentes afectados
+
+- [ ] Odoo Backend
+- [ ] API
+- [ ] Frontend
+- [ ] Base de datos
+- [ ] Configuración / despliegue
+- [ ] Otro:
+
+## Riesgo del cambio
+
+- [ ] Bajo
+- [ ] Medio
+- [ ] Alto
+
+Justificación si es medio o alto:
+
+## Verificación realizada
+
+Método:
+
+- [ ] Prueba manual documentada
+- [ ] Prueba unitaria
+- [ ] Prueba de integración
+- [ ] Prueba de API
+- [ ] Construcción / compilación
+- [ ] No aplica, con justificación
+
+Evidencia:
+
+## Validación
+
+- [ ] Revisado por otra persona
+- [ ] Auto-validación documentada
+- [ ] Validación automática
+- [ ] Excepción documentada
+
+Validador o justificación:
+
+## Checklist mínima
+
+- [ ] Rama incluye código de tarea.
+- [ ] Commits incluyen código de tarea.
+- [ ] No incluye credenciales ni datos sensibles.
+- [ ] Listo para `squash merge`.
+- [ ] Rama se eliminará después de fusionar.
+```
+
 El marco adoptará un flujo basado en tronco inspirado en *Trunk-Based Development* —desarrollo basado en tronco—. No se adoptará GitFlow como flujo principal, porque introduce ramas permanentes y ceremonias de versión que resultan pesadas para el estado actual de PRX. La regla será mantener ramas cortas por tarea, integrar mediante solicitud de integración, preferir `squash merge`, eliminar la rama después de fusionar y conservar solo ramas permanentes necesarias para estabilidad y validación, como `main`, `stage` o `test` según el proyecto.
 
 ## Plan inmediato de evaluación
@@ -107,9 +181,9 @@ En el ciclo formativo se aplicará el marco en Central, se registrarán friccion
 ## Pendientes antes de considerar cerrado el borrador
 
 - Revisar la consolidación de indicadores en `06_consolidacion_indicadores.md` si aparece nueva evidencia antes de aplicar el marco.
-- Convertir los requisitos preliminares en `07b_requisitos.md`.
-- Convertir los componentes del marco en diseño preliminar en `07c_diseno_artefacto.md`.
-- Definir la primera versión aplicable del marco y su criterio de suficiencia en `07d_plan_construccion.md`.
+- Requisitos del artefacto convertidos en `07b_requisitos.md`, suficiente para el hito.
+- Diseño preliminar del artefacto creado en `07c_diseno_artefacto.md`, suficiente para el hito.
+- Plan de construcción y versiones definido en `07d_plan_construccion.md`, suficiente para el hito.
 - Guardar evidencia privada o capturas mínimas de la línea base, sin publicar datos sensibles.
 
 ## Referencias
@@ -125,3 +199,4 @@ Laporte, C. Y., Munoz, M., Mejia Miranda, J., & OConnor, R. V. (2018). Applying 
 Pino, F. J., García, F., & Piattini, M. (2008). Software process improvement in small and medium software enterprises: A systematic review. *Software Quality Journal, 16*(2), 237–261. https://doi.org/10.1007/s11219-007-9038-z
 
 Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. https://scrumguides.org/scrum-guide.html
+

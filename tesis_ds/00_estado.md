@@ -36,8 +36,12 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 - E3. Perfil Design Science: cerrado para fines de perfil en `03_perfil_ds_limpio.md`.
 - E4. Marco teórico: preliminar suficiente para perfil; ampliable para tesis completa.
 - E5. Estado del arte: preliminar suficiente para perfil; ampliable para tesis completa.
-- E6. Diagnóstico: diseñado y fortalecido con instrumentos; no cerrado hasta levantar línea base real.
-- E7-E10: pendientes para desarrollo de propuesta, evaluación, trazabilidad final y conclusiones.
+- E6. Diagnóstico: consolidado para avanzar, con línea base GitHub, línea base Odoo/tareas e indicadores I1-I9; falta resguardar evidencias privadas y fortalecer I7.
+- E7a. Alternativas de solución: cerrada para el hito.
+- E7b. Requisitos del artefacto: suficiente para el hito.
+- E7c. Diseño del artefacto: suficiente para el hito.
+- E7d. Plan de construcción y versiones: suficiente para el hito.
+- E7e-E10: pendientes para construcción/verificación interna, ficha del artefacto, evaluación, trazabilidad final, contribución y conclusiones.
 
 ## Decisiones tomadas
 
@@ -48,10 +52,11 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 
 ## Pendientes inmediatos
 
-1. Publicar o compartir el enlace público del repositorio para la entrega del 2026-09-28.
-2. Estudiar `03_perfil_ds_limpio.md`, `matriz_coherencia.md`, `defensa_por_que_es_tesis.md` y `cronograma_ajustado_defensa.md` para la defensa oral del perfil.
-3. Iniciar el levantamiento real de línea base en PRX con `06_instrumentos_linea_base.md`.
-4. Avanzar a E7a: alternativas de solución, sin construir el artefacto antes de registrar la línea base.
+1. Resguardar evidencias privadas según `06_plan_evidencias_privadas.md`, separando línea base, intervención, evaluación formativa y evaluación sumativa.
+2. Crear `07e_construccion_verificacion.md` para registrar construcción/aplicación de V1.0-Central y verificación interna.
+3. Resolver la debilidad de I7 con `E-TEST-BASE-01` y/o `E-TEST-INT-01`, mediante prueba ejecutable o evidencia técnica equivalente en al menos un componente crítico de Central.
+4. Preparar `08_evaluacion.md` con evaluación formativa, rediseño documentado y evaluación sumativa inicial.
+5. No presentar todavía evaluación ni contribución validada hasta ejecutar V1.0-Central, rediseño formativo y evaluación sumativa.
 
 ## Riesgos iniciales
 
@@ -409,3 +414,109 @@ Se añadió en `tesis_ds/07b_requisitos.md` y `tesis_ds/borrador_hito_2026_10_05
 ## Registro 2026-10-05 - decisión de flujo basado en tronco
 
 Se decidió que el marco adoptará un flujo basado en tronco inspirado en *Trunk-Based Development* —desarrollo basado en tronco—. No se adoptará GitFlow como flujo principal por considerarse pesado para equipos pequeños y para la primera aplicación en Central. Se actualizó `tesis_ds/07b_requisitos.md`, `tesis_ds/borrador_hito_2026_10_05.md` y `tesis_ds/07a_alternativas.md` para registrar ramas cortas por tarea, solicitud de integración, `squash merge`, eliminación de ramas después de fusionar y uso limitado de ramas permanentes como `main`, `stage` o `test` según el proyecto.
+
+
+## Registro 2026-10-06 - plantilla mínima de solicitud y evidencia de ramas
+
+Se creó `tesis_ds/06_evidencia_nombres_ramas.md` con evidencia de variación en nombres de ramas permanentes y de validación, incluyendo `Production`, `production`, `Prod`, `Stage`, `Staging`, `staging`, `stagin`, `staging-server`, `TEST`, `Test`, `test`, `COSVI` y `moriah`. Se actualizó `tesis_ds/07b_requisitos.md` para exigir que cada repositorio declare sus ramas oficiales y equivalencias antes de imponer renombramientos. También se incorporó en `tesis_ds/borrador_hito_2026_10_05.md` la plantilla mínima obligatoria de solicitud de integración.
+
+
+## Registro 2026-10-06 - estándar objetivo de ramas permanentes
+
+Se precisó en `tesis_ds/06_evidencia_nombres_ramas.md`, `tesis_ds/07b_requisitos.md`, `tesis_ds/borrador_hito_2026_10_05.md` y `tesis_ds/06_consolidacion_indicadores.md` que la evidencia no solo muestra nombres heterogéneos de ramas, sino también ausencia de ramas `stage` o `production` en algunos repositorios y variación de rama por defecto entre `main` y `Production`. Se propuso como estándar objetivo para PRX: `main` como rama por defecto y tronco de integración, `stage` como rama de validación cuando exista ambiente de pruebas, y `production` como rama de producción solo cuando el mecanismo de despliegue lo requiera. La normalización debe ser progresiva para evitar riesgos con ramas históricas conectadas a despliegues u Odoo.sh.
+
+
+## Registro 2026-10-06 - plantilla de solicitud de integración como anexo del artefacto
+
+Se creó `tesis_ds/07c_plantilla_solicitud_integracion.md` como producto operativo del artefacto. La plantilla mínima obligatoria de solicitud de integración forma parte del marco, porque operacionaliza trazabilidad, verificación y validación mínima. En el cuerpo de la tesis deberá describirse y justificarse; la versión completa debe presentarse como anexo operativo del artefacto, no solo como referencia externa.
+
+
+## Registro 2026-10-06 - recordatorio de repositorio organizacional `.github`
+
+El tesista indicó que está creando el repositorio organizacional `.github` para alojar la plantilla de solicitud de integración y aplicarla por defecto en la organización. Esta acción debe registrarse como instanciación PRX del artefacto, específicamente del componente de integración y revisión de cambios, y no como el artefacto completo. Recordatorio pendiente: cuando el repositorio esté creado, registrar evidencia con repositorio, archivo `pull_request_template.md`, fecha de creación, responsable, captura o enlace interno. Esta evidencia debe fecharse después de la línea base porque forma parte de la intervención.
+
+
+## Registro 2026-10-07 - diseño preliminar del artefacto E7c
+
+Se creó `tesis_ds/07c_diseno_artefacto.md` con el diseño preliminar del marco. El documento declara la tipología del artefacto, la clase de contextos, la estructura C0-C6, reglas operativas de la versión 1, niveles de adopción, diagrama Mermaid, aplicación inicial en Central y trazabilidad requisito → componente → decisión. También se actualizó `tesis_ds/07b_requisitos.md` para marcar E7b como suficiente para el hito, y `tesis_ds/borrador_hito_2026_10_05.md` para reflejar que E7b y E7c ya están cubiertos. Queda pendiente E7d: plan de construcción y versiones.
+
+
+## Registro 2026-10-07 - repositorio organizacional `.github` creado
+
+El tesista informó que ya creó el repositorio organizacional `.github` y que la plantilla de solicitud de integración aparece al crear nuevas solicitudes. Esto se registra como instanciación PRX del componente C3, no como artefacto completo. La evidencia debe guardarse como intervención posterior a la línea base, idealmente con código `E-GH-ORG-01`, incluyendo captura del repositorio `.github`, archivo `pull_request_template.md`, fecha de creación, responsable y evidencia de que la plantilla se carga en una nueva solicitud de integración. El tesista también indicó que luego podría agregarse un flujo de trabajo de GitHub Actions para validar si la descripción de la solicitud cumple la plantilla; esa automatización se considera mejora posterior de la instanciación PRX y no requisito obligatorio de la versión 1, salvo que se decida incluirla explícitamente en E7d con tiempo y criterio de evaluación.
+
+
+## Registro 2026-10-07 - plan de evidencias privadas
+
+Se creó `tesis_ds/06_plan_evidencias_privadas.md` para organizar las capturas y registros que el tesista debe levantar. El plan separa evidencias de línea base, intervención, evaluación formativa y evaluación sumativa, y propone códigos como `E-GH-ORG-01`, `E-GH-BASE-01`, `E-ODOO-BASE-01`, `E-TEST-BASE-01`, `E-FORM-01` y `E-SUM-01`. Se recuerda que la tesis pública no debe exponer nombres completos, enlaces privados, credenciales ni código sensible; se usarán códigos de participantes `DEV-001` a `DEV-004`.
+
+
+## Registro 2026-10-07 - plan de construcción E7d
+
+Se creó `tesis_ds/07d_plan_construccion.md` con la versión mínima viable V1.0-Central, criterios para decidir qué entra o no en la primera versión, versiones previstas, productos de construcción, criterio de suficiencia para evaluación formativa y riesgos de construcción. Se clasificó el flujo de trabajo de GitHub Actions para validar descripciones de solicitudes de integración como mejora posterior, no obligatoria para V1.0-Central. E7d queda suficiente para el hito; queda pendiente construir/aplicar V1.0-Central, registrar verificación interna en E7e y preparar E8.
+
+
+## Registro 2026-10-07 - validación DSRM de perfil y borrador
+
+Se creó `tesis_ds/validacion_dsr_perfil_y_borrador_2026_10_07.md` para revisar la alineación del perfil y del borrador con DSRM. La validación concluye que el trabajo está alineado con DSRM hasta diseño/desarrollo y con demostración iniciada por la instanciación `.github`, pero que todavía no puede reclamar evaluación ni contribución validada. Los pendientes críticos son evidencias privadas, E7e, resolución de I7, evaluación formativa con rediseño y evaluación sumativa inicial.
+
+
+## Registro 2026-10-11 - actualización del estado superior
+
+Se actualizó la sección superior de `00_estado.md` porque todavía mostraba E6 como no cerrado y E7-E10 como pendientes generales, a pesar de que los registros posteriores ya indicaban E7a, E7b, E7c y E7d suficientes para el hito. El estado actual queda así: E6 consolidado para avanzar, E7a cerrado para el hito, E7b-E7d suficientes para el hito, y pendientes E7e-E10. También se actualizaron los pendientes inmediatos hacia evidencias privadas, construcción/verificación interna, resolución de I7 y preparación de E8.
+
+
+## Registro 2026-10-11 - plan de cierre para borrador ALSIE
+
+Se creó `tesis_ds/plan_cierre_borrador_para_alsie.md` para precisar qué falta antes de traducir el trabajo al modelo documental ALSIE como borrador de investigación. La validación concluye que la propuesta está diseñada, pero todavía falta aplicación con evidencia: E7e construcción/verificación interna, E7f ficha reproducible del artefacto, E8 evaluación formativa y sumativa inicial, E9 enlace problema-solución y E10 contribución/conclusiones. Si no se ejecutan E7e y E8, el trabajo solo puede traducirse como perfil/propuesta avanzada, no como investigación completa.
+
+
+## Registro 2026-10-11 - publicación del estándar STD-GIT-001
+
+El tesista documentó en SharePoint el estándar `STD-GIT-001 — Convención mínima de ramas`, con versión 1.0, estado propuesto, fecha 2026-10-11 y alcance en repositorios de desarrollo de software de PRX. El contenido mantiene la lógica de la propuesta inicial: convención mínima, ligera y extensible; ramas permanentes `main`, `stage` y `production` según aplique; ramas temporales con formato `<tipo>/<codigo-tarea>-<descripcion-corta>`; tipos mínimos `feat`, `fix`, `hotfix`, `config`, `test`, `docs` y `refactor`; procedimiento básico, excepciones y extensión futura. Se registró `E-ORG-INT-01` en `06_plan_evidencias_privadas.md` como evidencia de intervención asociada a I3, I4 e I9.
+
+
+## Registro 2026-10-11 - capturas de evidencia E-ORG-INT-01
+
+El tesista informó que la evidencia `E-ORG-INT-01` fue capturada en tres imágenes debido a la extensión del documento en SharePoint: `evidencias/E-ORG-INT-01_STD-GIT-001_convencion_minima_ramas_sharepoint - 1.png`, `evidencias/E-ORG-INT-01_STD-GIT-001_convencion_minima_ramas_sharepoint - 2.png` y `evidencias/E-ORG-INT-01_STD-GIT-001_convencion_minima_ramas_sharepoint - 3.png`. Se verificó que los tres archivos existen en el directorio `evidencias/`. Se actualizó `06_plan_evidencias_privadas.md` para registrar los tres archivos como una sola evidencia compuesta de intervención.
+
+
+## Registro 2026-10-11 - plantilla STD-GIT-002 de solicitudes de integración
+
+El tesista informó que cargó una plantilla de solicitud de integración con secciones en inglés: `Related task`, `Summary`, `Main changes`, `Affected components`, `Files changed`, `Expected behavior`, `Change risk`, `Test plan`, `Verification performed`, `Validation` y `Minimum checklist`. La plantilla es coherente con el componente C3 del artefacto porque operacionaliza tarea relacionada, descripción del cambio, tipo de cambio, componentes afectados, riesgo, verificación, evidencia, validación y lista mínima. Se registró `E-ORG-INT-02` en `06_plan_evidencias_privadas.md` como evidencia de intervención asociada a I5, I6 e I9. Para mantener trazabilidad institucional, se recomienda documentarla como `STD-GIT-002 — Convención mínima de solicitudes de integración`.
+
+
+## Registro 2026-10-11 - capturas de evidencia E-ORG-INT-02
+
+El tesista informó que la evidencia `E-ORG-INT-02` fue capturada en tres imágenes ubicadas en `evidencias/`: `evidencias/E-ORG-INT-02_STD-GIT-002_solicitudes_integracion_sharepoint -1.png`, `evidencias/E-ORG-INT-02_STD-GIT-002_solicitudes_integracion_sharepoint - 2.png` y `evidencias/E-ORG-INT-02_STD-GIT-002_solicitudes_integracion_sharepoint - 3.png`. Se verificó que los tres archivos existen y se actualizó `06_plan_evidencias_privadas.md` para registrarlos como una sola evidencia compuesta de intervención.
+
+
+## Registro 2026-10-11 - distinción entre estándar y plantilla de solicitud de integración
+
+Se precisó que la evidencia `E-ORG-INT-02` corresponde a la plantilla operativa de solicitud de integración, mientras que el estándar institucional `STD-GIT-002 — Convención mínima de solicitudes de integración` debe incluir reglas adicionales, especialmente el formato del título de la solicitud y la obligación de completar la descripción mediante la plantilla. Se actualizó `06_plan_evidencias_privadas.md` para registrar `E-ORG-INT-03` como evidencia pendiente del estándar completo, separada de la plantilla.
+
+
+## Registro 2026-10-11 - capturas corregidas E-ORG-INT-02 y E-ORG-INT-03
+
+El tesista renombró las evidencias de la plantilla operativa de solicitud de integración como `evidencias/E-ORG-INT-02_plantilla_operativa_pull_request_sharepoint - 1.png`, `evidencias/E-ORG-INT-02_plantilla_operativa_pull_request_sharepoint - 2.png` y `evidencias/E-ORG-INT-02_plantilla_operativa_pull_request_sharepoint - 3.png`. También agregó seis capturas del estándar `STD-GIT-002 — Convención mínima de solicitudes de integración`: `evidencias/E-ORG-INT-03_STD-GIT-002_convencion_minima_solicitudes_integracion_sharepoint - 1.png` a `- 6.png`. Se verificó que los nueve archivos existen en el directorio `evidencias/` y se actualizó `06_plan_evidencias_privadas.md`.
+
+
+## Registro 2026-10-11 - capturas de evidencia E-ORG-INT-04
+
+El tesista agregó cinco capturas del estándar `STD-GIT-003 — Convención mínima de commits`: `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 1.png`, `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 2.png`, `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 3.png`, `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 4.png` y `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 5.png`. Se verificó que los cinco archivos existen en el directorio `evidencias/` y se actualizó `06_plan_evidencias_privadas.md`. Esta evidencia respalda la intervención del componente C2 y los indicadores I4 e I9.
+
+
+## Registro 2026-10-11 - capturas de evidencia E-ORG-INT-05
+
+El tesista agregó dos capturas de la estructura documental de estándares técnicos en SharePoint: `evidencias/E-ORG-INT-05_estructura_estandares_tecnicos_sharepoint - 1.png` y `evidencias/E-ORG-INT-05_estructura_estandares_tecnicos_sharepoint - 2.png`. La primera evidencia muestra la carpeta `Estandares tecnicos/01 - Git` con los archivos `STD-GIT-001-convencion-de-ramas.md` y `STD-GIT-003-convencion-de-commits.md`; la segunda muestra `Estandares Tecnicos/02 - Pull Request` con `STD-GIT-002-convencion-de-pull-requests.md` y `STD-GIT-002-pull_request_template.md`. Se verificó que ambos archivos existen en el directorio `evidencias/` y se actualizó `06_plan_evidencias_privadas.md`. Esta evidencia respalda la organización institucional de los productos operativos del marco.
+
+
+## Registro 2026-10-11 - captura E-GH-ORG-01 del repositorio `.github`
+
+El tesista agregó la evidencia `evidencias/E-GH-ORG-01_repositorio_github_organizacional_ramas_template.png`, donde se observa el repositorio organizacional `.github` con la rama `main` y la rama temporal `config/ADM-4940_config_pr_template` asociada a la configuración de la plantilla de solicitudes de integración. Se verificó que el archivo existe en `evidencias/` y se actualizó `06_plan_evidencias_privadas.md`. La rama temporal evidencia aplicación inicial de la convención, aunque el uso de guion bajo en la descripción se registra como fricción de adopción frente al formato definido `<tipo>/<codigo-tarea>-<descripcion-corta>`.
+
+
+## Registro 2026-10-11 - redacción de E7e construcción y verificación interna
+
+Se creó `tesis_ds/07e_construccion_verificacion.md` para registrar la construcción inicial de V1.0-Central. El documento integra los productos operativos construidos (`STD-GIT-001`, plantilla operativa de solicitud de integración, `STD-GIT-002`, `STD-GIT-003`, estructura documental en SharePoint y repositorio `.github`), sus evidencias (`E-ORG-INT-01` a `E-ORG-INT-05` y `E-GH-ORG-01`), la verificación interna y las fricciones detectadas. E7e queda suficiente como registro inicial de construcción, pero todavía pendiente de aplicación completa en una solicitud real de Central (`E-GH-INT-01`) y de evidencia técnica de verificación (`E-TEST-INT-01`).
+
