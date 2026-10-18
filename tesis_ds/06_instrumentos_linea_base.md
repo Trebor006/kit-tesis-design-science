@@ -79,7 +79,8 @@ La entrevista debe durar entre 10 y 15 minutos por participante. Debe registrars
 4. ¿Qué verificación realizó antes de integrar o entregar el cambio?
 5. ¿Existe algún componente del proyecto que considere crítico y que debería tener pruebas unitarias iniciales? ¿Por qué?
 6. ¿Qué dificultad concreta encuentra para registrar tareas, usar ramas, crear solicitudes de integración o escribir pruebas unitarias?
-7. ¿Hubo defectos o correcciones urgentes asociadas a cambios recientes durante la ventana observada?`r`n8. ¿Qué evidencia se usa actualmente para demostrar avance de trabajo o respaldar entregables frente a clientes?
+7. ¿Hubo defectos o correcciones urgentes asociadas a cambios recientes durante la ventana observada?
+8. ¿Qué evidencia se usa actualmente para demostrar avance de trabajo o respaldar entregables frente a clientes?
 
 ## Ficha de consolidación de línea base
 
@@ -92,7 +93,8 @@ La entrevista debe durar entre 10 y 15 minutos por participante. Debe registrars
 | I5. Cambios integrados mediante solicitudes de integración | Pendiente | GitHub | Entrevistas | Pendiente | Pendiente |
 | I6. Solicitudes con evidencia mínima de verificación | Pendiente | GitHub | Revisión manual | Pendiente | Pendiente |
 | I7. Componentes críticos con pruebas unitarias iniciales | Pendiente | Repositorio | Ejecución de pruebas | Pendiente | Pendiente |
-| I8. Defectos o correcciones urgentes | Pendiente | Odoo, GitHub o entrevista | Revisión documental | Pendiente | Indicador contextual |`r`n| I9. Evidencia trazable para respaldo de entregables | Pendiente | Odoo y GitHub | Entrevista a responsables | Pendiente | Indicador contextual |
+| I8. Defectos o correcciones urgentes | Pendiente | Odoo, GitHub o entrevista | Revisión documental | Pendiente | Indicador contextual |
+| I9. Evidencia trazable para respaldo de entregables | Pendiente | Odoo y GitHub | Entrevista a responsables | Pendiente | Indicador contextual |
 
 ## Registro de cierre de línea base
 

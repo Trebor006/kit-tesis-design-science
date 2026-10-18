@@ -35,7 +35,7 @@ La tipología principal del artefacto es **marco**, porque integrará constructo
 
 ## Campo de acción
 
-El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La aplicación y evaluación inicial se concentrarán en cinco desarrolladores de la línea de software a medida durante un periodo de dos semanas.
+El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La primera aplicación y evaluación se concentrarán en el proyecto Central, con tres responsables técnicos codificados —Central Odoo Backend, Central API y Central Frontend—, durante un periodo posterior comparable con la línea base.
 
 La delimitación excluye la certificación formal de madurez, la implantación completa de CMMI, la transformación integral de todos los procesos organizacionales y la automatización avanzada mediante agentes de calidad de código. Estas dimensiones pueden aparecer como antecedentes, restricciones o trabajo futuro, pero no forman parte del núcleo evaluable del perfil.
 
@@ -73,7 +73,7 @@ La investigación adoptará el modelo DSRM de Peffers et al. como proceso princi
 1. **Identificación del problema y motivación.** Se realizará un diagnóstico de PRX mediante revisión del tablero interno de gestión de tareas implementado en Odoo, GitHub institucional, repositorios de proyectos piloto y entrevistas breves con desarrolladores.
 2. **Definición de objetivos de solución.** Se establecerán indicadores y criterios de éxito antes de construir el artefacto: visibilidad de tareas, conformidad de ramas y commits, solicitudes de integración de cambios, evidencia mínima de verificación y pruebas unitarias iniciales.
 3. **Diseño y desarrollo del artefacto.** Se construirá el marco ligero con diagnóstico inicial, ruta de adopción, reglas mínimas, productos de trabajo y criterios de verificación.
-4. **Demostración.** Se aplicará inicialmente el marco en la línea de software a medida de PRX, con cinco desarrolladores y proyectos piloto seleccionados.
+4. **Demostración.** Se aplicará inicialmente el marco en el proyecto Central de la línea de software a medida de PRX, con tres responsables técnicos codificados y tres componentes seleccionados.
 5. **Evaluación.** Se ejecutará un ciclo formativo para observar fricciones y rediseñar el marco, seguido de un ciclo sumativo inicial para contrastar los criterios de éxito.
 6. **Comunicación.** Se documentarán el perfil, el marco, los resultados de evaluación, las limitaciones y los principios de diseño derivados.
 
@@ -89,18 +89,18 @@ La evaluación seguirá una secuencia formativa–sumativa en contexto real. Pri
 
 | Fase | Propósito | Fuentes o actividades | Resultado esperado |
 |:--|:--|:--|:--|
-| Línea base previa | Establecer el estado inicial antes de construir o aplicar el artefacto. | Revisión del tablero interno de tareas implementado en Odoo; revisión de GitHub institucional; revisión de repositorios de proyectos piloto; entrevistas breves con cinco desarrolladores. | Valores iniciales de visibilidad de tareas, repositorios, ramas, commits, solicitudes de integración y pruebas unitarias. |
+| Línea base previa | Establecer el estado inicial antes de construir o aplicar el artefacto. | Revisión del tablero interno de tareas implementado en Odoo; revisión de GitHub institucional; revisión de repositorios de Central, Ansular y PConst; entrevistas o revisión conjunta con responsables codificados cuando corresponda. | Valores iniciales de visibilidad de tareas, repositorios, ramas, commits, solicitudes de integración y pruebas unitarias. |
 | Evaluación formativa | Identificar fricciones de aplicación y oportunidades de rediseño. | Aplicación inicial del marco; registro de reglas poco claras, dificultad de uso, resistencia y prácticas inviables. | Lista de hallazgos formativos y rediseño documentado del marco. |
 | Evaluación sumativa inicial | Valorar si la versión rediseñada satisface los criterios de éxito fijados antes de la construcción. | Medición de indicadores en el tablero interno de tareas implementado en Odoo, GitHub y repositorios piloto. | Evidencia sobre cumplimiento de criterios de visibilidad, trazabilidad, revisión previa y verificación básica. |
 | Análisis de amenazas a la validez | Delimitar el alcance de las afirmaciones de contribución. | Identificación de amenazas de constructo, interna, externa y de conclusión. | Declaración de limitaciones y condiciones de contorno. |
 
-Los criterios de éxito serán: 80 % de tareas activas visibles en el tablero interno de tareas; 80 % de ramas y commits conformes con la convención mínima; 70 % de cambios integrados mediante solicitudes de integración; 70 % de solicitudes con evidencia mínima de verificación; y al menos un componente crítico por proyecto piloto con pruebas unitarias ejecutables.
+Los criterios de éxito serán: 80 % de tareas activas visibles en el tablero interno de tareas; 80 % de ramas y commits conformes con la convención mínima; 70 % de cambios integrados mediante solicitudes de integración; 70 % de solicitudes con evidencia mínima de verificación; y al menos un componente crítico de Central con prueba, construcción, prueba de API o verificación técnica documentada.
 
 Las principales amenazas a la validez son la muestra pequeña, el periodo corto de evaluación, la participación del investigador en el contexto, la evaluación en un solo contexto organizacional y el posible sesgo por adopción inducida u obligatoria. Estas amenazas impiden una generalización estadística; por ello, la tesis reclamará transferibilidad analítica hacia equipos pequeños de desarrollo con baja estandarización y condiciones comparables a las observadas en PRX.
 
 ## Selección y muestra
 
-La selección del contexto es intencional. PRX representa un contexto relevante porque cuenta con un departamento de desarrollo en proceso de profesionalización, líneas de trabajo diferenciadas y evidencia preliminar de baja formalización en la línea de software a medida. La muestra inicial estará conformada por cinco desarrolladores de esa línea y por proyectos piloto seleccionados según disponibilidad de repositorio, actividad durante el periodo de evaluación y pertinencia para observar tareas, cambios de código y pruebas unitarias.
+La selección del contexto es intencional. PRX representa un contexto relevante porque cuenta con un departamento de desarrollo en proceso de profesionalización, líneas de trabajo diferenciadas y evidencia preliminar de baja formalización en la línea de software a medida. La muestra de primera aplicación estará conformada por tres responsables técnicos del proyecto Central y por los componentes Central Odoo Backend, Central API y Central Frontend, seleccionados por su pertinencia para observar tareas, cambios de código, solicitudes de integración y verificación mínima.
 
 La muestra no pretende representar estadísticamente a todos los equipos pequeños de desarrollo con baja estandarización. Su función es permitir evaluación naturalista en un contexto real y generar evidencia suficiente para formular principios de diseño con transferibilidad analítica hacia equipos estructuralmente similares.
 
@@ -127,7 +127,7 @@ El cronograma de ejecución posterior a la aprobación del perfil se plantea en 
 | 3 | Construcción y formalización del marco; revisión con expertos o responsables técnicos. | Versión 1.0 del marco lista para aplicación formativa. |
 | 4 | Evaluación formativa en PRX: aplicación inicial y registro de fricciones. | Hallazgos formativos documentados. |
 | 5 | Rediseño documentado del marco según hallazgos formativos. | Versión 1.1 del marco. |
-| 6 | Evaluación sumativa inicial con cinco desarrolladores y proyectos piloto. | Resultados de indicadores frente a criterios de éxito. |
+| 6 | Evaluación sumativa inicial en Central con responsables técnicos y componentes seleccionados. | Resultados de indicadores frente a criterios de éxito. |
 | 7 | Análisis de resultados y formulación de principios de diseño. | Principios de diseño preliminares y condiciones de contorno. |
 | 8 | Redacción final, revisión de coherencia, amenazas a la validez y conclusiones. | Documento final de tesis o informe de avance completo, según exigencia institucional. |
 

@@ -16,14 +16,15 @@ La construcción se documenta como intervención posterior a la línea base. Por
 | Convención mínima de commits | Construida y publicada. | `E-ORG-INT-04`; `E-ORG-INT-05`. | Formalizada como `STD-GIT-003 — Convención mínima de commits`. |
 | Organización documental de estándares técnicos | Construida. | `E-ORG-INT-05`. | Los estándares quedaron organizados en carpetas técnicas diferenciadas para Git y solicitudes de integración. |
 | Repositorio organizacional `.github` | Iniciado. | `E-GH-ORG-01`. | Permite instanciar la plantilla de solicitudes de integración en GitHub. |
-| Aplicación en solicitud de integración real de Central | Pendiente. | `E-GH-INT-01` pendiente. | Se requiere al menos una solicitud posterior usando rama, commits, título, plantilla y evidencia mínima. |
-| Verificación técnica en componente crítico | Pendiente. | `E-TEST-INT-01` pendiente. | Se requiere prueba, construcción, prueba de API o verificación manual documentada. |
+| Aplicación en solicitud de integración real de Central | Ejecutada. | `E-ODOO-INT-01`; `E-GH-INT-01`; `E-GH-INT-02`. | La tarea `CCC-7336` produjo rama, commit, solicitud de integración, fusión y eliminación de rama temporal. |
+| Verificación técnica en componente crítico | Ejecutada. | `E-TEST-INT-01`. | Se ejecutaron satisfactoriamente 169 pruebas unitarias en la API de Central. |
+| Configuración de ramas permanentes de Central | Ejecutada. | `E-GH-INT-04`; `E-ORG-INT-06`. | Se configuraron `main`, `Stage` y `Production`, y se formalizó la convención V1.1. |
 
 ## Productos construidos
 
 ### STD-GIT-001 — Convención mínima de ramas
 
-Se construyó y publicó el estándar `STD-GIT-001 — Convención mínima de ramas`. El estándar define ramas permanentes mínimas (`main`, `stage` y `production` cuando aplique), formato de ramas temporales y tipos iniciales permitidos. La regla central es que toda rama temporal de trabajo debe seguir el formato:
+Se construyó y publicó el estándar `STD-GIT-001 — Convención mínima de ramas`. La versión vigente, actualizada por la enmienda V1.1, define ramas permanentes mínimas (`main`, `Stage` y `Production` cuando aplique), formato de ramas temporales y tipos iniciales permitidos. La regla central es que toda rama temporal de trabajo debe seguir el formato:
 
 ```text
 <tipo>/<codigo-tarea>-<descripcion-corta>
@@ -92,6 +93,8 @@ Esta diferencia se registra como fricción formativa, no como incumplimiento ocu
 | `STD-GIT-002` | Revisión de título, uso de plantilla, validación y excepciones. | Cumple como estándar, diferenciado de la plantilla. | `E-ORG-INT-03`; `E-ORG-INT-05`. |
 | `STD-GIT-003` | Revisión de formato de commit, tipos permitidos, ejemplos y validación mínima. | Cumple como convención mínima de commits y mantiene alineación con ramas y solicitudes. | `E-ORG-INT-04`; `E-ORG-INT-05`. |
 | Repositorio `.github` | Revisión visual de repositorio y ramas. | Evidencia instanciación inicial; se detecta fricción en nombre de rama. | `E-GH-ORG-01`. |
+| Aplicación `CCC-7336` | Revisión de tarea, rama, commits, solicitud, fusión y eliminación de rama. | La cadena de trazabilidad fue aplicada en un cambio real de Central. | `E-ODOO-INT-01`; `E-GH-INT-01`; `E-GH-INT-02`. |
+| Pruebas unitarias de API | Ejecución de la batería de pruebas. | 169 pruebas unitarias exitosas. | `E-TEST-INT-01`. |
 
 La verificación interna confirma que los productos documentales y técnicos iniciales existen y están alineados con los requisitos del artefacto. Sin embargo, esta verificación no equivale a evaluación de campo. Todavía falta observar el uso del marco en una solicitud de integración real de Central y registrar evidencia de verificación técnica.
 
@@ -112,8 +115,7 @@ La verificación interna confirma que los productos documentales y técnicos ini
 |:--|:--|:--|:--|
 | Uso de guion bajo en `config/ADM-4940_config_pr_template`. | `E-GH-ORG-01`. | La regla fue comprendida parcialmente: se usó tipo y código de tarea, pero no el separador definido para la descripción. | Registrar como fricción formativa y reforzar el ejemplo correcto en la comunicación del estándar. |
 | Diferencia inicial entre plantilla y estándar de solicitud de integración. | `E-ORG-INT-02`; `E-ORG-INT-03`. | La plantilla resolvía la descripción, pero no el título de la solicitud; el estándar completo cerró esa brecha. | Mantener ambos productos separados: plantilla operativa y estándar institucional. |
-| Verificación técnica aún no ejecutada en Central. | Pendiente `E-TEST-INT-01`. | La construcción documental no demuestra por sí sola verificación técnica del código. | Ejecutar prueba, construcción, prueba de API o prueba manual documentada en componente crítico. |
-| Solicitud de integración real posterior pendiente. | Pendiente `E-GH-INT-01`. | Aún no se observó el uso completo de rama, commits, título, plantilla y evidencia en un cambio real de Central. | Aplicar el marco en una solicitud real y capturar evidencia. |
+| Discrepancia inicial entre configuración propuesta y denominaciones históricas de ramas. | `E-GH-INT-04`; `E-ORG-INT-06`. | La práctica histórica no era estándar institucional, pero usaba `Stage` y `Production`; se alineó el estándar V1.1 sin atribuir esas ramas al artefacto. | Mantener `main`, `Stage` y `Production` como convención vigente y normalizar progresivamente repositorios históricos. |
 
 ## Estado frente al criterio de suficiencia de E7d
 
@@ -123,19 +125,14 @@ La verificación interna confirma que los productos documentales y técnicos ini
 | Central con componentes, responsables y repositorios o excepciones. | Definido documentalmente. | Componentes y responsables están codificados en documentos previos; falta integrarlo en ficha E7f. |
 | Ramas permanentes y equivalencias declaradas por repositorio. | Parcial. | Hay estándar general; falta ficha por repositorio Central. |
 | Convención comunicada a responsables. | Parcial. | La publicación en SharePoint evidencia disponibilidad; falta evidencia de comunicación o uso por los responsables. |
-| Al menos una solicitud nueva con plantilla o fricción. | Pendiente. | Debe levantarse `E-GH-INT-01`. |
-| Mecanismo para registrar evidencia de verificación. | Definido, no aplicado. | La plantilla exige evidencia; falta `E-TEST-INT-01`. |
+| Al menos una solicitud nueva con plantilla o fricción. | Cumplido. | `CCC-7336` evidencia solicitud real con plantilla. |
+| Mecanismo para registrar evidencia de verificación. | Aplicado. | `E-TEST-INT-01` documenta 169 pruebas unitarias exitosas. |
 | Evidencias categorizadas. | Cumplido para intervención inicial. | `06_plan_evidencias_privadas.md` separa línea base, intervención y evaluación. |
 
 ## Pendientes para cerrar E7e completamente
 
-E7e queda **avanzado, pero no cerrado de forma absoluta**. La construcción documental e institucional de V1.0-Central está respaldada por evidencias, pero aún falta demostrar aplicación completa en un cambio real de Central. Los pendientes mínimos son:
-
-1. Capturar `E-GH-INT-01`: primera solicitud de integración posterior al marco usando título, plantilla, rama y commits trazables.
-2. Capturar `E-TEST-INT-01`: evidencia de verificación técnica en al menos un componente crítico de Central.
-3. Registrar, si corresponde, `E-FORM-01`: fricciones observadas por responsables o por el tesista durante el primer uso.
-4. Integrar las evidencias de aplicación real en E8 como evaluación formativa.
+E7e queda **cerrado como construcción y verificación interna de la primera aplicación**. La construcción documental, la configuración de ramas, la solicitud real `CCC-7336` y la verificación técnica están respaldadas por evidencias. La evaluación sumativa permanece pendiente en E8; no forma parte del cierre de construcción.
 
 ## Estado del gate E7e
 
-E7e queda **suficiente como registro inicial de construcción y verificación interna**, porque existen productos operativos construidos, evidencias privadas verificadas y fricciones documentadas. No obstante, para cumplir el estándar de maestría en Design Science, esta etapa debe completarse con una aplicación real en Central y con evidencia de verificación técnica antes de pasar a una evaluación sumativa.
+E7e queda **cerrado para la primera aplicación**, porque existen productos operativos construidos, evidencia privada de aplicación real y verificación técnica ejecutada. La siguiente etapa es cerrar la evaluación sumativa inicial, sin confundir el funcionamiento de `CCC-7336` con una mejora sostenida del contexto.

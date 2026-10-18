@@ -44,6 +44,10 @@ Mezclar estos momentos debilita la evaluación. Si una captura se toma después,
 | `E-ODOO-BASE-02` | Línea base | Tarea amplia o poco granular. | Ejemplo de tarea que agrupa varios objetivos o componentes, si aplica. | I1, RQ2, RQ3. |
 | `E-TEST-BASE-01` | Línea base | Evidencia de pruebas existente o ausencia documentada. | Comando, salida, registro o constatación de que no existe evidencia ejecutable en componente crítico. | I7. |
 | `E-GH-INT-01` | Intervención | Primera solicitud usando la plantilla. | PR creada después del marco con plantilla completada, tarea, verificación y validación. | I5, I6, I9. |
+| `E-GH-INT-02` | Intervención | Cierre de solicitud de integración. | PR fusionada y eliminación posterior de rama temporal. | I3, I5, I9. |
+| `E-GH-INT-04` | Intervención | Configuración de ramas permanentes en Central. | Creación de `main`, `Stage` y `Production`, y retiro de `master` cuando fue técnicamente seguro. | I3, RQ5.1, I9. |
+| `E-ODOO-INT-01` | Intervención | Tarea real posterior al marco. | Tarea `CCC-7336` con proyecto, componente y responsable codificado. | I1, I9. |
+| `E-ORG-INT-06` | Intervención / rediseño | Publicación de `STD-GIT-001` V1.1. | Actualización de ramas permanentes a `main`, `Stage` y `Production`. | I3, I9. |
 | `E-TEST-INT-01` | Intervención | Verificación técnica en Central. | Ejecución de prueba unitaria, construcción, prueba de API o prueba manual documentada con resultado. | I7. |
 | `E-FORM-01` | Evaluación formativa | Fricciones de uso del marco. | Comentarios, observaciones o casos donde la plantilla/regla necesitó ajuste. | Rediseño formativo. |
 | `E-SUM-01` | Evaluación sumativa | Medición posterior. | Tabla comparativa línea base frente a periodo posterior en Central. | I1-I9. |
@@ -73,6 +77,13 @@ Mezclar estos momentos debilita la evaluación. Si una captura se toma después,
 | `E-ORG-INT-04` | `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 1.png`; `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 2.png`; `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 3.png`; `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 4.png`; `evidencias/E-ORG-INT-04_STD-GIT-003_convencion_minima_commits_sharepoint - 5.png` | Intervención | Publicación del estándar `STD-GIT-003 — Convención mínima de commits`, dividido en cinco capturas por extensión del contenido. | I4, I9. |
 | `E-ORG-INT-05` | `evidencias/E-ORG-INT-05_estructura_estandares_tecnicos_sharepoint - 1.png`; `evidencias/E-ORG-INT-05_estructura_estandares_tecnicos_sharepoint - 2.png` | Intervención | Estructura documental en SharePoint: carpeta `Estandares tecnicos/01 - Git` con `STD-GIT-001-convencion-de-ramas.md` y `STD-GIT-003-convencion-de-commits.md`; carpeta `Estandares Tecnicos/02 - Pull Request` con `STD-GIT-002-convencion-de-pull-requests.md` y `STD-GIT-002-pull_request_template.md`. | I3, I4, I5, I6, I9. |
 | `E-GH-ORG-01` | `evidencias/E-GH-ORG-01_repositorio_github_organizacional_ramas_template.png` | Intervención | Repositorio organizacional `.github` con rama `main` y rama temporal `config/ADM-4940_config_pr_template` para configuración de la plantilla de solicitudes de integración. La rama temporal evidencia adopción inicial, aunque el uso de guion bajo se registra como fricción frente a la convención definida. | I3, I5, I6, I9. |
+| `E-ODOO-INT-01` | `evidencias/E-ODOO-INT-01_tarea_CCC-7336_validar_tests_unitarios_API_Central.png` | Intervención | Tarea real `CCC-7336` para validar pruebas unitarias en la API de Central. | I1, I9. |
+| `E-GH-INT-01` | Cuatro capturas `evidencias/E-GH-INT-01_PR_CCC-7336_aplicacion_marco-01_titulo_rama_tarea_resumen - 01.png` a `- 04.png`. | Intervención | Solicitud de integración real `CCC-7336` con rama temporal, título conforme, relación con tarea y plantilla operativa completada. | I3, I4, I5, I6, I9. |
+| `E-GH-INT-02` | `evidencias/E-GH-INT-02_PR_CCC-7336_cierre_integracion - 01_rama_eliminada.png`; `evidencias/E-GH-INT-02_PR_CCC-7336_cierre_integracion - 02_PR_fusionada.png`. | Intervención | Fusión de la solicitud de integración y eliminación de la rama temporal. | I3, I5, I9. |
+| `E-GH-INT-04` | `evidencias/E-GH-INT-04_configuracion_ramas_permanentes_Central-01_creacion_main.png`; `evidencias/E-GH-INT-04_configuracion_ramas_permanentes_Central-02_creacion_Stage_Production.png`; `evidencias/E-GH-INT-04_configuracion_ramas_permanentes_Central-03_retiro_master.png`. | Intervención | Configuración de ramas permanentes `main`, `Stage` y `Production` y retiro de `master` en el repositorio intervenido. | I3, RQ5.1, I9. |
+| `E-TEST-INT-01` | `evidencias/E-TEST-INT-01_CCC-7336_API_169_pruebas_unitarias_exitosas.png`. | Intervención | Ejecución satisfactoria de 169 pruebas unitarias en la API de Central. | I7. |
+| `E-ORG-INT-06` | `evidencias/E-ORG-INT-06_STD-GIT-001_V1_1_actualizacion_ramas_permanentes_sharepoint - 01.png`; `evidencias/E-ORG-INT-06_STD-GIT-001_V1_1_actualizacion_ramas_permanentes_sharepoint - 02.png`. | Intervención / rediseño | Publicación de `STD-GIT-001` V1.1 con la convención `main`, `Stage` y `Production`. | I3, I9. |
+| `E-FORM-01` | `tesis_ds/08_registro_formativo_CCC-7336.md`. | Evaluación formativa | Aplicación real sin fricción operativa reportada y ajuste contextual V1.1 documentado. | Rediseño formativo. |
 
 ## Reglas de anonimización
 
@@ -84,9 +95,5 @@ Mezclar estos momentos debilita la evaluación. Si una captura se toma después,
 
 ## Pendientes inmediatos
 
-1. Capturar `E-ORG-INT-01` por la publicación de `STD-GIT-001 — Convención mínima de ramas` en SharePoint.
-2. Capturar `E-GH-ORG-01` por la creación del repositorio organizacional `.github` y la aparición de la plantilla de solicitud de integración.
-3. Recuperar evidencias de línea base de GitHub: repositorios, ramas, solicitudes de integración, commits y ausencia de verificación mínima.
-4. Recuperar evidencias de línea base de Odoo: tareas de Central y ejemplos de granularidad.
-5. Resolver `E-TEST-BASE-01` o declarar explícitamente la ausencia de evidencia ejecutable de pruebas en la línea base.
-6. Antes de aplicar nuevas reglas, separar toda evidencia en línea base, intervención o evaluación.
+1. Registrar `E-SUM-01` con comparación posterior contra la línea base, después de definir su periodo de observación.
+2. Antes de incorporar resultados en la tesis, mantener separada toda evidencia como línea base, intervención, evaluación formativa o evaluación sumativa.

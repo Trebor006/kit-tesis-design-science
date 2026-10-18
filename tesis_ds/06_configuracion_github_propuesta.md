@@ -1,5 +1,7 @@
 # Propuesta de configuración estándar para GitHub institucional
 
+> **Estado del documento:** histórico / reemplazado parcialmente. Este borrador fue útil para explorar una configuración inicial de GitHub, pero varias decisiones fueron ajustadas posteriormente por el artefacto V1.0-Central. La versión vigente del marco no adopta `dev` como rama permanente obligatoria ni usa `feature` como tipo inicial; la convención vigente se encuentra en `STD-GIT-001`, `STD-GIT-002` y `STD-GIT-003`, documentados en `07e_construccion_verificacion.md` y `07f_ficha_artefacto.md`. Este archivo debe leerse como antecedente de diseño, no como regla actual.
+
 ## Propósito
 
 Este documento define una configuración mínima y homogénea para los repositorios de GitHub institucional de PRX vinculados a los proyectos piloto Central, Ansular y PConst. La configuración no debe aplicarse antes de cerrar la línea base de GitHub; primero se debe medir el estado actual y luego aplicar estas reglas como parte del marco ligero. Esta separación evita atribuir al artefacto mejoras que fueron realizadas antes de la evaluación.
@@ -47,7 +49,9 @@ La configuración debe distinguir entre acceso interno y acceso externo. Los cli
 
 Para la primera versión del marco, este punto no se implementará antes de la medición. Se documentará como decisión de diseño futura o condición de contorno, porque el problema actual se concentra en estandarizar el uso interno de GitHub dentro de la línea de software a medida de PRX.
 
-## Ramas estándar
+## Ramas estándar exploratorias
+
+> Esta sección queda como antecedente. La decisión vigente para V1.1-Central usa `main` como tronco de integración, `Stage` como validación cuando exista ambiente y `Production` solo cuando el mecanismo de despliegue lo requiera. `dev` no forma parte obligatoria de la versión mínima. La versión vigente se formaliza en `07e_STD-GIT-001_enmienda_v1_1.md`.
 
 | Rama | Propósito | Regla |
 |:--|:--|:--|
@@ -57,7 +61,9 @@ Para la primera versión del marco, este punto no se implementará antes de la m
 
 Esta estructura solo es recomendable si PRX efectivamente diferencia ambientes de desarrollo, preproducción y producción. Si un proyecto no tiene ambiente de preproducción, mantener `stage` puede convertirse en una rama decorativa; en ese caso debe documentarse como deuda de proceso o excluirse temporalmente de la regla operacional.
 
-## Flujo mínimo de integración
+## Flujo mínimo de integración exploratorio
+
+> Esta sección no representa la decisión vigente. El flujo vigente es flujo basado en tronco: ramas temporales cortas desde `main`, solicitud de integración hacia `main`, y promoción posterior a `Stage` o `Production` si corresponde.
 
 1. El desarrollador crea una rama de trabajo desde `dev`.
 2. El cambio se desarrolla en la rama de trabajo.
@@ -66,7 +72,9 @@ Esta estructura solo es recomendable si PRX efectivamente diferencia ambientes d
 5. Otro desarrollador o responsable técnico revisa la solicitud.
 6. La integración hacia `dev`, `stage` o `main` se realiza solo mediante solicitud de integración aprobada.
 
-## Convención de nombres de ramas
+## Convención de nombres de ramas exploratoria
+
+> La convención vigente usa tipos mínimos `feat`, `fix`, `hotfix`, `config`, `test`, `docs` y `refactor`, con formato `<tipo>/<codigo-tarea>-<descripcion-corta>`. Ver `STD-GIT-001`.
 
 Formato propuesto:
 
@@ -93,7 +101,9 @@ Reglas mínimas:
 - no usar nombres personales en ramas;
 - no crear ramas genéricas como `cambios`, `prueba`, `robert`, `nuevo` o `final`.
 
-## Convención de commits
+## Convención de commits exploratoria
+
+> La convención vigente usa `<tipo>(<codigo-tarea>): <descripcion-breve>`, donde el campo entre paréntesis representa el código de tarea. Ver `STD-GIT-003`.
 
 Formato propuesto:
 

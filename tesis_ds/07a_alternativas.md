@@ -13,7 +13,7 @@ Las alternativas se comparan con seis criterios. Estos criterios no miden todav�
 | Criterio | Descripción | Peso cualitativo |
 |:--|:--|:--|
 | Coherencia con el problema | Grado en que la alternativa responde a visibilidad del trabajo, trazabilidad de cambios, evidencia verificable y verificación básica. | Alto |
-| Factibilidad en PRX | Posibilidad de aplicar la alternativa con cinco desarrolladores, herramientas existentes y tiempo limitado. | Alto |
+| Factibilidad en PRX | Posibilidad de aplicar la alternativa en Central con tres responsables técnicos, herramientas existentes y tiempo limitado. | Alto |
 | Ligereza de adopción | Capacidad de introducir reglas mínimas sin imponer una transformación organizacional pesada. | Alto |
 | Sustento teórico y técnico | Relación con mejora de procesos en entidades pequeñas, transparencia, control de cambios, solicitudes de integración y pruebas unitarias. | Alto |
 | Novedad relativa | Capacidad de producir conocimiento de diseño y no solo repetir una práctica conocida. | Medio |
@@ -21,7 +21,7 @@ Las alternativas se comparan con seis criterios. Estos criterios no miden todav�
 
 ## Alternativa 1: marco mínimo de gestión técnica inicial
 
-Esta alternativa propone un marco ligero centrado en un conjunto mínimo de prácticas técnicas y de gestión visibles: tareas registradas en un mecanismo de gestión de trabajo, repositorio oficial o excepción documentada como precondición, convención mínima de ramas y commits, solicitudes de integración de cambios y evidencia mínima de verificación, incluyendo pruebas unitarias iniciales en al menos un componente crítico por proyecto piloto. En PRX, esta alternativa se instancia con el tablero interno de gestión de tareas implementado en Odoo y repositorios GitHub.
+Esta alternativa propone un marco ligero centrado en un conjunto mínimo de prácticas técnicas y de gestión visibles: tareas registradas en un mecanismo de gestión de trabajo, repositorio oficial o excepción documentada como precondición, convención mínima de ramas y commits, solicitudes de integración de cambios y evidencia mínima de verificación, incluyendo prueba, construcción, prueba de API o verificación técnica documentada en al menos un componente crítico de Central. En PRX, esta alternativa se instancia con el tablero interno de gestión de tareas implementado en Odoo y repositorios GitHub.
 
 Su fortaleza es que responde directamente a los indicadores definidos en E6 y evita ampliar el alcance hacia una transformación completa de procesos. Su debilidad es que puede parecer una lista de buenas prácticas si no se documentan con rigor la ruta de adopción, las reglas mínimas, los productos de trabajo y los principios de diseño derivados de la evaluación.
 

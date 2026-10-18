@@ -84,7 +84,7 @@ Cada componente debe clasificarse como repositorio institucional, repositorio de
 
 ### R3. Ramas permanentes oficiales
 
-Cada repositorio debe declarar su rama por defecto, su rama de validación y su rama de producción si aplica. Para PRX, el estándar objetivo es `main` como rama por defecto y tronco de integración, `stage` como rama de validación cuando exista ambiente de pruebas, y `production` solo cuando el mecanismo de despliegue requiera una rama separada de producción.
+Cada repositorio debe declarar su rama por defecto, su rama de validación y su rama de producción si aplica. Para PRX, la convención institucional vigente es `main` como rama por defecto y tronco de integración, `Stage` como rama de validación cuando exista ambiente de pruebas, y `Production` solo cuando el mecanismo de despliegue requiera una rama separada de producción.
 
 La normalización debe ser progresiva. En repositorios históricos con ramas como `Production`, `Prod`, `Staging`, `TEST` o `test`, primero se documenta la equivalencia y luego se planifica la normalización. No se debe renombrar una rama sin verificar dependencias de despliegue, automatizaciones, Odoo.sh u otros mecanismos que dependan del nombre actual.
 
@@ -126,7 +126,7 @@ Los tipos iniciales permitidos son `feat`, `fix`, `hotfix`, `config`, `test`, `d
 
 ### R6. Flujo basado en tronco
 
-El marco adopta un flujo basado en tronco inspirado en *Trunk-Based Development* —desarrollo basado en tronco—, con ramas cortas por tarea, solicitud de integración, fusión por `squash merge` cuando sea apropiado y eliminación de la rama después de fusionar. `main` es el tronco de integración; `stage` y `production` son ramas de promoción o ambiente, no ramas donde se desarrolla directamente.
+El marco adopta un flujo basado en tronco inspirado en *Trunk-Based Development* —desarrollo basado en tronco—, con ramas cortas por tarea, solicitud de integración, fusión por `squash merge` cuando sea apropiado y eliminación de la rama después de fusionar. `main` es el tronco de integración; `Stage` y `Production` son ramas de promoción o ambiente, no ramas donde se desarrolla directamente.
 
 Flujo recomendado para PRX:
 
@@ -178,7 +178,7 @@ La primera aplicación en Central no tiene que alcanzar todos los niveles en tod
 | RQ3 | C1 | Incorporar criterio de división. | Los tickets amplios impiden verificar cumplimiento por cambio. |
 | RQ4 | C0 | Clasificar repositorio oficial o excepción. | La línea base mostró componentes fuera de la organización institucional. |
 | RQ5 | C2 | Usar formato `<tipo>/<codigo-tarea>-<descripcion-corta>`. | La rama debe vincular el cambio con la tarea desde su creación. |
-| RQ5.1 | C2 y C5 | Declarar ramas permanentes y equivalencias. | La ausencia o variación de `main`, `stage` y `production` debilita trazabilidad de ambientes. |
+| RQ5.1 | C2 y C5 | Declarar ramas permanentes y equivalencias. | La ausencia o variación de `main`, `Stage` y `Production` debilita trazabilidad de ambientes. |
 | RQ6 | C2 | Usar formato `<tipo>(<codigo-tarea>): <descripcion breve>`. | El commit debe conservar trazabilidad aunque la rama sea eliminada. |
 | RQ6.1 | C2 y C3 | Adoptar flujo basado en tronco. | GitFlow introduce sobrecarga innecesaria para la aplicación inicial. |
 | RQ7 | C3 | Usar plantilla mínima de solicitud de integración. | La solicitud se convierte en punto de control verificable. |

@@ -12,13 +12,13 @@ La propuesta ya está formulada y diseñada: E7a, E7b, E7c y E7d están suficien
 
 | Bloque | Estado actual | Falta mínima | Archivo de salida |
 |:--|:--|:--|:--|
-| Propuesta del artefacto | Diseñada preliminarmente. | Integrar construcción/aplicación real de V1.0-Central. | `07e_construccion_verificacion.md` |
-| Ficha del artefacto | Parcial, distribuida entre E7c, E7d y plantilla. | Consolidar una ficha reproducible del marco. | `07f_ficha_artefacto.md` |
-| Evidencia privada | Planificada, no levantada completamente. | Capturas y códigos de evidencia priorizados. | `06_plan_evidencias_privadas.md` y carpeta privada de evidencias |
+| Propuesta del artefacto | Construida documentalmente e instanciada parcialmente. | Integrar aplicación real completa de V1.0-Central. | `07e_construccion_verificacion.md` |
+| Ficha del artefacto | Consolidada como ficha reproducible inicial. | Actualizarla después de aplicación real y rediseño. | `07f_ficha_artefacto.md` |
+| Evidencia privada | Parcialmente levantada. | Capturas y códigos pendientes de aplicación/evaluación. | `06_plan_evidencias_privadas.md` y carpeta privada de evidencias |
 | Resultados formativos | Pendiente. | Al menos un ciclo real de uso con fricciones y rediseño. | `08_evaluacion.md` |
 | Resultados sumativos iniciales | Pendiente. | Comparación posterior contra línea base en Central. | `08_evaluacion.md` |
-| Enlace problema-solución | Pendiente. | Matriz problema → requisito → decisión → evidencia → cumplimiento. | `09_enlace_solucion.md` |
-| Contribución | Formulada, no validada. | Principios de diseño preliminares proporcionales a evidencia. | `10_contribucion_conclusiones.md` |
+| Enlace problema-solución | Iniciado y estructurado. | Completar cumplimiento con evidencia real de Central. | `09_enlace_solucion.md` |
+| Contribución | Formulada preliminarmente, no validada. | Ajustar principios de diseño después de evaluación. | `10_contribucion_conclusiones.md` |
 
 ## Secuencia de trabajo recomendada
 

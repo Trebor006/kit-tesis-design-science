@@ -10,7 +10,7 @@ Los valores esperados se fijan antes de construir el artefacto, para evitar crit
 
 - **Organización:** PRX.
 - **Línea de trabajo evaluada:** software a medida.
-- **Participantes previstos:** cinco desarrolladores.
+- **Participantes previstos para primera aplicación:** tres responsables técnicos codificados en Central.
 - **Periodo de observación previsto:** dos semanas.
 - **Herramientas observables:** Odoo para tareas y GitHub institucional para repositorios, ramas, commits y solicitudes de integración de cambios.
 - **Proyectos piloto:** pendientes de selección formal; la evidencia preliminar proviene de Central, Ansular y PConst.
@@ -25,7 +25,7 @@ Los valores esperados se fijan antes de construir el artefacto, para evitar crit
 | I4 | Cumplimiento de convención de commits | Proporción de commits del periodo que cumplen la convención mínima definida por el marco. | `(Número de commits conformes / Número total de commits del periodo) × 100` | GitHub; historial de commits. | A levantar antes de aplicar el marco. Si no existe convención previa, la línea base se registra como 0 % de conformidad formal. | ≥ 80 % de commits conformes. | Mide trazabilidad comprensible de cambios y reducción de ambigüedad técnica. |
 | I5 | Cambios integrados mediante solicitudes de integración | Proporción de cambios integrados a la rama principal mediante solicitudes de integración de cambios en GitHub. | `(Número de cambios integrados mediante solicitud de integración / Número total de cambios integrados a rama principal) × 100` | GitHub; historial de solicitudes de integración y fusiones. | A levantar antes de aplicar el marco. La evidencia inicial indica ausencia o uso no estabilizado de solicitudes de integración. | ≥ 70 % de cambios integrados mediante solicitudes de integración. | Mide revisión previa y control mínimo antes de integrar cambios. |
 | I6 | Solicitudes de integración con evidencia mínima de verificación | Proporción de solicitudes de integración que incluyen descripción del cambio y evidencia mínima de verificación, como prueba ejecutada, captura, lista de verificación o resultado de pruebas unitarias. | `(Número de solicitudes de integración con evidencia mínima / Número total de solicitudes de integración del periodo) × 100` | GitHub; descripción de solicitudes de integración; comentarios de revisión; resultados de pruebas si existen. | A levantar antes de aplicar el marco. Si no existen solicitudes de integración, la línea base es 0 %. | ≥ 70 % de solicitudes de integración con evidencia mínima de verificación. | Mide si la solicitud de integración funciona como mecanismo de control y no solo como trámite. |
-| I7 | Componentes críticos con pruebas unitarias iniciales | Existencia de pruebas unitarias ejecutables para al menos un componente crítico por proyecto piloto. | `Sí/No` por proyecto piloto; evidencia: comando de ejecución y resultado. | Repositorio GitHub; código fuente; herramienta de pruebas del proyecto. | A levantar antes de aplicar el marco. La evidencia inicial indica ausencia de pruebas unitarias en PConst e incorporación posterior de pruebas en API de Central. | Al menos un componente crítico por proyecto piloto con pruebas unitarias ejecutables. | Mide verificación básica del código en áreas de mayor riesgo. |
+| I7 | Componentes críticos con verificación técnica mínima | Existencia de prueba, construcción, prueba de API o verificación manual documentada para al menos un componente crítico de Central. | `Sí/No` por componente crítico; evidencia: comando, resultado, captura o registro verificable. | Repositorio GitHub; código fuente; herramienta de pruebas del proyecto; registro de verificación. | A levantar antes de aplicar el marco. La evidencia inicial indica que existen capacidades técnicas heterogéneas, pero falta evidencia ejecutada y asociada a la cadena de trazabilidad. | Al menos un componente crítico de Central con verificación técnica documentada. | Mide verificación básica del código en áreas de mayor riesgo sin exigir cobertura amplia inicial. |
 $0
 | I9 | Evidencia trazable para respaldo de entregables | Existencia de vínculo entre tarea, cambio técnico y evidencia de verificación que permita demostrar trabajo realizado en un proyecto piloto. | Conteo de entregables o cambios con trazabilidad mínima `tarea → rama/commit → solicitud de integración → evidencia de verificación`; reporte cualitativo de brechas. | Tablero interno de gestión de tareas implementado en Odoo; GitHub; solicitudes de integración; entrevistas con responsables. | A levantar antes de aplicar el marco. La evidencia cualitativa inicial indica que la falta de estándar dificulta demostrar avances y respaldar cobros a clientes. | No se fija criterio porcentual principal en esta versión; se usará como indicador contextual de gestión. | Ayuda a interpretar la relevancia práctica del marco para gestión de entregables y facturación, sin prometer impacto financiero en dos semanas. |
 
@@ -37,8 +37,8 @@ Los criterios de éxito principales del artefacto serán los siguientes:
 2. **Criterio de trazabilidad de ramas y commits:** al menos 80 % de las ramas y commits creados durante el periodo cumplirán la convención mínima definida por el marco.
 3. **Criterio de revisión previa:** al menos 70 % de los cambios integrados a la rama principal pasarán por solicitudes de integración de cambios en GitHub.
 4. **Criterio de verificación mínima:** al menos 70 % de las solicitudes de integración incluirán evidencia mínima de verificación.
-5. **Criterio de pruebas unitarias iniciales:** al menos un componente crítico por proyecto piloto contará con pruebas unitarias ejecutables.
-6. **Criterio de aplicabilidad:** los cinco desarrolladores participantes podrán aplicar las reglas del marco durante el periodo de evaluación sin requerir capacitación extensa ni intervención permanente del investigador.
+5. **Criterio de verificación técnica mínima:** al menos un componente crítico de Central contará con prueba, construcción, prueba de API o verificación técnica documentada.
+6. **Criterio de aplicabilidad:** los responsables técnicos participantes podrán aplicar las reglas del marco durante el periodo de evaluación sin requerir capacitación extensa ni intervención permanente del investigador.
 
 ## Indicadores no usados como criterios de éxito principales
 
@@ -51,7 +51,7 @@ La línea base debe levantarse antes de construir o aplicar el artefacto mediant
 1. Revisión del tablero interno de gestión de tareas implementado en Odoo para identificar tareas activas, tareas no registradas y responsables.
 2. Revisión del GitHub institucional de PRX para verificar repositorios, ramas, commits y solicitudes de integración.
 3. Revisión de repositorios de proyectos piloto para identificar pruebas unitarias existentes y forma de ejecución.
-4. Entrevistas breves a los cinco desarrolladores para detectar trabajo no visible, fricciones de Git y prácticas reales no registradas.
+4. Entrevistas breves o revisión conjunta con responsables codificados para detectar trabajo no visible, fricciones de Git y prácticas reales no registradas.
 5. Revisión con responsables del área, cuando sea posible, para identificar cómo la falta de evidencia de trabajo afecta la gestión de entregables y el respaldo de cobros a clientes.
 
 ## Advertencia metodológica

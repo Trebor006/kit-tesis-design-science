@@ -41,7 +41,11 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 - E7b. Requisitos del artefacto: suficiente para el hito.
 - E7c. Diseño del artefacto: suficiente para el hito.
 - E7d. Plan de construcción y versiones: suficiente para el hito.
-- E7e-E10: pendientes para construcción/verificación interna, ficha del artefacto, evaluación, trazabilidad final, contribución y conclusiones.
+- E7e. Construcción y verificación interna: cerrada para primera aplicación; `CCC-7336` aporta solicitud real, fusión, eliminación de rama y verificación técnica.
+- E7f. Ficha del artefacto: suficiente como ficha reproducible inicial.
+- E8. Evaluación: formativa ejecutada y rediseño V1.1 documentado; pendiente evaluación sumativa inicial.
+- E9. Enlace propuesta-solución: avanzado; pendiente evidencia sumativa.
+- E10. Contribución y conclusiones: iniciado como contribución preliminar; pendiente validación.
 
 ## Decisiones tomadas
 
@@ -52,11 +56,9 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 
 ## Pendientes inmediatos
 
-1. Resguardar evidencias privadas según `06_plan_evidencias_privadas.md`, separando línea base, intervención, evaluación formativa y evaluación sumativa.
-2. Crear `07e_construccion_verificacion.md` para registrar construcción/aplicación de V1.0-Central y verificación interna.
-3. Resolver la debilidad de I7 con `E-TEST-BASE-01` y/o `E-TEST-INT-01`, mediante prueba ejecutable o evidencia técnica equivalente en al menos un componente crítico de Central.
-4. Preparar `08_evaluacion.md` con evaluación formativa, rediseño documentado y evaluación sumativa inicial.
-5. No presentar todavía evaluación ni contribución validada hasta ejecutar V1.0-Central, rediseño formativo y evaluación sumativa.
+1. Registrar `E-SUM-01`: comparación posterior contra la línea base en Central.
+2. Actualizar E10 después de la comparación sumativa, manteniendo los principios como candidatos hasta que la evidencia soporte su formulación final.
+3. No presentar todavía contribución validada hasta completar la evaluación sumativa inicial.
 
 ## Riesgos iniciales
 
@@ -519,4 +521,55 @@ El tesista agregó la evidencia `evidencias/E-GH-ORG-01_repositorio_github_organ
 ## Registro 2026-10-11 - redacción de E7e construcción y verificación interna
 
 Se creó `tesis_ds/07e_construccion_verificacion.md` para registrar la construcción inicial de V1.0-Central. El documento integra los productos operativos construidos (`STD-GIT-001`, plantilla operativa de solicitud de integración, `STD-GIT-002`, `STD-GIT-003`, estructura documental en SharePoint y repositorio `.github`), sus evidencias (`E-ORG-INT-01` a `E-ORG-INT-05` y `E-GH-ORG-01`), la verificación interna y las fricciones detectadas. E7e queda suficiente como registro inicial de construcción, pero todavía pendiente de aplicación completa en una solicitud real de Central (`E-GH-INT-01`) y de evidencia técnica de verificación (`E-TEST-INT-01`).
+
+
+## Registro 2026-10-12 - ficha del artefacto E7f
+
+Se creó `tesis_ds/07f_ficha_artefacto.md` como ficha reproducible inicial del artefacto. La ficha consolida la identificación del marco, su tipología, problema que resuelve, alcance de V1.0-Central, componentes C0-C6, reglas mínimas, estándares construidos, evidencias disponibles, instanciación PRX, fricciones, limitaciones, instrucciones de aplicación y criterio de reproducibilidad. E7f queda suficiente como ficha inicial, aunque el artefacto todavía requiere aplicación real en Central y verificación técnica para pasar a evaluación formativa robusta.
+
+
+## Registro 2026-10-12 - plan de evaluación E8
+
+Se creó `tesis_ds/08_evaluacion.md` como plan de evaluación formativa y sumativa inicial. El documento define el enfoque FEDS, contexto de evaluación en Central, criterios de éxito derivados de E6 y E7b, evidencias necesarias, procedimiento formativo, criterio de rediseño, estructura de evaluación sumativa inicial y amenazas a la validez. E8 queda listo para ejecución, pero no se declara evaluación ejecutada hasta capturar `E-GH-INT-01`, `E-TEST-INT-01`, `E-FORM-01` y `E-SUM-01`.
+
+
+## Registro 2026-10-12 - enlace propuesta-solución E9
+
+Se creó `tesis_ds/09_enlace_solucion.md` como matriz inicial de trazabilidad entre problema de diseño, requisitos, decisiones de diseño, evidencias disponibles, grado preliminar de cumplimiento y limitaciones. El documento distingue construcción e instanciación parcial frente a evaluación completa. E9 queda iniciado y estructurado, pero no cerrado hasta contar con aplicación real en Central (`E-GH-INT-01`) y verificación técnica (`E-TEST-INT-01`).
+
+
+## Registro 2026-10-12 - contribución y conclusiones preliminares E10
+
+Se creó `tesis_ds/10_contribucion_conclusiones.md` con la contribución preliminar de la investigación. El documento formula principios de diseño candidatos, condiciones de contorno, conclusiones preliminares, amenazas a la validez y trabajo pendiente. E10 queda iniciado, pero no cerrado, porque los principios todavía requieren evaluación formativa, rediseño y evaluación sumativa inicial antes de ser presentados como contribución validada.
+
+
+## Registro 2026-10-12 - actualización de matriz de coherencia tras E7e-E10
+
+Se actualizó `tesis_ds/matriz_coherencia.md` para reflejar el estado real posterior a E7e, E7f, E8, E9 y E10. El artefacto queda registrado como construido documentalmente e instanciado parcialmente; la evaluación queda planificada y lista para ejecución; la evidencia queda separada entre línea base, intervención y pendientes de aplicación/evaluación; y la contribución queda formulada como principios candidatos todavía no validados. Se mantienen como evidencias críticas pendientes `E-GH-INT-01`, `E-TEST-INT-01`, `E-FORM-01` y `E-SUM-01`.
+
+
+## Registro 2026-10-12 - revisión de coherencia documental
+
+Se revisaron documentos centrales para detectar inconsistencias después de E7e-E10. Se actualizó el estado superior de `00_estado.md`, los pendientes inmediatos de `06_plan_evidencias_privadas.md`, y se marcó `06_configuracion_github_propuesta.md` como antecedente histórico reemplazado parcialmente por las decisiones vigentes `STD-GIT-001`, `STD-GIT-002` y `STD-GIT-003`. También se corrigió un salto de línea defectuoso en `06_instrumentos_linea_base.md`. Quedan como pendientes metodológicos reales: `E-GH-INT-01`, `E-TEST-INT-01`, `E-FORM-01` y `E-SUM-01`.
+
+Durante la revisión se detectó una inconsistencia residual entre la muestra inicial de cinco desarrolladores declarada en documentos de perfil y la decisión posterior de concentrar la primera aplicación en Central con tres responsables técnicos codificados. Se corrigieron `02_delimitacion.md`, `03_perfil_ds.md`, `03_perfil_ds_limpio.md`, `06_diagnostico.md`, `07a_alternativas.md` y `plan_cierre_borrador_para_alsie.md` para alinear la aplicación inicial con Central. La línea base puede seguir usando Central, Ansular y PConst como diagnóstico y contexto comparativo, pero la evaluación inicial no debe presentarse como aplicación simultánea en todos los proyectos. También se ajustó el criterio I7: para la primera aplicación no se exigirá cobertura amplia ni pruebas unitarias en todos los proyectos piloto, sino evidencia técnica documentada en al menos un componente crítico de Central.
+
+Se creó `tesis_ds/revision_coherencia_integral_2026_10_12.md` con el veredicto de coherencia, correcciones aplicadas, validación por eslabón y pendientes metodológicos. El veredicto indica que el conjunto documental es coherente para un borrador avanzado de Design Science, pero no para reclamar evaluación ejecutada ni contribución validada.
+
+
+## Registro 2026-10-17 - actualización de convención institucional de ramas
+
+El tesista confirmó que la convención institucional vigente de ramas permanentes será `main`, `Stage` y `Production`, aplicadas solo cuando el ambiente o mecanismo de despliegue correspondiente exista. La decisión se fundamenta en la revisión del contexto de repositorios Odoo; el tesista declara que aproximadamente el 90 % usa esa convención, mientras que las capturas disponibles corroboran su existencia sin demostrar de forma independiente dicho porcentaje. Se creó `07e_STD-GIT-001_enmienda_v1_1.md` y se actualizaron los documentos vigentes de requisitos, diseño, construcción, ficha y evidencia de ramas. La normalización conserva carácter progresivo: no se renombrarán ramas históricas sin revisar dependencias de despliegue, automatizaciones u Odoo.sh.
+
+Se creó `tesis_ds/08_protocolo_aplicacion_real_central.md` para guiar la primera aplicación real en Central. El protocolo fija condición de entrada, flujo obligatorio, evidencias a capturar, bitácora de fricción formativa, criterio para declarar evaluación formativa ejecutada y reglas de confidencialidad. El propósito es evitar que la primera solicitud de integración real se capture de forma incompleta o que se confunda demostración técnica con evaluación.
+
+
+## Registro 2026-10-18 - evaluación formativa de CCC-7336
+
+Se registró la primera aplicación real del marco en `CCC-7336` de Central API. Las evidencias `E-ODOO-INT-01`, `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-04`, `E-TEST-INT-01` y `E-ORG-INT-06` respaldan tarea real, solicitud de integración con plantilla, fusión, eliminación de rama, configuración de ramas permanentes, ejecución satisfactoria de 169 pruebas unitarias y publicación de `STD-GIT-001` V1.1. Se creó `08_registro_formativo_CCC-7336.md` y se actualizaron E7e, E8, E9, la matriz de coherencia y el plan de evidencias. La evaluación formativa queda ejecutada y V1.1 documentada; queda pendiente exclusivamente la comparación sumativa `E-SUM-01` antes de cerrar E8-E10.
+
+
+## Registro 2026-10-13 - tarea seleccionada para aplicación real
+
+Se seleccionó la tarea `CCC-7336`: validar pruebas unitarias en la API de CCC, como primera aplicación real del marco en Central. Se actualizó `08_protocolo_aplicacion_real_central.md` con la ficha de la tarea, evidencias esperadas y nombres recomendados de rama, commit y solicitud de integración. La tarea queda vinculada principalmente a los indicadores I3, I4, I5, I6, I7 e I9, y debe producir `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-03`, `E-TEST-INT-01` y `E-FORM-01`.
 

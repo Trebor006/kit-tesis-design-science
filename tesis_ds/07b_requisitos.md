@@ -25,7 +25,7 @@ Ansular y PConst se conservarán como evidencia diagnóstica y contexto comparat
 | RQ3 | Definir criterio de división de tareas. | Funcional | Una tarea debe dividirse cuando agrupa objetivos independientes, afecta componentes distintos, no puede verificarse como unidad o excede el ciclo acordado. | Caso PConst con un ticket amplio que agrupó backend, frontend, AWS S3, pruebas y configuración. | Alta |
 | RQ4 | Definir repositorio oficial o excepción documentada. | Contextual | Cada componente debe clasificarse como institucional, cliente, tercero o excepción documentada. | Solo 3 de 7 componentes estaban en GitHub institucional durante la línea base. | Alta |
 | RQ5 | Definir convención mínima de ramas. | Funcional | Toda rama de trabajo debe seguir el formato `<tipo>/<codigo-tarea>-<descripcion-corta>`, por ejemplo `feat/CCC-4407-operador-contrato`. | 0 % de convención documentada de ramas. | Alta |
-| RQ5.1 | Definir ramas permanentes oficiales por repositorio. | Contextual | Cada repositorio debe declarar rama por defecto, rama de validación y rama de producción si aplica. Estándar objetivo PRX: `main`, `stage` y `production` solo cuando corresponda. | Evidencia de nombres heterogéneos, ausencia de `stage` o `production` en algunos repositorios y variación de rama por defecto entre `main` y `Production`. | Alta |
+| RQ5.1 | Definir ramas permanentes oficiales por repositorio. | Contextual | Cada repositorio debe declarar rama por defecto, rama de validación y rama de producción si aplica. Convención institucional vigente: `main`, `Stage` y `Production` solo cuando corresponda. | Evidencia de nombres heterogéneos y decisión institucional posterior basada en revisión de repositorios Odoo. | Alta |
 | RQ6 | Definir convención mínima de commits. | Funcional | Todo commit relevante debe seguir el formato `<tipo>(<codigo-tarea>): <descripcion breve>`, por ejemplo `feat(CCC-4407): agregar datos del operador en contratos`. | 0 % de convención documentada de commits. | Alta |
 | RQ6.1 | Definir flujo de ramificación ligero. | Funcional | El marco debe adoptar un flujo basado en tronco inspirado en *Trunk-Based Development*, con ramas cortas por tarea y sin ramas de larga duración innecesarias. | Equipos pequeños, baja estandarización y riesgo de sobrecarga si se adopta GitFlow. | Alta |
 | RQ7 | Definir solicitud de integración válida. | Funcional | Una solicitud válida debe incluir tarea relacionada, descripción del cambio, componentes afectados, tipo de cambio, riesgo, evidencia mínima y estado de validación. | Solicitudes fusionadas sin evidencia mínima de verificación. | Alta |
@@ -54,7 +54,7 @@ Ansular y PConst se conservarán como evidencia diagnóstica y contexto comparat
 | RQ1, RQ4 | Componentes fuera de GitHub institucional y casos de repositorios en cuenta personal u otra organización. |
 | RQ2, RQ3 | Ticket amplio de PConst y visibilidad incompleta en componentes Odoo. |
 | RQ5, RQ6 | Ausencia de convención documentada de ramas y commits. |
-| RQ5.1 | Variación observada en nombres de ramas permanentes y de validación; ausencia de `stage` o `production` en algunos repositorios; rama por defecto no homogénea. |
+| RQ5.1 | Variación observada en nombres de ramas permanentes y de validación; ausencia de `Stage` o `Production` en algunos repositorios; rama por defecto no homogénea. |
 | RQ6.1 | Necesidad de evitar ramas largas y sobrecarga operativa en equipos pequeños; diferencias actuales entre `test`, `Stage` y ramas históricas de proyecto. |
 | RQ7, RQ10 | 5 solicitudes fusionadas y 0 con evidencia mínima de verificación. |
 | RQ8, RQ9 | Solicitudes creadas/fusionadas sin práctica institucional de revisión independiente. |
@@ -67,13 +67,13 @@ Ansular y PConst se conservarán como evidencia diagnóstica y contexto comparat
 
 La convención de ramas y commits se inspira en Angular y Conventional Commits, pero se adapta a PRX para priorizar trazabilidad con la tarea. La decisión no se justifica por estética del historial, sino porque permite seguir la relación entre tarea, rama, commit y solicitud de integración.
 
-El flujo de ramificación del marco será un **flujo basado en tronco**, inspirado en *Trunk-Based Development* —desarrollo basado en tronco—. Esta decisión significa que el marco evitará ramas largas y modelos de ramificación pesados como GitFlow. Para equipos pequeños con baja estandarización, el principio operativo será trabajar con ramas cortas vinculadas a tareas, integrarlas mediante solicitud de integración y eliminarlas después de la fusión. Las ramas permanentes se limitarán a las necesarias para estabilidad y validación, como `main` y `stage` o `test`, según la instanciación de cada proyecto.
+El flujo de ramificación del marco será un **flujo basado en tronco**, inspirado en *Trunk-Based Development* —desarrollo basado en tronco—. Esta decisión significa que el marco evitará ramas largas y modelos de ramificación pesados como GitFlow. Para equipos pequeños con baja estandarización, el principio operativo será trabajar con ramas cortas vinculadas a tareas, integrarlas mediante solicitud de integración y eliminarlas después de la fusión. Las ramas permanentes se limitarán a las necesarias para estabilidad y validación: `main`, `Stage` y `Production`, cuando el ambiente o mecanismo de despliegue correspondiente exista.
 
 ### Convención de ramas
 
 El marco distinguirá entre **ramas permanentes** y **ramas temporales de trabajo**. Las ramas permanentes representan estados del producto o ambientes de validación; las ramas temporales representan trabajo asociado a una tarea.
 
-Para ramas permanentes, cada repositorio deberá declarar cuáles son sus ramas oficiales y qué significa cada una. En la instanciación PRX se propone como estándar objetivo: `main` como rama por defecto y tronco de integración; `stage` como rama de validación cuando exista ambiente de pruebas; y `production` como rama de producción solo cuando el mecanismo de despliegue lo requiera. La primera versión del marco no exigirá renombrar de inmediato ramas históricas si eso genera riesgo técnico. En cambio, exigirá documentar la equivalencia y planificar la normalización.
+Para ramas permanentes, cada repositorio deberá declarar cuáles son sus ramas oficiales y qué significa cada una. En la instanciación PRX, la convención institucional vigente es: `main` como rama por defecto y tronco de integración; `Stage` como rama de validación cuando exista ambiente de pruebas; y `Production` como rama de producción solo cuando el mecanismo de despliegue lo requiera. La primera versión del marco no exigirá renombrar de inmediato ramas históricas si eso genera riesgo técnico. En cambio, exigirá documentar la equivalencia y planificar la normalización.
 
 Ejemplo:
 
