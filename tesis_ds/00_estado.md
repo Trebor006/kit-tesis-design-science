@@ -574,6 +574,16 @@ Se registró la primera aplicación real del marco en `CCC-7336` de Central API.
 Se creó `08_resultado_sumativo_inicial_CCC-7336.md` como `E-SUM-01` de alcance inicial. El documento compara la línea base de Central API con `CCC-7336` y demuestra, para un caso, tarea visible, rama y commit conformes, solicitud fusionada, eliminación de rama y 169 pruebas unitarias exitosas. Se documentó explícitamente que el resultado no equivale a una medición posterior de dos semanas ni permite calcular porcentajes sostenidos; E8, E9 y E10 permanecen abiertos para cierre estricto hasta contar con un periodo posterior comparable o aceptar formalmente la limitación metodológica.
 
 
+## Registro 2026-10-18 - título para traducción ALSIE
+
+Se aprobó como título para la traducción al modelo ALSIE: **Marco ligero progresivo de gestión técnica trazable en equipos pequeños de desarrollo con baja estandarización**. El título tiene 15 palabras y conserva el alcance contextual de la evidencia. Se diferencia del nombre extendido del artefacto, que continúa usándose en los documentos de diseño para describir sus componentes y función.
+
+
+## Registro 2026-10-18 - traducción inicial al modelo ALSIE
+
+Se creó `instituciones/alsie/IFI_Robert_Cabrera_Lara_borrador.md` como traducción inicial de la investigación al modelo IFI de ALSIE. El archivo incluye carátula, resumen, índice Markdown, introducción, cuatro capítulos, conclusiones, recomendaciones, referencias APA 7 y anexos. Se declara como borrador porque la evaluación sumativa se limita a un caso y la futura conversión institucional deberá generar paginación e incorporar únicamente evidencias anonimizadas.
+
+
 ## Registro 2026-10-13 - tarea seleccionada para aplicación real
 
 Se seleccionó la tarea `CCC-7336`: validar pruebas unitarias en la API de CCC, como primera aplicación real del marco en Central. Se actualizó `08_protocolo_aplicacion_real_central.md` con la ficha de la tarea, evidencias esperadas y nombres recomendados de rama, commit y solicitud de integración. La tarea queda vinculada principalmente a los indicadores I3, I4, I5, I6, I7 e I9, y debe producir `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-03`, `E-TEST-INT-01` y `E-FORM-01`.

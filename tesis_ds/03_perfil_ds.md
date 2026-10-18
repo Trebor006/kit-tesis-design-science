@@ -2,7 +2,7 @@
 
 ## Título provisional
 
-**Marco ligero para la adopción inicial de prácticas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización: un estudio Design Science en la línea de software a medida de PRX**
+**Marco ligero progresivo de gestión técnica trazable en equipos pequeños de desarrollo con baja estandarización**
 
 Este título se acepta como provisional porque declara el tipo de artefacto —marco ligero—, la clase de problema —adopción inicial de prácticas de Ingeniería de Software—, la clase de contexto —equipos pequeños de desarrollo con baja estandarización— y el contexto empírico inicial —línea de software a medida de PRX—. Evita formular el trabajo como “desarrollo de una guía para PRX”, lo que lo reduciría a un proyecto de consultoría o ingeniería aplicada.
 

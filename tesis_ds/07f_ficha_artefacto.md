@@ -8,7 +8,7 @@
 | Versión documentada | V1.0-Central. |
 | Tipología Design Science | Marco, con componentes de método, reglas mínimas, plantillas operativas, estándares, indicadores y niveles de adopción. |
 | Contexto de primera aplicación | Proyecto Central de PRX: Central Odoo Backend, Central API y Central Frontend. |
-| Estado actual | Construido documentalmente e instanciado parcialmente; pendiente de aplicación completa en una solicitud de integración real y evidencia técnica de verificación. |
+| Estado actual | Construido, instanciado y aplicado formativamente en `CCC-7336`; cuenta con resultado sumativo inicial de caso, sin evidencia de adopción sostenida. |
 | Archivos base | `07b_requisitos.md`, `07c_diseno_artefacto.md`, `07c_plantilla_solicitud_integracion.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md`. |
 
 ## Problema que resuelve
@@ -36,10 +36,10 @@ La versión V1.0-Central se concentra en hacer observable la cadena mínima de t
 | Componente | Propósito | Producto operativo en V1.0-Central | Evidencia disponible |
 |:--|:--|:--|:--|
 | C0. Precondiciones y gobernanza mínima | Definir condiciones mínimas de aplicación: responsables, repositorio o excepción, y mecanismo de tareas. | Codificación de participantes y delimitación de Central. | `06_codificacion_participantes.md`; `07b_requisitos.md`. |
-| C1. Gestión visible del trabajo | Evitar trabajo invisible o tareas demasiado amplias. | Reglas de tarea válida y criterio de división. | Línea base Odoo; pendiente de aplicación posterior en Central. |
+| C1. Gestión visible del trabajo | Evitar trabajo invisible o tareas demasiado amplias. | Reglas de tarea válida y criterio de división. | Línea base Odoo; `E-ODOO-INT-01` para `CCC-7336`. |
 | C2. Trazabilidad del código | Vincular rama y commit con tarea. | `STD-GIT-001`; `STD-GIT-003`. | `E-ORG-INT-01`; `E-ORG-INT-04`; `E-ORG-INT-05`; `E-GH-ORG-01`. |
 | C3. Integración y revisión de cambios | Estandarizar solicitud de integración como punto de control. | Plantilla operativa de PR; `STD-GIT-002`; repositorio `.github`. | `E-ORG-INT-02`; `E-ORG-INT-03`; `E-ORG-INT-05`; `E-GH-ORG-01`. |
-| C4. Verificación técnica básica | Exigir método y evidencia de verificación. | Sección de verificación en plantilla PR. | Pendiente `E-TEST-INT-01`. |
+| C4. Verificación técnica básica | Exigir método y evidencia de verificación. | Sección de verificación en plantilla PR. | `E-TEST-INT-01`: 169 pruebas unitarias exitosas en Central API. |
 | C5. Entrega y configuración básica | Registrar ambiente, rama o versión, fecha, responsable y mecanismo. | Regla definida en diseño; aplicación pendiente. | Pendiente de aplicación en entrega real. |
 | C6. Seguimiento y mejora | Registrar indicadores, fricciones, excepciones y rediseño. | Plan de evidencias y registro de fricción por nombre de rama. | `06_plan_evidencias_privadas.md`; `E-GH-ORG-01`. |
 
@@ -115,6 +115,10 @@ Cada cambio funcional debe declarar qué se verificó, cómo se verificó y con 
 | `E-ORG-INT-04` | Intervención | Publicación de `STD-GIT-003 — Convención mínima de commits`. | I4, I9. |
 | `E-ORG-INT-05` | Intervención | Estructura documental de estándares técnicos en SharePoint. | I3, I4, I5, I6, I9. |
 | `E-GH-ORG-01` | Intervención | Repositorio `.github` y rama de configuración de plantilla PR. | I3, I5, I6, I9. |
+| `E-ODOO-INT-01` | Intervención | Tarea real `CCC-7336` en Central API. | I1, I9. |
+| `E-GH-INT-01` y `E-GH-INT-02` | Intervención | Solicitud `CCC-7336` con plantilla, fusión y eliminación de rama. | I3, I4, I5, I6, I9. |
+| `E-TEST-INT-01` | Intervención | Ejecución exitosa de 169 pruebas unitarias. | I7. |
+| `E-ORG-INT-06` | Intervención/rediseño | Publicación de `STD-GIT-001` V1.1. | I3, I9. |
 
 ## Instanciación PRX
 
@@ -127,8 +131,8 @@ Esta instanciación no define universalmente el artefacto. Otro equipo con herra
 | Limitación o fricción | Evidencia | Implicación |
 |:--|:--|:--|
 | La rama `config/ADM-4940_config_pr_template` usa guion bajo en la descripción. | `E-GH-ORG-01`. | La convención fue adoptada parcialmente; debe reforzarse el uso de guiones en la descripción corta. |
-| Aún no existe una solicitud de integración real de Central que use toda la cadena del marco. | Pendiente `E-GH-INT-01`. | No se puede afirmar todavía evaluación de campo completa. |
-| Aún falta evidencia técnica de verificación en un componente crítico de Central. | Pendiente `E-TEST-INT-01`. | I7 sigue débil para evaluación sumativa. |
+| La evaluación posterior se limita a un cambio de Central API. | `08_resultado_sumativo_inicial_CCC-7336.md`. | No permite afirmar adopción sostenida ni mejora institucional. |
+| Central API continúa fuera de la organización institucional. | Línea base y resultado sumativo inicial. | Debe registrarse como excepción hasta completar migración; I2 no se declara cumplido. |
 | La publicación en SharePoint evidencia disponibilidad, no adopción efectiva por todos los desarrolladores. | `E-ORG-INT-01` a `E-ORG-INT-05`. | Debe complementarse con uso real y evaluación formativa. |
 
 ## Instrucciones mínimas de aplicación
@@ -160,8 +164,8 @@ La reproducción no exige usar SharePoint ni GitHub, pero sí exige conservar pr
 
 ## Estado del artefacto para evaluación
 
-El artefacto está **listo como versión construida documentalmente e instanciada parcialmente**. Está en condiciones de pasar a una primera aplicación real controlada en Central, pero todavía no debe presentarse como evaluado. Para habilitar evaluación formativa se requiere, como mínimo, una solicitud de integración real posterior al marco y una evidencia técnica de verificación.
+El artefacto está **construido, instanciado y evaluado formativamente en una aplicación real de Central API**. También cuenta con un resultado sumativo inicial de caso. No debe presentarse como adoptado institucionalmente ni como evaluado de forma sostenida, porque la evidencia posterior se limita a `CCC-7336`.
 
 ## Estado del gate E7f
 
-E7f queda **suficiente como ficha reproducible inicial del artefacto**. La ficha consolida identificación, alcance, componentes, reglas, productos operativos, evidencias, instanciación PRX, limitaciones e instrucciones mínimas de aplicación. El siguiente paso es preparar E8 con evaluación formativa, incorporando `E-GH-INT-01`, `E-TEST-INT-01` y las fricciones observadas durante el uso real.
+E7f queda **suficiente como ficha reproducible del artefacto para el borrador actual**. La ficha consolida identificación, alcance, componentes, reglas, productos operativos, evidencias, instanciación PRX, limitaciones e instrucciones mínimas de aplicación. Cualquier aplicación posterior deberá ampliar la evidencia sin alterar el registro de `CCC-7336`.
