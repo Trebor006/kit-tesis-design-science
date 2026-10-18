@@ -141,3 +141,7 @@ La evaluación sumativa inicial no reclamará transformación completa de PRX. S
 ## Estado actual de E8
 
 E8 tiene **evaluación formativa ejecutada y rediseño V1.1 documentado**. No queda cerrada porque falta la evaluación sumativa inicial `E-SUM-01`: una comparación posterior predefinida contra la línea base. Hasta contar con esa comparación, no se deben declarar mejora sostenida ni principios de diseño validados.
+
+## Registro posterior de E-SUM-01
+
+Se registró `08_resultado_sumativo_inicial_CCC-7336.md` como comparación sumativa inicial de un caso entre la línea base de Central API y la tarea posterior `CCC-7336`. El resultado demuestra trazabilidad y verificación técnica en un cambio real, pero documenta una desviación respecto al plan de periodo comparable: solo existe un cambio posterior con evidencia completa. Por ello, E8 sigue abierto para cierre estricto, aunque cuenta con resultado sumativo inicial de caso.

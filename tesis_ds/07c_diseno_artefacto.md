@@ -131,7 +131,7 @@ El marco adopta un flujo basado en tronco inspirado en *Trunk-Based Development*
 Flujo recomendado para PRX:
 
 ```text
-rama temporal de tarea → solicitud de integración → main → stage → production
+rama temporal de tarea → solicitud de integración → main → Stage → Production
 ```
 
 ### R7. Solicitud de integración válida

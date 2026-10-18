@@ -4,7 +4,7 @@
 
 Este documento articula la contribución preliminar de la investigación y las conclusiones disponibles hasta el estado actual del trabajo. La contribución se formula como **principios de diseño candidatos**, porque ya se ejecutó una evaluación formativa con una solicitud de integración real en Central y se documentó el rediseño V1.1, pero todavía falta la evaluación sumativa inicial.
 
-Por rigor metodológico, este documento no afirma que los principios estén validados. Los principios se presentan como formulaciones derivadas del diagnóstico, del diseño, de la construcción y de una primera aplicación formativa; deberán ajustarse después de `E-SUM-01`.
+Por rigor metodológico, este documento no afirma que los principios estén validados. Los principios se presentan como formulaciones derivadas del diagnóstico, del diseño, de la construcción, de una primera aplicación formativa y de un resultado sumativo inicial de caso; deberán ajustarse después de una medición posterior por periodo comparable.
 
 ## Tipo de contribución reclamada
 
@@ -96,8 +96,8 @@ No se recomienda extrapolar estos principios sin ajuste a organizaciones con pro
 
 Para pasar de contribución preliminar a contribución validada, se requiere:
 
-1. Comparar resultados posteriores contra línea base (`E-SUM-01`).
-2. Ajustar los principios candidatos en función de evidencia sumativa, no de conveniencia narrativa.
+1. Realizar una medición posterior por periodo comparable, que complemente el resultado inicial de caso `E-SUM-01`.
+2. Ajustar los principios candidatos en función de evidencia sumativa adicional, no de conveniencia narrativa.
 
 ## Estado del gate E10
 

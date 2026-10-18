@@ -32,7 +32,7 @@ La línea base mostró que esta cadena existía solo de forma parcial, aislada o
 | Solicitudes sin evidencia mínima de verificación. | RQ10 | Exigir método y evidencia de verificación en plantilla PR. | `E-GH-INT-01`; `E-TEST-INT-01`. | Alto en primera aplicación. | Falta comparar proporción posterior contra la línea base. |
 | Pruebas unitarias o evidencia técnica no institucionalizadas. | RQ11 | Exigir al menos una evidencia técnica en componente crítico. | `E-TEST-INT-01`. | Cumplido en primera aplicación. | La evidencia se limita a Central API y no demuestra cobertura institucional. |
 | Entregas o ambientes con trazabilidad parcial. | RQ12 | Definir registro mínimo de entrega y ramas permanentes. | `07c_diseno_artefacto.md`; `STD-GIT-001`. | Pendiente/parcial. | Falta entrega real trazada. |
-| Necesidad de comparar antes/después. | RQ13 | Definir indicadores I1-I9 y plan de evaluación E8. | `06_consolidacion_indicadores.md`; `08_evaluacion.md`. | Alto en planificación. | Falta medición posterior `E-SUM-01`. |
+| Necesidad de comparar antes/después. | RQ13 | Definir indicadores I1-I9 y plan de evaluación E8. | `06_consolidacion_indicadores.md`; `08_resultado_sumativo_inicial_CCC-7336.md`. | Parcial. | Existe comparación de un caso; falta medición por periodo comparable. |
 | Riesgo de reducir el marco a GitHub/Odoo. | RQ14 | Separar regla general e instanciación PRX. | `07c_diseno_artefacto.md`; `07f_ficha_artefacto.md`. | Alto. | Debe mantenerse en la traducción ALSIE. |
 
 ## Evidencias que ya respaldan solución construida
@@ -56,7 +56,7 @@ La línea base mostró que esta cadena existía solo de forma parcial, aislada o
 
 | Evidencia pendiente | Por qué es necesaria |
 |:--|:--|
-| `E-SUM-01` | Permite comparar resultados posteriores contra línea base. |
+| Medición posterior por periodo comparable | Permitirá contrastar tasas de adopción contra la línea base sin depender de un solo cambio. |
 
 ## Demostración versus evaluación
 
@@ -74,4 +74,4 @@ Esta distinción es crítica: que existan estándares no significa que el equipo
 
 ## Estado del gate E9
 
-E9 queda **avanzado**, con trazabilidad demostrada en una aplicación real. No queda cerrado porque falta `E-SUM-01`, necesario para sostener afirmaciones de mejora frente a la línea base y completar el grado de cumplimiento de cada requisito.
+E9 queda **avanzado**, con trazabilidad demostrada en una aplicación real y comparación inicial de caso. No queda cerrado porque falta una medición posterior por periodo comparable, necesaria para sostener afirmaciones de mejora frente a la línea base y completar el grado de cumplimiento de cada requisito.

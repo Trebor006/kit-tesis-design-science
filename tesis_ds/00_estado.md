@@ -569,6 +569,11 @@ Se creó `tesis_ds/08_protocolo_aplicacion_real_central.md` para guiar la primer
 Se registró la primera aplicación real del marco en `CCC-7336` de Central API. Las evidencias `E-ODOO-INT-01`, `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-04`, `E-TEST-INT-01` y `E-ORG-INT-06` respaldan tarea real, solicitud de integración con plantilla, fusión, eliminación de rama, configuración de ramas permanentes, ejecución satisfactoria de 169 pruebas unitarias y publicación de `STD-GIT-001` V1.1. Se creó `08_registro_formativo_CCC-7336.md` y se actualizaron E7e, E8, E9, la matriz de coherencia y el plan de evidencias. La evaluación formativa queda ejecutada y V1.1 documentada; queda pendiente exclusivamente la comparación sumativa `E-SUM-01` antes de cerrar E8-E10.
 
 
+## Registro 2026-10-18 - resultado sumativo inicial de caso
+
+Se creó `08_resultado_sumativo_inicial_CCC-7336.md` como `E-SUM-01` de alcance inicial. El documento compara la línea base de Central API con `CCC-7336` y demuestra, para un caso, tarea visible, rama y commit conformes, solicitud fusionada, eliminación de rama y 169 pruebas unitarias exitosas. Se documentó explícitamente que el resultado no equivale a una medición posterior de dos semanas ni permite calcular porcentajes sostenidos; E8, E9 y E10 permanecen abiertos para cierre estricto hasta contar con un periodo posterior comparable o aceptar formalmente la limitación metodológica.
+
+
 ## Registro 2026-10-13 - tarea seleccionada para aplicación real
 
 Se seleccionó la tarea `CCC-7336`: validar pruebas unitarias en la API de CCC, como primera aplicación real del marco en Central. Se actualizó `08_protocolo_aplicacion_real_central.md` con la ficha de la tarea, evidencias esperadas y nombres recomendados de rama, commit y solicitud de integración. La tarea queda vinculada principalmente a los indicadores I3, I4, I5, I6, I7 e I9, y debe producir `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-03`, `E-TEST-INT-01` y `E-FORM-01`.
