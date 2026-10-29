@@ -108,6 +108,8 @@ docs/CCC-4431-actualizar-readme
 refactor/CCC-4432-separar-servicio-contratos
 ```
 
+La regla adapta la recomendación de utilizar ramas separadas para cambios no relacionados y eliminarlas después de integrarlas (GitHub Docs, s. f.-c). El tipo y el código de tarea son una decisión contextual de PRX para conservar la trazabilidad con Odoo.
+
 ### R5. Commits trazables
 
 Los commits relevantes deben seguir el formato:
@@ -124,9 +126,15 @@ feat(CCC-4407): agregar datos del operador en contratos
 
 Los tipos iniciales permitidos son `feat`, `fix`, `hotfix`, `config`, `test`, `docs` y `refactor`. Tipos como `chore`, `perf`, `build`, `ci`, `revert` y `release` quedan como ampliaciones posteriores, porque introducir demasiados tipos en la primera versión aumenta fricción y reduce adopción.
 
+El encabezado toma como referencia las guías de Angular y Conventional Commits, que estructuran los mensajes mediante tipo, alcance opcional y resumen (Angular, s. f.; Conventional Commits, s. f.). El código de tarea reemplaza al alcance técnico para responder al problema de trazabilidad de PRX; los tipos iniciales limitados son un vocabulario operativo V1.0 que deberá evaluarse por claridad y aplicabilidad, no una taxonomía universal.
+
 ### R6. Flujo basado en tronco
 
 El marco adopta un flujo basado en tronco inspirado en *Trunk-Based Development* —desarrollo basado en tronco—, con ramas cortas por tarea, solicitud de integración, fusión por `squash merge` cuando sea apropiado y eliminación de la rama después de fusionar. `main` es el tronco de integración; `Stage` y `Production` son ramas de promoción o ambiente, no ramas donde se desarrolla directamente.
+
+GitFlow mantiene `master` y `develop` como ramas de larga duración (Driessen, 2010), mientras que el desarrollo basado en tronco privilegia una rama central y ramas temporales breves (Hammant, s. f.-a, s. f.-b). La elección no afirma una aplicación pura de desarrollo basado en tronco: `Stage` y `Production` se conservan solo si existe ambiente o mecanismo de promoción real.
+
+La fusión por compresión permanece opcional: puede consolidar los commits de una rama temporal y simplificar el historial, pero pierde información de commits originales y autores (GitHub Docs, s. f.-a). Por ello, solo se recomienda cuando la solicitud de integración conserva el detalle del cambio y el mensaje final retiene el código de tarea.
 
 Flujo recomendado para PRX:
 
@@ -140,11 +148,15 @@ Una solicitud de integración válida debe usar la plantilla mínima definida en
 
 La plantilla es parte del artefacto, no un anexo decorativo. En el cuerpo de la tesis se describe y justifica; como anexo operativo se presenta completa. Su función es operacionalizar trazabilidad, verificación y validación mínima.
 
+Las solicitudes de integración pueden cumplir funciones técnicas y de coordinación más amplias que la detección de defectos (Bacchelli & Bird, 2013). Por ello, la plantilla reúne contexto, riesgo, verificación y estado de validación; sus campos concretos constituyen una adaptación del diagnóstico y deberán contrastarse por aplicabilidad.
+
 La validación automática del llenado de la plantilla mediante un flujo de trabajo de GitHub Actions puede incorporarse como mejora posterior de la instanciación PRX. No se define como requisito obligatorio de la versión 1 del marco, porque el criterio inicial es lograr uso observable de la plantilla y evidencia mínima en solicitudes de integración; la automatización debe agregarse solo si no desplaza la evaluación formativa ni introduce sobrecarga técnica innecesaria.
 
 ### R8. Validación progresiva
 
 El marco distingue cuatro estados de validación: solicitud trazable, plantilla completa, auto-validación documentada y revisión por una persona distinta del autor. En componentes con un solo desarrollador, la auto-validación documentada se acepta como excepción explícita, no como revisión independiente. Esta decisión evita declarar una práctica inexistente y permite medir progreso real.
+
+Las comprobaciones automatizadas y la revisión humana son controles distintos antes de la fusión (GitHub Docs, s. f.-b). Por tanto, la auto-validación se registra como excepción contextual; no equivale a revisión por tercero ni permite afirmar que se aplicó revisión por pares.
 
 ### R9. Verificación técnica básica
 
@@ -153,6 +165,8 @@ Cada cambio funcional debe declarar qué se verificó, cómo se verificó y con 
 ### R10. Registro mínimo de entrega
 
 Cada entrega relevante debe registrar ambiente, rama o versión, fecha, responsable y mecanismo de despliegue. Esta regla conecta la trazabilidad técnica con la evidencia de entrega ante clientes o responsables internos.
+
+La regla se vincula con la relación entre construcción, pruebas y despliegue en prácticas de entrega continua (Duvall et al., 2007; Humble & Farley, 2010). Una versión semántica puede utilizarse cuando un componente expone una interfaz pública, pero no se impone como requisito universal (Semantic Versioning, s. f.).
 
 ## Niveles de adopción
 
@@ -241,3 +255,27 @@ Pino, F. J., García, F., & Piattini, M. (2008). Software process improvement in
 Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. https://scrumguides.org/scrum-guide.html
 
 Wieringa, R. J. (2014). *Design science methodology for information systems and software engineering*. Springer. https://doi.org/10.1007/978-3-662-43839-8
+
+Angular. (s. f.). *Commit message format*. Recuperado el 29 de octubre de 2026, de https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md
+
+Bacchelli, A., & Bird, C. (2013). Expectations, outcomes, and challenges of modern code review. In *2013 35th International Conference on Software Engineering (ICSE)* (pp. 712–721). IEEE. https://doi.org/10.1109/ICSE.2013.6606617
+
+Conventional Commits. (s. f.). *Conventional Commits 1.0.0*. Recuperado el 29 de octubre de 2026, de https://www.conventionalcommits.org/en/v1.0.0/
+
+Driessen, V. (2010, 5 de enero). *A successful Git branching model*. https://nvie.com/posts/a-successful-git-branching-model/
+
+Duvall, P. M., Matyas, S., & Glover, A. (2007). *Continuous integration: Improving software quality and reducing risk*. Addison-Wesley Professional. https://www.informit.com/store/continuous-integration-improving-software-quality-9780321336385
+
+GitHub Docs. (s. f.-a). *About merge methods on GitHub*. Recuperado el 29 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github
+
+GitHub Docs. (s. f.-b). *About protected branches*. Recuperado el 29 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+
+GitHub Docs. (s. f.-c). *GitHub flow*. Recuperado el 29 de octubre de 2026, de https://docs.github.com/en/get-started/using-github/github-flow
+
+Hammant, P. (s. f.-a). *Branch for release*. Recuperado el 29 de octubre de 2026, de https://trunkbaseddevelopment.com/branch-for-release/
+
+Hammant, P. (s. f.-b). *Trunk Based Development: Introduction*. Recuperado el 29 de octubre de 2026, de https://trunkbaseddevelopment.com/
+
+Humble, J., & Farley, D. (2010). *Continuous delivery: Reliable software releases through build, test, and deployment automation*. Addison-Wesley Professional. https://martinfowler.com/books/continuousDelivery.html
+
+Semantic Versioning. (s. f.). *Semantic Versioning 2.0.0*. Recuperado el 29 de octubre de 2026, de https://semver.org/

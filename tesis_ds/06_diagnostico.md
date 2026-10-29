@@ -58,6 +58,14 @@ La línea base debe levantarse antes de construir o aplicar el artefacto mediant
 
 Los criterios quedan fijados antes de construir el artefacto. Si durante el ciclo formativo se descubre que un criterio fue técnicamente inviable o que no mide el problema real, el cambio podrá realizarse únicamente como rediseño documentado, indicando fecha, razón y efecto sobre la evaluación. No se aceptará ajustar criterios después de observar resultados para hacer que el artefacto parezca exitoso.
 
+## Entrevistas retrospectivas registradas
+
+El 29 de octubre de 2026 se realizaron entrevistas remotas con notas autorizadas a `DEV-001` sobre Central Odoo Backend y a `DEV-002` sobre Central API. Ambos participantes respondieron sobre prácticas anteriores a la publicación de los estándares del marco; dichos estándares siguen siendo sugerencias y no una obligación organizacional. Por ello, las respuestas se registran como evidencia retrospectiva del diagnóstico y no como prueba de adopción posterior.
+
+`DEV-001` declaró que utilizaba ramas con código de tarea sin una convención escrita, realizaba pruebas manuales en ambiente de pruebas y, al trabajar como único desarrollador, efectuaba auto-validación de sus solicitudes de integración. `E-GH-BASE-02` a `E-GH-BASE-04` aportan contraste parcial: muestran ramas identificadas por códigos de tarea y solicitudes fusionadas, pero también mensajes de *commit* sin código de tarea visible, y no acreditan pruebas ni revisión independiente. `DEV-002` declaró una práctica personal previa sin Git, basada en duplicar carpetas o proyectos, pruebas manuales sin evidencia registrada y auto-revisión antes del despliegue. `E-GH-BASE-06` muestra que Central API ya tenía historial Git desde 2025; por tanto, la tesis no afirmará ausencia total de Git en ese proyecto ni atribuirá el historial visible a `DEV-002` sin evidencia adicional. Las declaraciones son pertinentes para I2–I7 y para la aplicabilidad del marco, pero no deben cuantificarse ni usarse como hechos cerrados fuera del contraste documental disponible.
+
+El registro codificado se conserva en `06_registros_entrevistas_diagnostico_2026-10-30.md` como `E-INT-BASE-01` y `E-INT-BASE-02`. Falta contrastar las declaraciones contra Odoo.sh, GitHub, solicitudes de integración, pruebas y registros de despliegue, además de realizar la entrevista prevista con `DEV-004`; por tanto, no se recalcula la línea base ni se altera ningún criterio de éxito fijado previamente.
+
 ## Estado del gate E6
 
 E6 queda en estado preliminar. Los indicadores tienen definición operacional, fuente de datos y valor esperado, pero las líneas base numéricas todavía deben levantarse antes de aplicar el marco. El gate no se cerrará hasta contar con al menos una medición inicial real de Odoo, GitHub y repositorios piloto, además de evidencia de contexto obtenida mediante entrevistas o revisión documental.

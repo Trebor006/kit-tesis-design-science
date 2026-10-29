@@ -11,7 +11,16 @@
 
 ---
 
+# Agradecimientos
+
+A mi esposa, Brigitte, y a mi hija, Adaline, por ser mi mayor motivación para perseverar en mis estudios y alcanzar mis metas.
+
+A mis amigos y compañeros de trabajo, por su apoyo desde el momento en que decidí retomar mi formación de posgrado.
+
+Gracias por acompañarme en este proceso y por contribuir a que este logro sea posible.
+
 # Resumen
+
 
 La investigación abordó la ausencia de una ruta común, ligera y verificable para la gestión técnica del trabajo de desarrollo en la línea de software a medida de PRX. El objeto de estudio fue un marco ligero progresivo de gestión técnica trazable, compuesto por precondiciones de gobernanza, gestión visible del trabajo, trazabilidad de código, integración de cambios, verificación técnica, entrega y seguimiento. Se empleó Design Science Research Methodology para diagnosticar la situación inicial, diseñar el artefacto, construir sus productos operativos y evaluarlo en una aplicación real. El diagnóstico combinó revisión de tareas, repositorios, ramas, commits y solicitudes de integración durante la ventana del 21 de septiembre al 4 de octubre de 2026. Los resultados mostraron prácticas heterogéneas, repositorios no institucionales, convenciones no documentadas y ausencia de evidencia mínima de verificación en las solicitudes observadas. La propuesta se instanció mediante estándares de ramas, commits y solicitudes de integración, una plantilla operativa y una estructura documental institucional. La evaluación formativa se realizó en la tarea CCC-7336 de Central API; produjo una cadena trazable desde la tarea hasta la fusión y evidenció 169 pruebas unitarias exitosas. Se ajustó la convención de ramas permanentes a `main`, `Stage` y `Production`. El resultado sumativo inicial se limitó a un caso y no permitió afirmar adopción sostenida ni mejora institucional. Se concluyó que el marco puede producir trazabilidad y evidencia técnica en un cambio real, bajo condiciones de contorno estrictas.
 
@@ -56,7 +65,9 @@ Como hipótesis de trabajo, traducida desde la proposición de diseño de la inv
 
 El aporte teórico esperado fue un conjunto de principios de diseño candidatos para construir marcos ligeros de gestión técnica trazable. La significación práctica fue proporcionar a PRX un conjunto mínimo de productos operativos que permitan ordenar el trabajo técnico sin exigir una certificación de madurez ni automatización completa.
 
-La investigación utilizó análisis-síntesis y modelación para estructurar el artefacto; revisión documental para caracterizar línea base y soluciones existentes; y análisis de caso para evaluar la aplicación en Central. La población de referencia estuvo compuesta por los componentes de software a medida de PRX observados en la línea base. La muestra intencional para la aplicación inicial fue Central y, específicamente, el caso CCC-7336 de Central API. La selección respondió a disponibilidad de una tarea real, repositorio, solicitud de integración y verificación técnica observable.
+La investigación utilizó análisis-síntesis y modelación para estructurar el artefacto; revisión documental para caracterizar línea base y soluciones existentes; y análisis de caso para evaluar la aplicación en Central. La selección de técnicas respondió a la pregunta de investigación y a la naturaleza de cada fuente, en lugar de adoptar una etiqueta metodológica genérica (Creswell & Creswell, 2023). La población de referencia estuvo compuesta por los componentes de software a medida de PRX observados en la línea base. La muestra intencional para la aplicación inicial fue Central y, específicamente, el caso CCC-7336 de Central API. La selección respondió a disponibilidad de una tarea real, repositorio, solicitud de integración y verificación técnica observable.
+
+La evidencia documental, la observación estructurada y las entrevistas semiestructuradas se definieron como fuentes complementarias del diagnóstico. La triangulación prevista no busca una generalización estadística, sino contrastar registros observables con las prácticas y restricciones explicadas por los participantes; esta lógica es coherente con el uso de múltiples fuentes de evidencia en estudios de caso (Yin, 2018). Al cierre de este borrador, las entrevistas aún estaban programadas, por lo que sus resultados no se anticipan ni se incorporan como hallazgos.
 
 # Capítulo I. Diagnóstico de la investigación
 
@@ -80,14 +91,14 @@ Los indicadores fueron definidos antes de construir el artefacto. I8, relativo a
 
 ## 1.3. Resultados del diagnóstico
 
-La línea base se levantó entre el 21 de septiembre y el 4 de octubre de 2026. Se observó que solo 3 de 7 componentes examinados estaban en la organización institucional de GitHub, equivalente a 42,86 %. Central API, Ansular Frontend y los componentes de PConst permanecían fuera de dicha organización. Esta condición reveló institucionalización incompleta de los repositorios, aunque no significó ausencia total de Git.
+La línea base se levantó entre el 21 de septiembre y el 4 de octubre de 2026. Se observó que solo 2 de 7 componentes examinados estaban en la organización institucional de GitHub, equivalente a 28,57 %. Central API, Central Frontend, Ansular Frontend y los componentes de PConst permanecían fuera de dicha organización. La condición de Central Frontend fue corregida con una captura privada tomada el 28 de octubre de 2026 y confirmación del tesista de que el repositorio externo ya tenía esa ubicación antes de la ventana base. Esta condición reveló institucionalización incompleta de los repositorios, aunque no significó ausencia total de Git.
 
 En la misma ventana, no existía una convención institucional documentada de ramas ni commits; por ello, I3 e I4 se registraron en 0 %. Se observaron cinco solicitudes de integración en componentes Odoo, pero ninguna incluía evidencia mínima de verificación, por lo que I6 fue 0 de 5. En Central API se reportó trabajo realizado que no fue subido al repositorio durante la ventana; allí no se registraron ramas, commits ni solicitudes de integración observables. Esta diferencia confirmó que el problema no se reduce a abrir solicitudes de integración, sino a hacer trazable el trabajo y asociarlo con evidencia técnica.
 
 | Indicador | Línea base | Lectura diagnóstica |
 |:--|:--|:--|
 | I1 | Parcial | Existían tareas visibles, pero con granularidad desigual e información incompleta en componentes Odoo. |
-| I2 | 3 de 7 componentes institucionales | La gobernanza de repositorios era incompleta. |
+| I2 | 2 de 7 componentes institucionales | La gobernanza de repositorios era incompleta. |
 | I3 | 0 % | No existía convención documentada de ramas. |
 | I4 | 0 % | No existía convención documentada de commits. |
 | I5 | 5 de 5 cambios observables | Había solicitudes en Odoo, pero no homogeneidad ni revisión independiente demostrada. |
@@ -109,6 +120,8 @@ ISO/IEC 29110 fue adoptada como referencia para justificar una mejora gradual en
 
 La tensión relevante es que una estructura de control extensa puede aumentar la evidencia disponible y, al mismo tiempo, hacer inviable la adopción inicial. Laporte et al. (2018) vincularon la aplicación de estándares con trayectorias de crecimiento de entidades pequeñas, pero esa trayectoria no autoriza a afirmar certificación ni madurez formal en PRX. El marco se posicionó como un paso de profesionalización técnica, no como sustituto de ISO/IEC 29110 o CMMI.
 
+En esta investigación, un marco de trabajo se entendió como una estructura de componentes, prácticas, reglas y productos que permite orientar y seguir el trabajo sin prescribir una tecnología única. El núcleo Essence distingue los elementos esenciales del desarrollo de las prácticas concretas que un equipo selecciona y adapta (Jacobson et al., 2012, 2013; Object Management Group, 2018). Esta distinción fue decisiva: el artefacto propuesto no fue un marco de código ni una metodología cerrada, sino una organización progresiva de prácticas mínimas que podía instanciarse con Odoo, GitHub y SharePoint o con herramientas equivalentes.
+
 ## 2.2. Fundamentos de Ingeniería de Software y transparencia del trabajo
 
 SWEBOK ubica las prácticas seleccionadas en áreas reconocidas de Ingeniería de Software: gestión de configuración, proceso de software, gestión, pruebas y calidad (Washizaki, 2024). Esta relación impidió que el marco se fundamente en preferencias individuales. La exigencia de repositorio o excepción se vinculó con gestión de configuración; las tareas visibles con gestión de Ingeniería de Software; y la evidencia de pruebas con calidad y pruebas.
@@ -117,9 +130,27 @@ Los principios de transparencia, inspección y adaptación de Scrum fundamentaro
 
 ## 2.3. Trazabilidad de cambios y verificación técnica
 
-GitHub Flow describe un flujo ligero basado en ramas, commits y solicitudes de integración hacia una rama principal (GitHub Docs, s. f.). La investigación tomó estos elementos como principios operativos y los adaptó a la situación de PRX mediante nombres de ramas, códigos de tarea, plantilla de solicitud y validación progresiva. El objetivo no fue replicar un flujo corporativo completo, sino reducir ambigüedad mediante ramas cortas, integración frecuente y eliminación de ramas temporales después de la fusión.
+GitHub Flow describe un flujo ligero basado en ramas, commits y solicitudes de integración hacia una rama principal (GitHub Docs, s. f.-c). La investigación tomó estos elementos como principios operativos y los adaptó a la situación de PRX mediante nombres de ramas, códigos de tarea, plantilla de solicitud y validación progresiva. El objetivo no fue replicar un flujo corporativo completo, sino reducir ambigüedad mediante ramas cortas, integración frecuente y eliminación de ramas temporales después de la fusión.
 
-Aniche (2022) fundamentó la decisión de exigir verificación mínima en vez de cobertura total. La primera versión del marco solicitó una prueba unitaria, construcción, prueba de API o verificación documentada en un componente crítico. Buchalcevova (2021) mostró que la calidad y las pruebas requieren atención explícita incluso en perfiles básicos de ISO/IEC 29110; por ello, la verificación no se dejó como consecuencia implícita de usar solicitudes de integración.
+La convención `STD-GIT-001` formalizó ramas temporales con la estructura `<tipo>/<codigo-tarea>-<descripcion-corta>`. Su sentido no fue normalizar nombres por estética, sino preservar desde el inicio el vínculo entre una tarea visible y su espacio aislado de cambio. De manera coherente con GitHub Flow, cada cambio no relacionado debe utilizar una rama separada y la rama temporal debe eliminarse después de la integración; en PRX, `main` opera como tronco de integración, mientras que `Stage` y `Production` se mantienen únicamente cuando el mecanismo de promoción o el ambiente correspondiente existen (GitHub Docs, s. f.-c).
+
+La cadena tarea → rama → commit → solicitud de integración → evidencia se define como una adaptación mínima de trazabilidad para el tipo de trabajo observado. La literatura de trazabilidad estudia precisamente la creación, gestión y uso de relaciones entre artefactos de software; no obstante, la tesis no afirma que esta cadena cubra todas las relaciones posibles de requisitos, diseño, código y pruebas (Cleland-Huang et al., 2014). Su función es más acotada: permitir reconstruir un cambio técnico concreto desde su tarea hasta su verificación, y hacerlo también en sentido inverso.
+
+Se analizaron dos alternativas de flujo. GitFlow propone dos ramas principales de larga duración (`master` y `develop`) y ramas de apoyo para características, versiones y correcciones urgentes (Driessen, 2010). Esa estructura resulta útil cuando se mantienen versiones o ciclos de liberación diferenciados, pero introducir una segunda rama permanente de integración habría añadido un mecanismo que PRX no tenía capacidad de gobernar ni necesidad demostrada de aplicar en el periodo de estudio.
+
+En cambio, el desarrollo basado en tronco privilegia una rama central y evita ramas de desarrollo de larga duración; admite ramas breves por tarea y, cuando corresponde, ramas temporales de liberación creadas desde el tronco (Hammant, s. f.-a, s. f.-b). Por ello, el marco adoptó `main` como tronco, ramas temporales breves y solicitudes de integración antes de fusionar. `Stage` y `Production` no convierten la propuesta en una aplicación pura de desarrollo basado en tronco: son ramas de promoción condicionadas a la existencia real de ambientes y mecanismos de despliegue. La decisión se describe con precisión como un flujo inspirado en desarrollo basado en tronco y adaptado al contexto de PRX.
+
+La fusión por compresión se mantiene como recomendación opcional de la instanciación PRX, no como regla universal del marco. GitHub indica que este mecanismo consolida los commits de una rama temporal en un solo commit y puede simplificar el historial, pero también elimina información sobre los commits originales y sus autores (GitHub Docs, s. f.-a). En consecuencia, se recomienda solo cuando el mensaje final conserva el código de tarea y la solicitud de integración conserva el detalle necesario para la auditoría del cambio.
+
+La convención `STD-GIT-003` adaptó el encabezado `<tipo>(<codigo-tarea>): <descripcion breve>`. Las guías de mensajes de Angular emplean el patrón `<tipo>(<alcance>): <resumen breve>` para hacer el historial legible y analizable; asimismo, Conventional Commits define `tipo`, alcance opcional y descripción como estructura mínima para comunicar la intención de un cambio (Angular, s. f.; Conventional Commits, s. f.). PRX sustituyó el alcance técnico por el código de tarea, porque el requisito de diseño fue conservar trazabilidad hacia Odoo incluso si la rama temporal se elimina. Por tanto, se trata de una adaptación contextual de esas convenciones, no de una adopción literal ni de un estándar creado por Google.
+
+Bacchelli y Bird (2013) mostraron que las revisiones modernas de código cumplen funciones técnicas y sociales que exceden la simple detección de defectos. Por esa razón, la solicitud de integración se trató como un producto de evidencia que concentra contexto, riesgo, verificación y validación, sin afirmar que toda solicitud observada hubiera recibido revisión independiente. Duvall et al. (2007) y Humble y Farley (2010) respaldan la relación entre integración frecuente, automatización de verificaciones y retroalimentación temprana; el marco adoptó solo su mínimo viable para el contexto disponible.
+
+La auto-validación documentada, la validación automática y la revisión por tercero deben permanecer diferenciadas. GitHub distingue requisitos de revisión humana de requisitos de comprobaciones de estado antes de fusionar; una comprobación exitosa no equivale a una aprobación independiente (GitHub Docs, s. f.-b). Por ello, cuando no exista revisor disponible, el marco registra auto-validación como excepción y no la presenta como sustituto de la revisión por pares.
+
+Aniche (2022) fundamentó la decisión de exigir verificación mínima en vez de cobertura total. La primera versión del marco solicitó una prueba unitaria, construcción, prueba de API o verificación documentada en un componente crítico. Buchalcevova (2021) mostró que la calidad y las pruebas requieren atención explícita incluso en perfiles básicos de ISO/IEC 29110; por ello, la verificación no se dejó como consecuencia implícita de usar solicitudes de integración. Aunque Forsgren et al. (2018) relacionaron capacidades de entrega con resultados organizacionales mediante investigación a gran escala, la tesis no utilizó sus métricas para inferir desempeño: un único caso no permite ese nivel de afirmación.
+
+Para C5, el registro de entrega se limita a identificar ambiente, rama o versión, fecha, responsable y mecanismo de despliegue. La versión puede seguir una convención semántica cuando el componente exponga una interfaz pública y el contexto lo justifique; dicha convención comunica compatibilidad entre versiones, pero no se impone a todos los repositorios de PRX (Semantic Versioning, s. f.). El marco no evaluó todavía este componente, por lo que esta regla permanece como diseño por aplicar, no como práctica validada.
 
 ## 2.4. Estado del arte y posición de la investigación
 
@@ -220,6 +251,8 @@ La aplicación formativa se realizó en la tarea `CCC-7336`, correspondiente a l
 
 No se reportaron fricciones operativas durante el caso. El rediseño V1.1 respondió a un ajuste contextual de nombres de ramas permanentes y no a una falla del uso de `CCC-7336`. La evaluación sumativa inicial comparó Central API antes y después del caso: en la línea base no se registraron ramas, commits ni solicitudes de integración para ese componente; en el caso posterior se obtuvo una cadena completa. La comparación demuestra aplicabilidad inicial, no adopción sostenida, porque su unidad de análisis fue un único cambio y el ejecutor coincidió con el constructor del artefacto.
 
+Al corte de evidencia del 29 de octubre de 2026 se registró una segunda aplicación real en Central API: `CCC-7480`. La tarea cuenta con rama y commits trazables, una solicitud de integración abierta hacia `main`, plantilla completada y 182 pruebas unitarias exitosas. El cambio permanecía en fase de pruebas; por ello, no se presenta como integrado ni entregado y no se usa para afirmar fusión, eliminación de rama o mejora sostenida. Esta aplicación amplía la evidencia de uso del marco, pero conserva el carácter inicial y limitado de la evaluación.
+
 ## 4.5. Evaluación de la propuesta
 
 La propuesta fue evaluada con una estrategia formativa y un resultado sumativo inicial de caso. La utilidad observada fue que el marco permitió relacionar una tarea real con rama, commit, solicitud, prueba, fusión y eliminación de rama. I7 se cumplió para Central API mediante 169 pruebas unitarias exitosas. I2 no se declaró cumplido porque la migración del repositorio a la organización institucional seguía pendiente; el marco exige registrar esta condición como excepción durante la transición.
@@ -256,19 +289,51 @@ La propuesta concretó el modelo teórico en productos reproducibles y reglas ap
 
 # Referencias bibliográficas
 
+Angular. (s. f.). *Commit message format*. Recuperado el 29 de octubre de 2026, de https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md
+
 Aniche, M. (2022). *Effective software testing: A developer's guide*. Manning Publications. https://www.manning.com/books/effective-software-testing
+
+Bacchelli, A., & Bird, C. (2013). Expectations, outcomes, and challenges of modern code review. In *2013 35th International Conference on Software Engineering (ICSE)* (pp. 712–721). IEEE. https://doi.org/10.1109/ICSE.2013.6606617
 
 Buchalcevova, A. (2021). Towards higher software quality in very small entities: ISO/IEC 29110 software basic profile mapping to testing standards. *International Journal of Information Technologies and Systems Approach, 14*(1), 79–96. https://doi.org/10.4018/IJITSA.2021010105
 
+Cleland-Huang, J., Gotel, O. C. Z., Huffman Hayes, J., Mäder, P., & Zisman, A. (2014). Software traceability: Trends and future directions. *Future of Software Engineering Proceedings*, 55–69. https://doi.org/10.1145/2593882.2593891
+
 CMMI Institute. (s. f.). *CMMI Model Viewer*. ISACA. Recuperado el 22 de septiembre de 2026, de https://cmmiinstitute.com/cmmi/model-viewer/
 
-GitHub Docs. (s. f.). *GitHub flow*. Recuperado el 22 de septiembre de 2026, de https://docs.github.com/en/get-started/using-github/github-flow
+Conventional Commits. (s. f.). *Conventional Commits 1.0.0*. Recuperado el 29 de octubre de 2026, de https://www.conventionalcommits.org/en/v1.0.0/
+
+Creswell, J. W., & Creswell, J. D. (2023). *Research design: Qualitative, quantitative, and mixed methods approaches* (6th ed.). SAGE. https://us.sagepub.com/en-us/nam/research-design/book270550
+
+Driessen, V. (2010, 5 de enero). *A successful Git branching model*. https://nvie.com/posts/a-successful-git-branching-model/
+
+Duvall, P. M., Matyas, S., & Glover, A. (2007). *Continuous integration: Improving software quality and reducing risk*. Addison-Wesley Professional. https://www.informit.com/store/continuous-integration-improving-software-quality-9780321336385
+
+Forsgren, N., Humble, J., & Kim, G. (2018). *Accelerate: The science of lean software and DevOps: Building and scaling high performing technology organizations*. IT Revolution Press. https://itrevolution.com/product/accelerate/
+
+GitHub Docs. (s. f.-a). *About merge methods on GitHub*. Recuperado el 29 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github
+
+GitHub Docs. (s. f.-b). *About protected branches*. Recuperado el 29 de octubre de 2026, de https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+
+GitHub Docs. (s. f.-c). *GitHub flow*. Recuperado el 22 de septiembre de 2026, de https://docs.github.com/en/get-started/using-github/github-flow
+
+Hammant, P. (s. f.-a). *Branch for release*. Recuperado el 29 de octubre de 2026, de https://trunkbaseddevelopment.com/branch-for-release/
+
+Hammant, P. (s. f.-b). *Trunk Based Development: Introduction*. Recuperado el 29 de octubre de 2026, de https://trunkbaseddevelopment.com/
 
 Hevner, A. R., March, S. T., Park, J., & Ram, S. (2004). Design science in information systems research. *MIS Quarterly, 28*(1), 75–106. https://doi.org/10.2307/25148625
 
+Humble, J., & Farley, D. (2010). *Continuous delivery: Reliable software releases through build, test, and deployment automation*. Addison-Wesley Professional. https://martinfowler.com/books/continuousDelivery.html
+
 International Organization for Standardization, & International Electrotechnical Commission. (2024a). *ISO/IEC 29110-1-1:2024: Systems and software engineering — Lifecycle profiles for very small entities (VSEs) — Part 1-1: Overview*. https://www.iso.org/standard/85337.html
 
+Jacobson, I., Ng, P.-W., McMahon, P. E., Spence, I., & Lidman, S. (2012). The essence of software engineering. *Communications of the ACM, 55*(12), 42–49. https://doi.org/10.1145/2380656.2380670
+
+Jacobson, I., Ng, P.-W., McMahon, P. E., Spence, I., & Lidman, S. (2013). *The essence of software engineering: Applying the SEMAT kernel*. Addison-Wesley Professional. https://www.informit.com/store/essence-of-software-engineering-applying-the-semat-9780321885951
+
 Laporte, C. Y., Munoz, M., Mejia Miranda, J., & OConnor, R. V. (2018). Applying software engineering standards in very small entities: From startups to grownups. *IEEE Software, 35*(1), 99–103. https://doi.org/10.1109/MS.2017.4541041
+
+Object Management Group. (2018). *Essence, Version 1.2*. https://www.omg.org/spec/Essence/1.2/About-Essence/
 
 Peffers, K., Tuunanen, T., Rothenberger, M. A., & Chatterjee, S. (2007). A design science research methodology for information systems research. *Journal of Management Information Systems, 24*(3), 45–77. https://doi.org/10.2753/MIS0742-1222240302
 
@@ -276,7 +341,11 @@ Pino, F. J., García, F., & Piattini, M. (2008). Software process improvement in
 
 Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. https://scrumguides.org/scrum-guide.html
 
+Semantic Versioning. (s. f.). *Semantic Versioning 2.0.0*. Recuperado el 29 de octubre de 2026, de https://semver.org/
+
 Washizaki, H. (Ed.). (2024). *Guide to the Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0*. IEEE Computer Society. https://www.computer.org/education/bodies-of-knowledge/software-engineering
+
+Yin, R. K. (2018). *Case study research and applications: Design and methods* (6th ed.). SAGE. https://us.sagepub.com/en-us/nam/case-study-research-and-applications/book250150
 
 # Anexos
 

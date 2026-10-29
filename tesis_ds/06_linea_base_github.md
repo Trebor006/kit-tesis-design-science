@@ -22,7 +22,7 @@ La situación general sigue mostrando institucionalización incompleta: algunos 
 |:--|:--|:--|:--|:--|:--|:--|
 | Central | Backend Odoo | Python - Odoo | `https://github.com/PRX/Premmium-Finance` | Sí | Estaba en otra organización. | El backend operativo está en servidor local; existe clon en Odoo.sh que no siempre está actualizado. |
 | Central | API | C# | `https://github.com/joselo/insFinanceApi` | No | Cuenta personal; antes no estaba en GitHub. | Pendiente migración a la organización institucional. Hubo cambios en las dos semanas, pero no fueron subidos. |
-| Central | Frontend | Angular - TypeScript | `https://github.com/PRX/central-front` | Sí | Estaba en otra organización; incorporación aproximada en abril de 2026. | Sin actividad en la ventana; uso histórico de solicitudes de integración y despliegue automático desde rama de prueba. |
+| Central | Frontend | Angular - TypeScript | Repositorio externo de Central Frontend; identificador y enlace reservados en evidencia privada. | No | Permanecía en una organización externa antes de la ventana base. | Sin actividad en la ventana; uso histórico de solicitudes de integración y despliegue automático desde rama de prueba. La migración requiere autorización porque integrantes de otro equipo tienen acceso vigente. |
 | Ansular | Backend Odoo | Python - Odoo | `https://github.com/PRX/ansular-trading` | Sí | Estaba en otra organización; incorporación aproximada en febrero de 2026. | Requiere coordinación con desarrolladores Odoo para acceso directo y evidencia complementaria. |
 | Ansular | Frontend | Angular - TypeScript | `https://github.com/software/ansular-front` | No | Está en otra organización. | Pendiente migración al GitHub institucional. |
 | PConst | Backend | Express.js - TypeScript | `https://github.com/software/pconst-back` | No | Está en otra organización. | Usa prácticas de commits no documentadas; tiene pruebas unitarias, pruebas de integración y empaquetado automático hacia AWS Lambda. |
@@ -85,10 +85,10 @@ La situación general sigue mostrando institucionalización incompleta: algunos 
 | Proyecto | Central |
 | Componente | Frontend |
 | Tecnología | Angular - TypeScript |
-| Repositorio | `https://github.com/PRX/central-front` |
+| Repositorio | Repositorio externo de Central Frontend; identificador y enlace reservados en evidencia privada `E-GH-BASE-05`. |
 | Rama principal actual | `main` |
-| ¿Está en GitHub institucional de PRX? | Sí |
-| Situación previa | Estaba en otra organización; incorporación aproximada en abril de 2026. |
+| ¿Está en GitHub institucional de PRX? | No |
+| Situación previa | Estaba en una organización externa antes del 21 de septiembre de 2026. La clasificación se corrige con base en la verificación del tesista y en la evidencia privada `E-GH-BASE-05`, capturada el 28 de octubre de 2026. La captura acredita la condición actual; la fecha previa a la ventana se registra como declaración verificable del tesista, no como inferencia de la captura. |
 | Ramas creadas en la ventana | 0 |
 | Commits en la ventana | 0 |
 | Solicitudes de integración en la ventana | 0 |
@@ -96,7 +96,7 @@ La situación general sigue mostrando institucionalización incompleta: algunos 
 | ¿Existe convención documentada de ramas? | No |
 | ¿Existe convención documentada de commits? | No |
 | ¿Hay evidencia de verificación en solicitudes de integración? | No aplica en la ventana; existe evidencia histórica declarada fuera del periodo. |
-| Observaciones | En las últimas semanas no hubo desarrollo. El tesista declara uso histórico de solicitudes de integración, separación en ramas `test` y `master`, y despliegue automático desde `test` hacia servidor de pruebas. La evidencia histórica de solicitudes de integración fuera de la ventana observada no se contabiliza en los indicadores principales de línea base. |
+| Observaciones | En las últimas semanas no hubo desarrollo. El tesista declara uso histórico de solicitudes de integración, separación en ramas `test` y `master`, y despliegue automático desde `test` hacia servidor de pruebas. La evidencia histórica de solicitudes de integración fuera de la ventana observada no se contabiliza en los indicadores principales de línea base. No se realizará migración hasta contar con autorización, debido a que integrantes de otro equipo conservan acceso al repositorio externo. Esta condición debe registrarse como excepción documentada, no como cumplimiento de institucionalización. |
 
 ### Ansular - Backend Odoo
 
@@ -198,7 +198,7 @@ Esta consolidación es preliminar porque todavía faltan capturas, exportaciones
 
 | Indicador | Valor preliminar | Cálculo | Interpretación |
 |:--|:--|:--|:--|
-| I2. Componentes con repositorio en GitHub institucional | 3 de 7 componentes, equivalente a 42,86 %. | Central Odoo, Central Frontend y Ansular Backend están en PRX; Central API, Ansular Frontend, PConst Backend y PConst Frontend no están en PRX. | Existe GitHub para los componentes, pero la institucionalización todavía es incompleta. |
+| I2. Componentes con repositorio en GitHub institucional | 2 de 7 componentes, equivalente a 28,57 %. | Central Odoo y Ansular Backend están en PRX; Central API, Central Frontend, Ansular Frontend, PConst Backend y PConst Frontend no están en PRX. | Existe GitHub para los componentes, pero la institucionalización todavía es más limitada de lo estimado inicialmente. |
 | I3. Cumplimiento de convención documentada de ramas | 0 %. | Ningún componente tiene convención documentada de ramas. | Existen ramas asociadas a solicitudes de integración y patrones usados en algunos repositorios, pero no constituyen estándar formal documentado. |
 | I4. Cumplimiento de convención documentada de commits | 0 %. | Ningún componente tiene convención documentada de commits. | Central Odoo y PConst muestran prácticas aparentes, pero no documentadas institucionalmente. |
 | I5. Cambios integrados mediante solicitudes de integración | 5 de 5 cambios integrados observables en GitHub durante la ventana, equivalente a 100 %. | Central Odoo: 1; Ansular Backend: 4. Todas las solicitudes fueron fusionadas dentro de las fechas indicadas. El cálculo excluye trabajo no subido a GitHub, como el caso reportado de Central API. | Existe uso de solicitudes de integración en los cambios observables de Odoo, pero no hay homogeneidad entre todos los componentes, no hay revisión independiente y no hay evidencia de verificación asociada. |
@@ -214,6 +214,8 @@ Esta consolidación es preliminar porque todavía faltan capturas, exportaciones
 6. Central Frontend, Central API, Ansular Frontend, PConst Backend y PConst Frontend tienen evidencia histórica de uso de solicitudes de integración fuera de la ventana observada. Esa evidencia se conserva como contexto, pero no se contabiliza en los indicadores principales porque la línea base mide el periodo del 21 de septiembre de 2026 al 4 de octubre de 2026.
 7. En Central Frontend, las prácticas de rama de trabajo, solicitud de integración, referencia al ticket y `squash merge` fueron introducidas por el tesista después de recibir un repositorio con trazabilidad inicial mínima. Por tanto, no se interpretan como estándar institucional existente, sino como antecedente práctico de la propuesta de estandarización.
 8. Existen diferencias de nomenclatura entre componentes: en Central Frontend se usa una rama de prueba denominada `test`, mientras que en proyectos Odoo aparece una rama o destino denominado `Stage`. Esta variación refuerza la ausencia de una convención institucional única para ramas de integración o validación.
+
+9. La condición de Central Frontend se corrigió el 28 de octubre de 2026. La evidencia privada `E-GH-BASE-05` muestra que el repositorio pertenece a una organización externa; el tesista confirmó que esa condición existía antes de la ventana base. La corrección reduce I2 de 3 de 7 a 2 de 7 componentes institucionales. No se atribuye esta situación al marco ni se la presenta como cambio posterior, pues corresponde a la línea base.
 9. En los proyectos donde un solo desarrollador concentra el trabajo de un componente, las solicitudes de integración pueden ser creadas y fusionadas por la misma persona. Por tanto, la existencia de solicitud de integración no debe interpretarse automáticamente como revisión independiente. El marco deberá distinguir entre solicitud de integración como mecanismo de trazabilidad y solicitud de integración revisada por un tercero.
 
 ## Datos pendientes para cerrar esta línea base

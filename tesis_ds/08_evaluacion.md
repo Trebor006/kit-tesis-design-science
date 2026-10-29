@@ -16,7 +16,7 @@ La evaluación seguirá una estrategia alineada con FEDS: evaluación de campo f
 | Rediseño | Iteración de diseño | Ajustar reglas, plantilla o comunicación del marco según evidencia formativa. | Ejecutado: V1.1 alinea ramas permanentes con la práctica histórica del contexto. |
 | Evaluación sumativa inicial | Campo sumativa | Comparar resultados posteriores contra línea base con criterios definidos antes de construir. | Pendiente. |
 
-La evaluación no se diseñará como encuesta genérica de satisfacción. El artefacto es un marco con reglas, plantillas y estándares; por tanto, debe evaluarse por aplicabilidad, cobertura, coherencia, adopción observable y evidencia producida.
+La evaluación no se diseñará como encuesta genérica de satisfacción. El artefacto es un marco con reglas, plantillas y estándares; por tanto, debe evaluarse por aplicabilidad, cobertura, coherencia, adopción observable y evidencia producida. La estrategia de un caso instrumental requiere explicitar la unidad de análisis, las fuentes de evidencia y las limitaciones de generalización; Runeson y Höst (2009) respaldan esta disciplina de reporte. Por ello, los registros de Odoo, GitHub, pruebas y entrevistas se triangulan, pero no se interpretan como una muestra estadística de equipos pequeños.
 
 ## Contexto y muestra de evaluación
 
@@ -57,7 +57,9 @@ Los criterios se derivan de E6 y E7b, no de resultados observados después. Cual
 | `E-GH-ORG-01` | Disponible. | Evidencia instanciación técnica inicial en repositorio `.github`. |
 | `E-GH-INT-01` | Pendiente. | Evidencia de primera solicitud real posterior al marco. |
 | `E-GH-INT-02` | Pendiente opcional. | Evidencia de plantilla PR completada en un cambio real. |
-| `E-GH-INT-03` | Pendiente opcional. | Evidencia de commits con convención en cambio real. |
+| `E-GH-INT-03` | Disponible parcialmente. | Evidencia de rama y tres commits conformes de `CCC-7480` en Central API; falta captura del cuarto commit declarado por la solicitud para afirmar conformidad completa. |
+| `E-GH-INT-05` | Disponible parcialmente. | Solicitud `CCC-7480` abierta hacia `main` con plantilla completada; `E-TEST-INT-02` acredita pruebas unitarias. Faltan evidencia de construcción, fusión y eliminación de rama. |
+| `E-TEST-INT-02` | Disponible. | Ejecución satisfactoria de 182 pruebas unitarias en Central API para el cambio `CCC-7480`; no acredita por sí sola construcción ni despliegue. |
 | `E-TEST-INT-01` | Pendiente. | Evidencia de verificación técnica en componente crítico. |
 | `E-FORM-01` | Pendiente. | Evidencia de fricciones y ajustes formativos. |
 | `E-SUM-01` | Pendiente. | Evidencia de medición posterior comparada contra línea base. |
@@ -145,3 +147,7 @@ E8 tiene **evaluación formativa ejecutada y rediseño V1.1 documentado**. No qu
 ## Registro posterior de E-SUM-01
 
 Se registró `08_resultado_sumativo_inicial_CCC-7336.md` como comparación sumativa inicial de un caso entre la línea base de Central API y la tarea posterior `CCC-7336`. El resultado demuestra trazabilidad y verificación técnica en un cambio real, pero documenta una desviación respecto al plan de periodo comparable: solo existe un cambio posterior con evidencia completa. Por ello, E8 sigue abierto para cierre estricto, aunque cuenta con resultado sumativo inicial de caso.
+
+## Referencias
+
+Runeson, P., & Höst, M. (2009). Guidelines for conducting and reporting case study research in software engineering. *Empirical Software Engineering, 14*(2), 131–164. https://doi.org/10.1007/s10664-008-9102-8
