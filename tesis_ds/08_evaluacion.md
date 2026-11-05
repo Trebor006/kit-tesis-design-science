@@ -2,9 +2,9 @@
 
 ## Propósito
 
-Este documento planifica la evaluación del **Marco ligero progresivo para la gestión técnica trazable del trabajo de desarrollo en equipos pequeños con baja estandarización**. La evaluación distingue dos funciones: demostrar utilidad práctica del artefacto en el contexto de Central y generar evidencia suficiente para formular principios de diseño con alcance analítico prudente.
+Este documento registra el plan y la ejecución de la evaluación del **Marco ligero progresivo para la gestión técnica trazable del trabajo de desarrollo en equipos pequeños con baja estandarización**. La evaluación distingue dos funciones: demostrar utilidad práctica del artefacto en el contexto de Central y generar evidencia para formular principios de diseño con alcance analítico prudente.
 
-En el estado actual, E8 se redacta como **plan de evaluación y estructura de resultados pendientes**. No se declara evaluación ejecutada todavía, porque aún faltan dos evidencias críticas: una solicitud de integración real posterior al marco (`E-GH-INT-01`) y una verificación técnica en un componente crítico (`E-TEST-INT-01`). Esta distinción protege la tesis contra el error de presentar construcción documental como evaluación de campo.
+El plan original previó una comparación por período posterior equivalente a la línea base. La ejecución disponible se cerró como una serie acotada de tres cambios, documentada en `08_resultado_sumativo_serie_casos_central.md`. Por tanto, E8 no afirma mejora sostenida ni adopción institucional: afirma aplicabilidad inicial y utilidad trazable en los casos observados.
 
 ## Enfoque metodológico de evaluación
 
@@ -14,7 +14,7 @@ La evaluación seguirá una estrategia alineada con FEDS: evaluación de campo f
 |:--|:--|:--|:--|
 | Evaluación formativa | Campo formativa | Observar uso real inicial, fricciones, incumplimientos y necesidad de ajuste del marco. | Ejecutada en `CCC-7336`; ver `08_registro_formativo_CCC-7336.md`. |
 | Rediseño | Iteración de diseño | Ajustar reglas, plantilla o comunicación del marco según evidencia formativa. | Ejecutado: V1.1 alinea ramas permanentes con la práctica histórica del contexto. |
-| Evaluación sumativa inicial | Campo sumativa | Comparar resultados posteriores contra línea base con criterios definidos antes de construir. | Pendiente. |
+| Evaluación sumativa inicial | Campo sumativa | Valorar la utilidad de la iteración V1.0–V1.1 frente a criterios definidos antes de construir. | Ejecutada como serie acotada de tres casos cerrados; ver `08_resultado_sumativo_serie_casos_central.md`. |
 
 La evaluación no se diseñará como encuesta genérica de satisfacción. El artefacto es un marco con reglas, plantillas y estándares; por tanto, debe evaluarse por aplicabilidad, cobertura, coherencia, adopción observable y evidencia producida. La estrategia de un caso instrumental requiere explicitar la unidad de análisis, las fuentes de evidencia y las limitaciones de generalización; Runeson y Höst (2009) respaldan esta disciplina de reporte. Por ello, los registros de Odoo, GitHub, pruebas y entrevistas se triangulan, pero no se interpretan como una muestra estadística de equipos pequeños.
 
@@ -55,14 +55,21 @@ Los criterios se derivan de E6 y E7b, no de resultados observados después. Cual
 | `E-ORG-INT-04` | Disponible. | Evidencia construcción de estándar de commits. |
 | `E-ORG-INT-05` | Disponible. | Evidencia organización documental de productos operativos. |
 | `E-GH-ORG-01` | Disponible. | Evidencia instanciación técnica inicial en repositorio `.github`. |
-| `E-GH-INT-01` | Pendiente. | Evidencia de primera solicitud real posterior al marco. |
-| `E-GH-INT-02` | Pendiente opcional. | Evidencia de plantilla PR completada en un cambio real. |
+| `E-GH-INT-01` | Disponible. | Evidencia de primera solicitud real posterior al marco en `CCC-7336`. |
+| `E-GH-INT-02` | Disponible. | Evidencia de fusión y eliminación de rama en `CCC-7336`. |
 | `E-GH-INT-03` | Disponible parcialmente. | Evidencia de rama y tres commits conformes de `CCC-7480` en Central API; falta captura del cuarto commit declarado por la solicitud para afirmar conformidad completa. |
 | `E-GH-INT-05` | Disponible parcialmente. | Solicitud `CCC-7480` abierta hacia `main` con plantilla completada; `E-TEST-INT-02` acredita pruebas unitarias. Faltan evidencia de construcción, fusión y eliminación de rama. |
+| `E-GH-INT-06` | Disponible. | Aplicación posterior en Central Frontend para `CCC-7480`: rama, *commit*, solicitud #27 hacia `main`, fusión y eliminación de rama. La plantilla y verificación se registran en `E-GH-INT-08` y `E-TEST-INT-03`. |
+| `E-GH-INT-07` | Disponible. | Aplicación posterior en Central Frontend para `CCC-7477`: *commit*, solicitud #26 fusionada hacia `main` desde rama conforme y eliminación posterior de rama. La plantilla y excepción de verificación se registran en `E-GH-INT-09`. |
+| `E-GH-INT-08` | Disponible. | Plantilla completa de `CCC-7480` en Frontend, con método, evidencia de verificación y validación documentada. |
+| `E-GH-INT-09` | Disponible. | Plantilla completa de `CCC-7477` en Frontend, con comprobaciones exitosas y excepción técnica explícita de Karma y construcción por permisos de entorno. |
+| `E-ODOO-INT-02` | Disponible. | Tarea real posterior `CCC-7480` para implementar pólizas provisionales. |
+| `E-ODOO-INT-03` | Disponible. | Tarea real posterior `CCC-7477` para actualizar filtros de la pantalla de contratos. |
 | `E-TEST-INT-02` | Disponible. | Ejecución satisfactoria de 182 pruebas unitarias en Central API para el cambio `CCC-7480`; no acredita por sí sola construcción ni despliegue. |
-| `E-TEST-INT-01` | Pendiente. | Evidencia de verificación técnica en componente crítico. |
-| `E-FORM-01` | Pendiente. | Evidencia de fricciones y ajustes formativos. |
-| `E-SUM-01` | Pendiente. | Evidencia de medición posterior comparada contra línea base. |
+| `E-TEST-INT-03` | Disponible. | Ejecución satisfactoria visible de pruebas Karma de `ContractsComponent`, incluidas pruebas vinculadas con pólizas provisionales de `CCC-7480` en Central Frontend. |
+| `E-TEST-INT-01` | Disponible. | Evidencia de verificación técnica en componente crítico para `CCC-7336`. |
+| `E-FORM-01` | Disponible. | Evidencia de aplicación formativa y ajuste V1.1. |
+| `E-SUM-01` | Disponible como antecedente. | Comparación inicial de caso para `CCC-7336`, posteriormente integrada y acotada por `E-SUM-02`. |
 
 ## Resultado de evaluación formativa ejecutada
 
@@ -109,44 +116,46 @@ Se debe generar V1.1-Central si aparece cualquiera de estas situaciones:
 
 La fricción ya observada en `E-GH-ORG-01`, donde la rama `config/ADM-4940_config_pr_template` usó guion bajo en la descripción, anticipa un ajuste comunicacional: reforzar que la descripción corta debe separarse con guiones.
 
-## Evaluación sumativa inicial planificada
+## Plan sumativo original y desviación ejecutada
 
-### Pregunta sumativa
+### Pregunta sumativa original
 
 Después del rediseño formativo, ¿V1.1-Central mejora la trazabilidad técnica y la evidencia mínima de verificación frente a la línea base del 21 de septiembre al 4 de octubre de 2026?
 
-### Comparación esperada
+### Comparación originalmente esperada
 
 | Indicador | Línea base | Resultado posterior | Estado |
 |:--|:--|:--|:--|
-| I1. Tareas activas visibles | Parcial. | Pendiente. | Pendiente. |
-| I3. Convención documentada de ramas | 0 %. | Pendiente. | Pendiente. |
-| I4. Convención documentada de commits | 0 %. | Pendiente. | Pendiente. |
-| I5. Solicitudes de integración | 5/5 observables en GitHub, con advertencia de trabajo no subido. | Pendiente. | Pendiente. |
-| I6. Evidencia mínima de verificación | 0/5. | Pendiente. | Pendiente. |
-| I7. Verificación técnica en componente crítico | Parcial. | Pendiente. | Pendiente. |
-| I9. Evidencia trazable de entregables | Parcial. | Pendiente. | Pendiente. |
+| I1. Tareas activas visibles | Parcial. | Tres tareas visibles; validez completa no calculable. | Resultado de caso; ver `E-SUM-02`. |
+| I3. Convención documentada de ramas | 0 %. | Tres ramas observables conformes. | Resultado de caso; no tasa de período. |
+| I4. Convención documentada de commits | 0 %. | Al menos un commit conforme por caso. | Porcentaje no calculable. |
+| I5. Solicitudes de integración | 5/5 observables en GitHub, con advertencia de trabajo no subido. | 3/3 cambios cerrados integrados mediante solicitud. | Alcanzado solo en la serie acotada. |
+| I6. Evidencia mínima de verificación | 0/5. | 3/3 solicitudes cerradas con plantilla y evidencia o excepción. | Alcanzado solo en la serie acotada. |
+| I7. Verificación técnica en componente crítico | Parcial. | Pruebas API y Frontend documentadas. | Alcanzado. |
+| I9. Evidencia trazable de entregables | Parcial. | Cadena trazable en tres casos. | Mejora cualitativa por caso. |
 
-La evaluación sumativa inicial no reclamará transformación completa de PRX. Su alcance será demostrar mejora observable en Central y derivar principios de diseño proporcionales a esa evidencia.
+La desviación se documentó antes de formular conclusiones finales: la evidencia no permitió reconstruir un período posterior completo ni denominadores exhaustivos. Por ello, el resultado se reporta como serie de casos y no como comparación de tasas organizacionales.
 
 ## Amenazas a la validez
 
 | Amenaza | Riesgo | Mitigación | Impacto residual |
 |:--|:--|:--|:--|
-| Validez de constructo | Confundir publicación de estándares con adopción real. | Separar evidencias de construcción (`E-ORG-INT-*`) de evidencias de uso real (`E-GH-INT-*`). | Medio hasta obtener PR real. |
+| Validez de constructo | Confundir publicación de estándares con adopción real. | Separar evidencias de construcción (`E-ORG-INT-*`) de evidencias de uso real (`E-GH-INT-*`). | Medio: hay tres casos de uso, no adopción sostenida. |
 | Validez interna | El tesista influye directamente en el diseño y aplicación. | Documentar decisiones, fricciones y excepciones; usar responsables codificados. | Medio. |
 | Validez externa | Evaluación inicial concentrada en Central. | Declarar generalización analítica solo a contextos similares. | Alto si se intenta generalizar demasiado. |
-| Validez de conclusión | Pocos casos de uso pueden producir conclusiones débiles. | No usar afirmaciones estadísticas; usar evidencia trazable y análisis cualitativo. | Medio. |
+| Validez de conclusión | Pocos casos de uso pueden producir conclusiones débiles. | No usar afirmaciones estadísticas; usar evidencia trazable y análisis cualitativo. | Alto para eficacia sostenida; medio para aplicabilidad inicial. |
 | Sesgo post-hoc | Ajustar criterios después de ver resultados. | Mantener criterios definidos en E6 y E7b; documentar ajustes como rediseño. | Bajo si se respeta la trazabilidad. |
 | Confidencialidad | Evidencias contienen datos internos. | Mantener capturas privadas y usar códigos en tesis pública. | Bajo si se anonimiza. |
 
 ## Estado actual de E8
 
-E8 tiene **evaluación formativa ejecutada y rediseño V1.1 documentado**. No queda cerrada porque falta la evaluación sumativa inicial `E-SUM-01`: una comparación posterior predefinida contra la línea base. Hasta contar con esa comparación, no se deben declarar mejora sostenida ni principios de diseño validados.
+E8 tiene **evaluación formativa ejecutada y rediseño V1.1 documentado**, seguida por la evaluación de campo sumativa `E-SUM-02`, realizada como serie acotada de tres cambios cerrados de Central. La evaluación conserva los criterios definidos antes de construir; cuando la evidencia no permite calcular un porcentaje completo, el resultado se declara no calculable y no se reemplaza por una estimación favorable.
+
+E8 queda **cerrada con limitación metodológica documentada**. El cambio frente al plan original —medición por período comparable— se explica en `08_resultado_sumativo_serie_casos_central.md`. La evidencia permite afirmar utilidad inicial y aplicabilidad de la cadena de trazabilidad en tres cambios reales, pero no mejora sostenida, adopción institucional ni tasas organizacionales.
 
 ## Registro posterior de E-SUM-01
 
-Se registró `08_resultado_sumativo_inicial_CCC-7336.md` como comparación sumativa inicial de un caso entre la línea base de Central API y la tarea posterior `CCC-7336`. El resultado demuestra trazabilidad y verificación técnica en un cambio real, pero documenta una desviación respecto al plan de periodo comparable: solo existe un cambio posterior con evidencia completa. Por ello, E8 sigue abierto para cierre estricto, aunque cuenta con resultado sumativo inicial de caso.
+Se registró `08_resultado_sumativo_inicial_CCC-7336.md` como comparación inicial de un caso entre la línea base de Central API y la tarea posterior `CCC-7336`. Posteriormente, las evidencias de `CCC-7480` y `CCC-7477` permitieron consolidar `E-SUM-02` como serie acotada. Este resultado sustituye el estado de “abierto” previo, sin borrar el registro de la desviación respecto al período comparable originalmente planificado.
 
 ## Referencias
 

@@ -46,7 +46,7 @@ Los criterios de superioridad contextual serán: mayor proporción de tareas act
 
 ## Gate de E5
 
-E5 queda preliminarmente satisfecho para fines del perfil porque ya se puede responder por qué las soluciones existentes son insuficientes para el problema de PRX y qué aportará el marco propuesto: una composición ligera, contextualizada y evaluable de prácticas iniciales. No obstante, para la tesis completa deberá ampliarse esta revisión con una búsqueda sistemática más exhaustiva en bases académicas y, si el tiempo lo permite, con análisis de marcos ligeros adicionales usados en empresas pequeñas.
+E5 queda cerrado como revisión de alcance dirigido, no como revisión sistemática exhaustiva. La matriz permite responder con evidencia por qué ISO/IEC 29110, CMMI, Scrum, GitHub Flow y las solicitudes de integración no resuelven por sí solos la clase de problema, y qué aporta la composición propuesta. La ausencia de un mapeo sistemático amplio se declara como límite de cobertura bibliográfica; no invalida la novedad relativa ni se presenta como exhaustividad inexistente.
 
 ## Referencias
 

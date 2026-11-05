@@ -103,7 +103,7 @@ Este marco teórico pasa parcialmente la prueba de eliminación. Si se eliminan 
 
 Si se eliminan Cleland-Huang et al. (2014), Angular, Conventional Commits, Driessen, Hammant y GitHub Docs, el diseño conservaría sus reglas internas, pero perdería su justificación para distinguir trazabilidad mínima, formatos de commits, alternativas de ramificación, estados de validación y límites de la fusión por compresión. Del mismo modo, sin Duvall et al. (2007), Humble y Farley (2010) y Semantic Versioning, C5 quedaría como una lista local de campos sin conexión explícita con entrega e identificación de versiones.
 
-La búsqueda académica adicional sobre mejora de procesos en pequeñas organizaciones fue reforzada con Pino et al. (2008), Laporte et al. (2018), Buchalcevova (2021) y Vives et al. (2022). Para el perfil, el marco teórico es suficiente; para la tesis completa conviene ampliar la revisión sistemática y separar con mayor detalle la base teórica del estado del arte de soluciones existentes.
+La búsqueda académica adicional sobre mejora de procesos en pequeñas organizaciones fue reforzada con Pino et al. (2008), Laporte et al. (2018), Buchalcevova (2021) y Vives et al. (2022). La base de conocimiento se complementó posteriormente con fuentes sobre trazabilidad, revisión, granularidad de tareas, gestión de configuración y reporte de casos, registradas en `04_plan_ampliacion_bibliografica.md` y `referencias.md`. E4 queda cerrada como fundamentación del objeto de estudio: las adaptaciones específicamente locales —campos exactos de plantilla, niveles 0–5 y auto-validación— se declaran como decisiones contextuales, no como teoría general.
 
 ## Referencias
 

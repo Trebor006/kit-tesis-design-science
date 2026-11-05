@@ -238,7 +238,7 @@ La versión 1 del marco se considera suficientemente diseñada para pasar a E7d 
 
 ## Estado del gate E7c
 
-E7c queda **suficiente para el hito**. El diseño cubre los requisitos de E7b, explicita componentes, relaciones, reglas, plantilla operativa, niveles de adopción, decisiones descartadas y aplicación inicial. Para la tesis completa, este diseño deberá enriquecerse con resultados de construcción, verificación interna, evaluación formativa, rediseño y evaluación sumativa.
+E7c queda **cerrado**. El diseño cubre los requisitos de E7b, explicita componentes, relaciones, reglas, plantilla operativa, niveles de adopción, decisiones descartadas y aplicación inicial. La construcción, verificación, evaluación formativa, rediseño V1.1 y evaluación sumativa acotada se documentan en E7e–E10; C5 permanece diseñado pero no evaluado en una entrega real.
 
 ## Referencias
 

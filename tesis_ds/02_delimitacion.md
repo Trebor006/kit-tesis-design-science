@@ -116,7 +116,7 @@ La evaluación prevista tendrá un ciclo formativo y un ciclo sumativo inicial d
 
 ## Estado del gate E2
 
-E2 queda parcialmente satisfecha. El problema de diseño, el problema de investigación —que en el formato institucional se registrará como problema científico—, el objeto de estudio, el campo de acción y la propuesta ya cuentan con una formulación coherente. Falta verificar la base bibliográfica inicial sobre mejora de procesos de software, modelos de madurez y adopción de prácticas en empresas pequeñas antes de cerrar definitivamente la etapa.
+E2 queda cerrada. El problema de diseño, el problema de investigación —que en el formato institucional se registrará como problema científico—, el objeto de estudio, el campo de acción y la propuesta fueron fundamentados en E4–E5 y se mantuvieron como referencia durante la construcción y evaluación. La evaluación posterior delimitó la utilidad demostrada a tres cambios cerrados de Central; no alteró retrospectivamente el problema ni los criterios definidos antes de construir.
 
 
 

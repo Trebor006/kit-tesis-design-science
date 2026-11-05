@@ -5,10 +5,10 @@
 | Campo | Descripción |
 |:--|:--|
 | Nombre | Marco ligero progresivo para la gestión técnica trazable del trabajo de desarrollo en equipos pequeños con baja estandarización. |
-| Versión documentada | V1.0-Central. |
+| Versión documentada | V1.1-Central (V1.0-Central con enmienda contextual de ramas permanentes). |
 | Tipología Design Science | Marco, con componentes de método, reglas mínimas, plantillas operativas, estándares, indicadores y niveles de adopción. |
 | Contexto de primera aplicación | Proyecto Central de PRX: Central Odoo Backend, Central API y Central Frontend. |
-| Estado actual | Construido, instanciado y aplicado formativamente en `CCC-7336`; cuenta con resultado sumativo inicial de caso, sin evidencia de adopción sostenida. |
+| Estado actual | Construido, instanciado, evaluado formativamente en `CCC-7336` y evaluado sumativamente como serie acotada de tres casos; sin evidencia de adopción sostenida. |
 | Archivos base | `07b_requisitos.md`, `07c_diseno_artefacto.md`, `07c_plantilla_solicitud_integracion.md`, `07d_plan_construccion.md`, `07e_construccion_verificacion.md`. |
 
 ## Problema que resuelve
@@ -119,6 +119,8 @@ Cada cambio funcional debe declarar qué se verificó, cómo se verificó y con 
 | `E-GH-INT-01` y `E-GH-INT-02` | Intervención | Solicitud `CCC-7336` con plantilla, fusión y eliminación de rama. | I3, I4, I5, I6, I9. |
 | `E-TEST-INT-01` | Intervención | Ejecución exitosa de 169 pruebas unitarias. | I7. |
 | `E-ORG-INT-06` | Intervención/rediseño | Publicación de `STD-GIT-001` V1.1. | I3, I9. |
+| `E-ODOO-INT-02`, `E-GH-INT-06`, `E-GH-INT-08` y `E-TEST-INT-03` | Intervención posterior | Tarea `CCC-7480`, cadena trazable fusionada, plantilla completa y pruebas unitarias visibles en Central Frontend. | I1, I3, I4, I5, I6, I7, I9. |
+| `E-ODOO-INT-03`, `E-GH-INT-07` y `E-GH-INT-09` | Intervención posterior | Tarea `CCC-7477`, cadena trazable fusionada, plantilla completa y excepción técnica documentada en Central Frontend. | I1, I3, I4, I5, I6, I9. |
 
 ## Instanciación PRX
 
@@ -131,7 +133,7 @@ Esta instanciación no define universalmente el artefacto. Otro equipo con herra
 | Limitación o fricción | Evidencia | Implicación |
 |:--|:--|:--|
 | La rama `config/ADM-4940_config_pr_template` usa guion bajo en la descripción. | `E-GH-ORG-01`. | La convención fue adoptada parcialmente; debe reforzarse el uso de guiones en la descripción corta. |
-| La evaluación posterior se limita a un cambio de Central API. | `08_resultado_sumativo_inicial_CCC-7336.md`. | No permite afirmar adopción sostenida ni mejora institucional. |
+| La evaluación sumativa es una serie acotada de tres casos, no un período completo. | `08_resultado_sumativo_serie_casos_central.md`. | No permite afirmar adopción sostenida, mejora institucional ni tasas organizacionales. |
 | Central API continúa fuera de la organización institucional. | Línea base y resultado sumativo inicial. | Debe registrarse como excepción hasta completar migración; I2 no se declara cumplido. |
 | La publicación en SharePoint evidencia disponibilidad, no adopción efectiva por todos los desarrolladores. | `E-ORG-INT-01` a `E-ORG-INT-05`. | Debe complementarse con uso real y evaluación formativa. |
 
@@ -164,8 +166,8 @@ La reproducción no exige usar SharePoint ni GitHub, pero sí exige conservar pr
 
 ## Estado del artefacto para evaluación
 
-El artefacto está **construido, instanciado y evaluado formativamente en una aplicación real de Central API**. También cuenta con un resultado sumativo inicial de caso. No debe presentarse como adoptado institucionalmente ni como evaluado de forma sostenida, porque la evidencia posterior se limita a `CCC-7336`.
+El artefacto está **construido, instanciado y evaluado**: `CCC-7336` fue la aplicación formativa de V1.0 que produjo la enmienda V1.1; `CCC-7480` y `CCC-7477` en Central Frontend ampliaron la evaluación sumativa de la iteración mediante una serie acotada. No debe presentarse como adoptado institucionalmente ni como evaluado de forma sostenida, porque no existe un período comparable con denominadores completos.
 
 ## Estado del gate E7f
 
-E7f queda **suficiente como ficha reproducible del artefacto para el borrador actual**. La ficha consolida identificación, alcance, componentes, reglas, productos operativos, evidencias, instanciación PRX, limitaciones e instrucciones mínimas de aplicación. Cualquier aplicación posterior deberá ampliar la evidencia sin alterar el registro de `CCC-7336`.
+E7f queda **cerrado como ficha reproducible del artefacto**. La ficha consolida identificación, alcance, componentes, reglas, productos operativos, evidencias, instanciación PRX, limitaciones e instrucciones mínimas de aplicación. Una aplicación posterior podrá ampliar la evidencia, pero deberá preservarse el registro de los tres casos evaluados y sus límites.

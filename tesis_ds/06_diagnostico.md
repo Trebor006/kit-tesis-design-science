@@ -68,7 +68,7 @@ El registro codificado se conserva en `06_registros_entrevistas_diagnostico_2026
 
 ## Estado del gate E6
 
-E6 queda en estado preliminar. Los indicadores tienen definición operacional, fuente de datos y valor esperado, pero las líneas base numéricas todavía deben levantarse antes de aplicar el marco. El gate no se cerrará hasta contar con al menos una medición inicial real de Odoo, GitHub y repositorios piloto, además de evidencia de contexto obtenida mediante entrevistas o revisión documental.
+La formulación preliminar fue superada por el levantamiento documentado en `06_linea_base_github.md`, `06_linea_base_odoo_tareas.md`, `06_consolidacion_indicadores.md` y las entrevistas retrospectivas codificadas. El estado vigente de cierre se establece en la sección “Estado actualizado del gate E6” al final de este documento.
 
 
 ## Plan operativo para levantar la línea base
@@ -123,7 +123,9 @@ Los instrumentos operativos se documentan en `tesis_ds/06_instrumentos_linea_bas
 
 ## Estado actualizado del gate E6
 
-E6 queda fortalecido, pero todavía no cerrado. Ya existen indicadores, reglas de codificación, fuentes, procedimiento de línea base e instrumentos mínimos. El cierre metodológico de E6 ocurrirá solo cuando se registren valores reales de línea base para los proyectos piloto seleccionados y exista al menos una fuente de contexto real adicional a la literatura, como entrevistas breves o revisión documental interna.
+E6 queda cerrado para el alcance de esta investigación. La línea base se congela en la ventana del 21 de septiembre al 4 de octubre de 2026, con fuentes documentales de Odoo, GitHub, repositorios y entrevistas retrospectivas codificadas. Cada indicador conserva definición, fuente y estado de línea base: cuando la evidencia es parcial o no permite un denominador confiable, el valor se registra como “parcial/no calculable”, no se inventa un porcentaje.
+
+Esta decisión no transforma I1, I7 o I9 en mediciones exhaustivas; delimita expresamente su interpretación. La evaluación sumativa posterior mantiene el mismo tratamiento: solo calcula proporciones donde existe denominador completo y reporta los demás indicadores por evidencia de caso. La limitación queda incorporada a las amenazas a la validez de E8 y E10.
 
 
 

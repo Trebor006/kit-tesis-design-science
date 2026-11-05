@@ -1,5 +1,7 @@
 # Corte de evidencia para predefensa — 29 de octubre de 2026
 
+> **Estado documental.** Registro histórico del corte realizado el 29 de octubre de 2026. Fue superado por evidencias posteriores de Central Frontend y por el cierre de E8–E10; las afirmaciones vigentes se encuentran en `08_resultado_sumativo_serie_casos_central.md`, `09_enlace_solucion.md` y `10_contribucion_conclusiones.md`.
+
 ## Decisión de corte
 
 La investigación se presenta en la predefensa con un corte de evidencia al 29 de octubre de 2026. Este corte permite exponer un artefacto construido, una aplicación formativa cerrada (`CCC-7336`) y una segunda aplicación real en curso (`CCC-7480`). No autoriza a declarar adopción sostenida del marco ni cierre de una evaluación sumativa por periodo comparable.

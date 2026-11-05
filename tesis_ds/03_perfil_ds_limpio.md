@@ -1,5 +1,7 @@
 ﻿# Perfil de investigación Design Science
 
+> **Estado documental.** Este es el perfil prospectivo cerrado antes de construir el artefacto. Conserva los compromisos originales y el tiempo futuro; la ejecución canónica está en E7e–E10. La evaluación sumativa finalmente se documentó como serie acotada de tres casos, no como período completo comparable.
+
 ## Título provisional
 
 **Marco ligero progresivo de gestión técnica trazable en equipos pequeños de desarrollo con baja estandarización**
@@ -35,7 +37,7 @@ La tipología principal del artefacto es **marco**, porque integrará constructo
 
 ## Campo de acción
 
-El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La primera aplicación y evaluación se concentrarán en el proyecto Central, con tres responsables técnicos codificados —Central Odoo Backend, Central API y Central Frontend—, durante un periodo posterior comparable con la línea base.
+El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial es la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La primera aplicación se concentró en Central con tres responsables técnicos codificados —Central Odoo Backend, Central API y Central Frontend—; la evaluación sumativa se limitó a una serie de cambios cerrados porque no fue posible reconstruir un período comparable completo.
 
 La delimitación excluye la certificación formal de madurez, la implantación completa de CMMI, la transformación integral de todos los procesos organizacionales y la automatización avanzada mediante agentes de calidad de código. Estas dimensiones pueden aparecer como antecedentes, restricciones o trabajo futuro, pero no forman parte del núcleo evaluable del perfil.
 

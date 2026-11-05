@@ -32,20 +32,20 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 
 - E0. Encuadre: completada el 2026-09-22.
 - E1. Áreas y temas: cerrada el 2026-09-22.
-- E2. Delimitación: suficiente para perfil; consolidada en `02_delimitacion.md`.
+- E2. Delimitación: cerrada; problema de diseño, problema de investigación —que en el formato institucional se registrará como problema científico—, objeto de estudio, campo de acción y propuesta consolidados en `02_delimitacion.md`.
 - E3. Perfil Design Science: cerrado para fines de perfil en `03_perfil_ds_limpio.md`.
-- E4. Marco teórico: preliminar suficiente para perfil; ampliable para tesis completa.
-- E5. Estado del arte: preliminar suficiente para perfil; ampliable para tesis completa.
-- E6. Diagnóstico: consolidado para avanzar, con línea base GitHub, línea base Odoo/tareas e indicadores I1-I9; falta resguardar evidencias privadas y fortalecer I7.
-- E7a. Alternativas de solución: cerrada para el hito.
-- E7b. Requisitos del artefacto: suficiente para el hito.
-- E7c. Diseño del artefacto: suficiente para el hito.
-- E7d. Plan de construcción y versiones: suficiente para el hito.
-- E7e. Construcción y verificación interna: cerrada para primera aplicación; `CCC-7336` aporta solicitud real, fusión, eliminación de rama y verificación técnica.
-- E7f. Ficha del artefacto: suficiente como ficha reproducible inicial.
-- E8. Evaluación: formativa ejecutada y rediseño V1.1 documentado; pendiente evaluación sumativa inicial.
-- E9. Enlace propuesta-solución: avanzado; pendiente evidencia sumativa.
-- E10. Contribución y conclusiones: iniciado como contribución preliminar; pendiente validación.
+- E4. Marco teórico: cerrado como fundamentación del objeto, con decisiones contextuales explícitamente delimitadas.
+- E5. Estado del arte: cerrado como revisión de alcance dirigido; no se presenta como revisión sistemática exhaustiva.
+- E6. Diagnóstico: cerrado con línea base GitHub, Odoo/tareas e indicadores I1-I9; los valores parciales o no calculables se declaran como limitación.
+- E7a. Alternativas de solución: cerrada.
+- E7b. Requisitos del artefacto: cerrada; evidencia de cumplimiento y límites trazados a E8–E9.
+- E7c. Diseño del artefacto: cerrada; C5 permanece diseñado, no evaluado en entrega real.
+- E7d. Plan de construcción y versiones: cerrado como plan ejecutado con desviación documentada de la medición por período.
+- E7e. Construcción y verificación interna: cerrada; tres aplicaciones cerradas y evidencia técnica o excepción documentada.
+- E7f. Ficha del artefacto: cerrada como ficha reproducible V1.1-Central.
+- E8. Evaluación: cerrada con evaluación formativa, rediseño V1.1 y evaluación sumativa de campo mediante serie acotada de tres casos; desviación respecto al período comparable documentada.
+- E9. Enlace propuesta-solución: cerrado con matriz de trazabilidad y limitaciones explícitas.
+- E10. Contribución y conclusiones: cerrado con principios de alcance analítico inicial, calibrados a la evidencia disponible.
 
 ## Decisiones tomadas
 
@@ -56,9 +56,10 @@ El tesista es ingeniero de software, cuenta con diplomados en DevOps y gestión 
 
 ## Pendientes inmediatos
 
-1. Registrar `E-SUM-01`: comparación posterior contra la línea base en Central.
-2. Actualizar E10 después de la comparación sumativa, manteniendo los principios como candidatos hasta que la evidencia soporte su formulación final.
-3. No presentar todavía contribución validada hasta completar la evaluación sumativa inicial.
+1. Atender las observaciones posteriores a la defensa: compilar el artefacto en un anexo único y declarar inequívocamente cuál es el artefacto final.
+2. Entregar los archivos canónicos de `tesis_ds/` al agente de traducción institucional para que regenere el IFI ALSIE y sustituya el borrador provisional. Este agente no realizará esa traducción.
+3. Mantener `C5` como componente diseñado no evaluado hasta contar con una entrega real; no atribuirle utilidad demostrada.
+4. Si Central genera nuevos cambios, repetir la evaluación con un período completo y actualizar la serie sin alterar los resultados ya registrados.
 
 ## Riesgos iniciales
 
@@ -624,7 +625,45 @@ El 29 de octubre de 2026 se verificaron e integraron once fuentes adicionales, c
 
 El 29 de octubre de 2026 se realizaron y registraron entrevistas remotas con notas autorizadas a `DEV-001` (Central Odoo Backend) y `DEV-002` (Central API), codificadas como `E-INT-BASE-01` y `E-INT-BASE-02`. Ambas refieren prácticas anteriores a la publicación de los estándares, los cuales permanecen como sugerencias no obligatorias para la organización. Las respuestas están registradas como declaraciones retrospectivas y no modifican la línea base ni acreditan adopción: falta contrastarlas con evidencia documental de Odoo.sh, GitHub, solicitudes de integración, pruebas y despliegues; `DEV-004` permanece pendiente.
 
+La exposición del 31 de octubre de 2026 fue confirmada como **predefensa**, no como defensa final. Se creó `11_cierre_predefensa_2026-10-31.md` para fijar evidencia presentable, afirmaciones prohibidas, controles de anonimización y pendientes posteriores. La presentación institucional fue actualizada con el estado de las entrevistas y la fecha correcta del acto. La tesis mantiene E8, E9 y E10 abiertos; la predefensa no autoriza afirmar adopción, mejora sostenida ni validación plena de principios.
+
+Los requisitos institucionales comunicados para estructura, diagnóstico, extensión, conclusiones, recomendaciones y presentación se registraron en `instituciones/alsie/requisitos_reunion_predefensa_2026-10-29.md`. La principal tensión identificada es que el perfil DS tiene seis objetivos operativos, mientras la presentación institucional solicita cuatro conclusiones asociadas a objetivos; en la traducción institucional se deberán agrupar en cuatro objetivos de capítulo sin eliminar la trazabilidad DS. El título institucional también requerirá traducir explícitamente qué se propone, para qué y en qué población o lugar, sin sustituir el título científico canónico hasta tomar esa decisión.
+
 
 ## Registro 2026-10-13 - tarea seleccionada para aplicación real
 
 Se seleccionó la tarea `CCC-7336`: validar pruebas unitarias en la API de CCC, como primera aplicación real del marco en Central. Se actualizó `08_protocolo_aplicacion_real_central.md` con la ficha de la tarea, evidencias esperadas y nombres recomendados de rama, commit y solicitud de integración. La tarea queda vinculada principalmente a los indicadores I3, I4, I5, I6, I7 e I9, y debe producir `E-GH-INT-01`, `E-GH-INT-02`, `E-GH-INT-03`, `E-TEST-INT-01` y `E-FORM-01`.
+
+## Registro 2026-10-29 - aplicación posterior de CCC-7480 en Central Frontend
+
+Se verificaron y normalizaron cinco capturas de la aplicación posterior a la línea base de `CCC-7480` en Central Frontend bajo el código `E-GH-INT-06`: rama conforme, *commit* conforme, solicitud #27 inicialmente abierta hacia `main`, fusión y eliminación de la rama temporal. La intervención demuestra una segunda aplicación completa de trazabilidad e integración en otro componente de Central. No se atribuye verificación técnica ni uso de plantilla al frontend porque las capturas no los muestran; tampoco sustituye la medición de un período posterior comparable requerida para cerrar estrictamente E8, E9 y E10.
+
+## Registro 2026-10-29 - segunda tarea posterior en Central Frontend: CCC-7477
+
+Se verificaron y normalizaron las evidencias de la tarea posterior `CCC-7477`, “Filtros Pantalla de Contratos”, bajo `E-ODOO-INT-03` y `E-GH-INT-07`. La evidencia muestra la tarea asignada a `DEV-003`, un *commit* conforme, la solicitud #26 fusionada hacia `main` desde `feat/CCC-7477-filtros-pantalla-contratos` y la eliminación posterior de la rama. La tarea amplía la observación posterior con un segundo cambio independiente de Central Frontend, pero no acredita plantilla completada ni verificación técnica; por ello, se contabiliza para I1, I3, I4, I5 e I9, no para I6 o I7.
+
+## Registro 2026-10-29 - verificación técnica de CCC-7480 en Central Frontend
+
+Se verificó y normalizó `E-TEST-INT-03`, evidencia de ejecución satisfactoria visible de pruebas Karma en `ContractsComponent` después de los cambios de `CCC-7480`. La captura incluye pruebas relacionadas con pólizas provisionales. Esta evidencia permite asociar I7 a la aplicación de frontend para esa tarea, pero no muestra el conteo total de la suite ni acredita construcción o despliegue; no se le atribuye alcance mayor al observado.
+
+## Registro 2026-10-29 - plantillas de solicitudes posteriores en Central Frontend
+
+Se verificaron y normalizaron `E-GH-INT-08` y `E-GH-INT-09`, correspondientes a las plantillas completas de las solicitudes de integración de `CCC-7480` y `CCC-7477`, respectivamente. Ambas consignan tarea relacionada, resumen, componentes, archivos, riesgo, plan de prueba, verificación y validación. `CCC-7480` declara pruebas focalizadas exitosas y comprobaciones TypeScript, diferenciando fallas heredadas de la suite completa; `CCC-7477` declara comprobaciones TypeScript exitosas y una excepción documentada porque Karma y la escritura del directorio de salida fueron bloqueadas por permisos `EPERM`. Estas evidencias permiten evaluar I6 sin ocultar las limitaciones técnicas observadas.
+
+## Registro 2026-10-29 - cierre de E8, E9 y E10
+
+Con autorización explícita del tesista se cerraron E8, E9 y E10. La evaluación sumativa se documentó en `08_resultado_sumativo_serie_casos_central.md` como evaluación de campo de tres cambios cerrados: `CCC-7336`, `CCC-7480` Frontend y `CCC-7477`. La decisión reemplaza la medición originalmente prevista por período comparable con una serie acotada de casos y declara la desviación, los criterios no calculables y sus amenazas a la validez; no se presentan tasas organizacionales ni adopción sostenida.
+
+E9 quedó cerrado con la trazabilidad problema → requisito → decisión → evidencia → cumplimiento → limitación. E10 quedó cerrado con principios de diseño de alcance analítico inicial: P1, P3 y P5 tienen respaldo directo en la serie; P2 y P4 cuentan con respaldo parcial; P6 permanece como decisión de diseño no validada. El trabajo queda listo para regenerar la traducción institucional desde `tesis_ds/`, sin presentar C5, institucionalización de repositorios ni mejora sostenida como resultados demostrados.
+
+## Registro 2026-10-29 - revisión final de coherencia
+
+Se revisaron los documentos de `tesis_ds/` y se creó `revision_final_coherencia_2026-10-29.md` como dictamen de coherencia y precedencia documental. La revisión corrigió textos residuales que aún mostraban E8 como pendiente, ajustó la secuencia real V1.0 → aplicación formativa `CCC-7336` → V1.1 → serie sumativa acotada, y actualizó E7b–E7f, E8, E9, E10 y la matriz de coherencia. Se verificaron 45 rutas internas a Markdown y 56 rutas de evidencias declaradas; no se detectaron archivos faltantes.
+
+El dictamen mantiene límites no subsanables por redacción: no hubo período posterior completo comparable, C5 no se evaluó en una entrega real, I2 carece de fichas C0 de excepción formal por componente externo y la serie se concentra en dos componentes de Central. Para la traducción institucional prevalecen `00_estado.md`, `matriz_coherencia.md`, E2, E4–E10 y el dictamen final; los documentos de planificación o predefensa fechados se conservan como antecedentes históricos.
+
+## Registro 2026-11-04 — observaciones posteriores a la defensa
+
+El tesista informó que realizó la defensa y recibió dos observaciones: compilar la propuesta como artefacto en un solo anexo y declarar cuál es el artefacto final del marco de trabajo. Se creó `tesis_ds/anexo_artefacto_marco_trabajo.md` como anexo autónomo y reproducible. El artefacto final queda declarado como el **Marco ligero progresivo para la gestión técnica trazable del trabajo de desarrollo en equipos pequeños con baja estandarización, versión V1.1-Central**, de tipología marco con método operativo, reglas, plantillas, estándares, indicadores y niveles de adopción. Los estándares `STD-GIT-001`, `STD-GIT-002`, `STD-GIT-003`, la plantilla de solicitud de integración y la configuración PRX son productos operativos o instanciaciones del marco, no artefactos finales independientes.
+
+La regeneración del IFI ALSIE será realizada por el agente de traducción institucional correspondiente. El presente agente conserva y actualiza únicamente la fuente canónica de Design Science en `tesis_ds/`.

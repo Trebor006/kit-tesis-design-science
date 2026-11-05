@@ -1,5 +1,7 @@
 # E-SUM-01. Resultado sumativo inicial de caso — CCC-7336
 
+> **Estado documental.** Antecedente de la consolidación final. Este resultado individual fue incorporado y contextualizado por `08_resultado_sumativo_serie_casos_central.md`; no debe usarse aisladamente para sostener conclusiones finales.
+
 ## Propósito y alcance
 
 Este documento compara la situación de línea base de Central API con la primera aplicación real del marco en la tarea `CCC-7336`. Su unidad de análisis es un cambio de software trazable, no un periodo completo de adopción institucional. Por ello, el resultado se denomina **sumativo inicial de caso** y no demuestra mejora sostenida del equipo ni adopción institucional completa.

@@ -146,5 +146,5 @@ Si alguno de estos eslabones no aplica o no existe, debe registrarse la excepci�
 
 ## Estado del gate E7b
 
-E7b queda **suficiente para el hito**. Los requisitos son trazables a la línea base y al problema de diseño, cada propiedad tiene criterio de cumplimiento, fuente y prioridad, y las tensiones principales están declaradas. Como primer producto operativo del artefacto se creó `tesis_ds/07c_plantilla_solicitud_integracion.md`, que se referencia en el diseño del marco y se presentará completa como anexo operativo. Para la tesis completa, los requisitos deberán contrastarse con la evaluación formativa y ajustarse si el uso real en Central revela fricciones no previstas.
+E7b queda **cerrado**. Los requisitos son trazables a la línea base y al problema de diseño, cada propiedad tiene criterio de cumplimiento, fuente y prioridad, y las tensiones principales están declaradas. La evaluación posterior confirmó evidencia de uso para RQ5–RQ10 y RQ11, mantuvo RQ1/RQ4 como no evaluables de forma completa y dejó RQ12/C5 sin evaluación en una entrega real. Esta distinción se conserva en E8 y E9.
 

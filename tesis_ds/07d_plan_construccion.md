@@ -95,4 +95,4 @@ Otras mejoras posteriores son: bloqueo automático de ramas mal nombradas, table
 
 ## Estado del gate E7d
 
-E7d queda **suficiente para el hito**. La versión mínima viable está definida, las versiones tienen pregunta de diseño, el criterio de suficiencia para evaluación formativa es explícito y los riesgos principales tienen mitigación. El siguiente paso metodológico es construir/aplicar V1.0-Central, registrar verificación interna en E7e y preparar la evaluación formativa de E8.
+E7d queda **cerrado como plan ejecutado con desviación documentada**. V1.0-Central se aplicó formativamente en `CCC-7336`, produjo la enmienda V1.1 y la evaluación posterior se realizó como serie acotada de tres casos, no como V1.2 con período comparable. La desviación reduce el alcance de inferencia y está registrada en `08_resultado_sumativo_serie_casos_central.md`.

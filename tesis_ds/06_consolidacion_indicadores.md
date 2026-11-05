@@ -55,7 +55,7 @@ Aunque la línea base considera evidencia de Central, Ansular y PConst, la prime
 
 ## Estado del cierre de E6
 
-E6 queda suficientemente consolidada para avanzar al diseño del artefacto. No obstante, no se declara cerrada de forma absoluta porque todavía faltan evidencias privadas o capturas mínimas de respaldo, especialmente en repositorios Odoo y en pruebas unitarias por proyecto. Estas ausencias no impiden avanzar a E7b, pero deben mantenerse registradas como limitaciones y amenazas a la validez.
+E6 queda cerrada para el alcance de la tesis. Las evidencias privadas recuperadas para Central permiten congelar la línea base y distinguir indicadores cuantificables de indicadores parciales o no calculables. Las ausencias de repositorios Odoo y pruebas por proyecto no se eliminan: se mantienen como limitaciones y amenazas a la validez, sin impedir la evaluación de campo acotada en Central.
 
 ## Declaración de fijación de línea base
 

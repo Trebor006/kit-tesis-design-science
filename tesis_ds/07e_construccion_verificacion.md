@@ -95,8 +95,10 @@ Esta diferencia se registra como fricción formativa, no como incumplimiento ocu
 | Repositorio `.github` | Revisión visual de repositorio y ramas. | Evidencia instanciación inicial; se detecta fricción en nombre de rama. | `E-GH-ORG-01`. |
 | Aplicación `CCC-7336` | Revisión de tarea, rama, commits, solicitud, fusión y eliminación de rama. | La cadena de trazabilidad fue aplicada en un cambio real de Central. | `E-ODOO-INT-01`; `E-GH-INT-01`; `E-GH-INT-02`. |
 | Pruebas unitarias de API | Ejecución de la batería de pruebas. | 169 pruebas unitarias exitosas. | `E-TEST-INT-01`. |
+| Aplicación `CCC-7480` en Central Frontend | Revisión de rama, *commit*, solicitud #27, plantilla, fusión, eliminación de rama y pruebas unitarias. | La cadena de trazabilidad e integración fue aplicada en un segundo componente de Central; la evidencia de prueba se limita a los casos visibles de `ContractsComponent` y distingue fallas heredadas de la suite completa. | `E-GH-INT-06`; `E-GH-INT-08`; `E-TEST-INT-03`. |
+| Aplicación `CCC-7477` en Central Frontend | Revisión de tarea, *commit*, solicitud #26, plantilla, fusión y eliminación de rama. | La cadena de trazabilidad e integración fue aplicada en un segundo cambio independiente de Central Frontend. Las comprobaciones TypeScript se registran como exitosas; Karma y escritura de salida tienen una excepción documentada por permisos `EPERM`. | `E-ODOO-INT-03`; `E-GH-INT-07`; `E-GH-INT-09`. |
 
-La verificación interna confirma que los productos documentales y técnicos iniciales existen y están alineados con los requisitos del artefacto. Sin embargo, esta verificación no equivale a evaluación de campo. Todavía falta observar el uso del marco en una solicitud de integración real de Central y registrar evidencia de verificación técnica.
+La verificación interna confirma que los productos documentales y técnicos iniciales existen y están alineados con los requisitos del artefacto. Las aplicaciones de `CCC-7336`, `CCC-7480` Frontend y `CCC-7477` muestran uso real de la cadena de trazabilidad. Esta verificación no sustituye a la evaluación; la evaluación de campo posterior se consolidó como serie acotada en `08_resultado_sumativo_serie_casos_central.md`, no como período comparable.
 
 ## Trazabilidad producto → componente → indicador
 
@@ -131,8 +133,8 @@ La verificación interna confirma que los productos documentales y técnicos ini
 
 ## Pendientes para cerrar E7e completamente
 
-E7e queda **cerrado como construcción y verificación interna de la primera aplicación**. La construcción documental, la configuración de ramas, la solicitud real `CCC-7336` y la verificación técnica están respaldadas por evidencias. La evaluación sumativa permanece pendiente en E8; no forma parte del cierre de construcción.
+E7e queda **cerrado como construcción y verificación interna**. La construcción documental, la configuración de ramas y las tres aplicaciones cerradas están respaldadas por evidencias. La evaluación sumativa ya fue cerrada en E8 con el alcance y límites de una serie acotada; no forma parte del cierre de construcción.
 
 ## Estado del gate E7e
 
-E7e queda **cerrado para la primera aplicación**, porque existen productos operativos construidos, evidencia privada de aplicación real y verificación técnica ejecutada. La siguiente etapa es cerrar la evaluación sumativa inicial, sin confundir el funcionamiento de `CCC-7336` con una mejora sostenida del contexto.
+E7e queda **cerrado** porque existen productos operativos construidos, evidencia privada de aplicación real y verificación técnica ejecutada. El funcionamiento de los casos no se confunde con mejora sostenida del contexto, que la evidencia disponible no acredita.

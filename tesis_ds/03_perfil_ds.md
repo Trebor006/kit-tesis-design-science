@@ -1,5 +1,7 @@
 ﻿# E3. Perfil de investigación Design Science
 
+> **Estado documental.** Este archivo conserva el perfil prospectivo aprobado antes de construir el artefacto; por ello, varias secciones emplean futuro y describen el plan original de evaluación. La ejecución y sus desviaciones están registradas de forma canónica en E7e–E10. En particular, la evaluación sumativa se realizó como una serie acotada de tres casos cerrados, no como un período completo comparable.
+
 ## Título provisional
 
 **Marco ligero progresivo de gestión técnica trazable en equipos pequeños de desarrollo con baja estandarización**
@@ -99,7 +101,7 @@ Esta oración satisface el gate de E3 porque expresa en una sola formulación qu
 
 ## Estado del gate E3
 
-E3 queda sustancialmente construido. El perfil ya contiene título provisional, pregunta de investigación, subpreguntas, objetivo general, objetivos específicos, proposición de diseño, metodología, estrategia de evaluación, tipo de contribución, cronograma y oración única de contribución original. Antes de cerrar formalmente E3, debe revisarse la coherencia completa del documento y completar los apartados faltantes del perfil en redacción integrada.
+E3 queda cerrado como perfil fundacional. El perfil contiene título provisional, pregunta de investigación, subpreguntas, objetivo general, objetivos específicos, proposición de diseño, metodología, estrategia de evaluación, tipo de contribución, cronograma y oración única de contribución original. La contrastación de esa planificación con la ejecución se documenta en E8–E10, sin reescribir retrospectivamente los compromisos de diseño.
 
 # Versión integrada del perfil DS
 
@@ -119,7 +121,7 @@ La tipología principal del artefacto es **marco**, porque integrará constructo
 
 ## Campo de acción
 
-El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial será la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La primera aplicación y evaluación se concentrarán en el proyecto Central, con tres responsables técnicos codificados —Central Odoo Backend, Central API y Central Frontend—, durante un periodo posterior comparable con la línea base.
+El campo de acción se delimita a la adopción inicial de prácticas mínimas de Ingeniería de Software en equipos pequeños de desarrollo con baja estandarización de gestión técnica. El contexto empírico inicial es la línea de software a medida de PRX, dentro de un departamento de desarrollo que también incluye líneas de WordPress y Odoo. La primera aplicación se concentró en Central; la ejecución sumativa no recuperó un período comparable completo y se declaró como una serie acotada de tres cambios cerrados.
 
 La delimitación excluye la certificación formal de madurez, la implantación completa de CMMI, la transformación integral de todos los procesos organizacionales y la automatización avanzada mediante agentes de calidad de código. Estas dimensiones pueden aparecer como antecedentes, restricciones o trabajo futuro, pero no forman parte del núcleo evaluable del perfil.
 
